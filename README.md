@@ -1,4 +1,4 @@
-<h1 align="center"><img src="./resources/extras/GeezFire.gif" width="35px">饾棡饾槅饾槅-饾棬饾榾饾棽饾椏饾棷饾椉饾榿<img src="./resources/extras/GeezFire.gif" width="35px"></h1>
+<h1 align="center"><img src="./resources/extras/GeezFire.gif" width="35px">XA USER FUCKING BOT FOR TELEGRAM<img src="./resources/extras/GeezFire.gif" width="35px"></h1>
 
 <p align="center">
 
