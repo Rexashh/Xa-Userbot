@@ -16,7 +16,7 @@
 
 
 <p align="center">
-  <img src="https://telegra.ph/file/a4e107eea64da0d781e5c.jpg">
+  <img src="https://telegra.ph/file/543425c832763405474c4.jpg">
 </p>
 
 <h4 align="center"> ⚠️DEPLOY TO HEROKU BOT⚠️ </p>
