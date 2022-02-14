@@ -40,9 +40,8 @@
 
  🙏 **ORIGINAL REPO :**
 
-*
-*   [sandy1709](https://github.com/sandy1709/catuserbot)    CatUserbot
-*   DAN TERIMAKASIH BANYAK KEPADA USERBOT INDONESIA LAINNYA🙏
+*   [SendiAp](https://github.com/SendiAp/Rose-Userbot)    RoseUserbot
+*   TERIMAKASIH BANYAK KEPADA USERBOT INDONESIA LAINNYA🙏
 
 ## Stay Support 🚀
 ❁   [LonamiWeb](https://github.com/LonamiWebs/) and [Telethon](https://github.com/LonamiWebs/Telethon)
