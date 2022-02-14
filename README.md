@@ -1,43 +1,47 @@
+<h1 align="center"><img src="./resources/extras/geez.gif" width="35px">ROSE-UBOT<img src="./resources/extras/geez.gif" width="35px"></h1>
 
-<h1 align="width="35px">XA USERBOT TELEGRAM
-
-
+</p>
 <p align="center">
-  <img src="https://telegra.ph/file/09c0c9a642048a89de008.jpg">
+    <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://t.me/rexaprivateroom"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
 
+<h1 align="center">֍ xᴀ ᴜsᴇʀʙᴏᴛ ֍<h1 align="center">
 
-## Disclaimer
-
-```
-Saya tidak bertanggung jawab atas penyalahgunaan bot ini.
-Bot ini dimaksudkan untuk bersenang-senang sekaligus membantu Anda
-mengelola grup secara efisien dan mengotomatiskan beberapa hal yang membosankan.
-Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
-```
-
-
-## String Session :
-[![GenerateStringName](https://img.shields.io/badge/repl.it-generateStringName-white)](https://replit.com/@rizkyhmdanii16/StringSession)
-
-<h2 align="center">
-   Metode Deploy
-</h2>
 
 <p align="center">
-<a href="https://dashboard.heroku.com/new?template=https://github.com/muhammadrizky16/templat-userbot"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="250""/</a>  
-<a href="https://telegram.dog/XTZ_HerokuBot?start=bXVoYW1tYWRyaXpreTE2L0t5eS1Vc2VyYm90IEt5eS1Vc2VyYm90"><img src="https://img.shields.io/badge/Deploy%20Via%20Telegram-blue?style=for-the-badge&logo=telegram" width="250""/</a>  </p>
+  <img src="https://telegra.ph/file/a4e107eea64da0d781e5c.jpg">
+</p>
+
+<h4 align="center"> ⚠️DEPLOY TO HEROKU BOT⚠️ </p>
+<p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=U2VuZGlBcC9Sb3NlLVVzZXJib3QgbWFzdGVy"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-indigo?style=flat&logo=heroku" width="250" height="38.60" /></a></p>
+
+<h4 align="center"> ⚠️DEPLOY TO HEROKU⚠️ </p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/SendiAp/Rose-Userbot/tree/master"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-indigo?style=flat&logo=heroku" width="250" height="38.60" /></a></p>
 
 
-### Support & Updates 
-<a href="https://t.me/rexaprivateroom"><img src="https://img.shields.io/badge/Join-Group%20Support-red.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/tirexgugel"><img src="https://img.shields.io/badge/Join-Updates%20Channel-white.svg?style=for-the-badge&logo=Telegram"></a>
+### Follow Me:
+<p align="left">
+<a href="https://github.com/Rexashh/Xa-Userbot"><img src="https://img.shields.io/badge/GitHub-Follow%20on%20GitHub-inactive.svg?logo=github"></a>
+</p>
+</p>
+<p align="left">
+<a href="https://instagram.com/syhndr_"><img src="https://img.shields.io/badge/Instagram-Follow%20on%20Instagram-important.svg?logo=instagram"></a>
+</p>
 
-##
+<details>
+  <summary><b>© Credits</b></summary>
 
-ðŸ”° **THANKS YOU TO**
-*   [Kyy](https://github.com/muhammadrizky16/Kyy-Userbot)   Kyy - Userbot
-*   [Sendi](https://github.com/SendiAp/Rose-Userbot)   Rose-Userbot
-*   [Skyzu](https://github.com/Skyzu/skyzu-userbot)   skyzu-userbot
-*   DAN TERIMAKASIH KEPADA USERBOT LAINNYA
+ 🙏 **THANK YOU VERY MUCH FOR**
 
+*   [Vckyou](https://github.com/Vckyou/Geez-Project)    Geez - Project
+*   [X_iMFiNe](https://github.com/ximfine/xBot-Remix)    XBOT-REMIX
+*   [Koala](https://github.com/ManusiaRakitan/Kampang-Bot)    Kampang - Bot
+*   [RaphielGang](https://github.com/RaphielGang)    Telegram - Paperplane
+*   [AvinashReddy3108](https://github.com/AvinashReddy3108)    PaperplaneExtended
+*   [TeamUserge](https://github.com/UsergeTeam/Userge)    Userge
+*   [sandy1709](https://github.com/sandy1709/catuserbot)    CatUserbot
+*   DAN TERIMAKASIH BANYAK KEPADA USERBOT INDONESIA LAINNYA🙏
 
+## Stay Support 🚀
+❁   [LonamiWeb](https://github.com/LonamiWebs/) and [Telethon](https://github.com/LonamiWebs/Telethon)
