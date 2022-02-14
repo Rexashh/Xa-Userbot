@@ -1,4 +1,4 @@
-<h1 align="center"><img src="./resources/extras/geez.gif" width="35px">ROSE-UBOT<img src="./resources/extras/geez.gif" width="35px"></h1>
+<h1 align="center"><img src="./resources/extras/geez.gif" width="35px">XA-USERBOT<img src="./resources/extras/geez.gif" width="35px"></h1>
 
 </p>
 <p align="center">
