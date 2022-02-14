@@ -23,7 +23,7 @@
 <p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=U2VuZGlBcC9Sb3NlLVVzZXJib3QgbWFzdGVy"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-indigo?style=flat&logo=heroku" width="250" height="38.60" /></a></p>
 
 <h4 align="center"> ⚠️DEPLOY TO HEROKU⚠️ </p>
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Rexashh/Xa-Userbot/tree/master <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-indigo?style=flat&logo=heroku" width="250" height="38.60" /></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Rexashh/Xa-Userbot/tree/master"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-indigo?style=flat&logo=heroku" width="250" height="38.60" /></a></p>
 
 
 ### Follow Me:
@@ -38,14 +38,9 @@
 <details>
   <summary><b>© Credits</b></summary>
 
- 🙏 **THANK YOU VERY MUCH FOR**
+ 🙏 **ORIGINAL REPO :**
 
-*   [Vckyou](https://github.com/Vckyou/Geez-Project)    Geez - Project
-*   [X_iMFiNe](https://github.com/ximfine/xBot-Remix)    XBOT-REMIX
-*   [Koala](https://github.com/ManusiaRakitan/Kampang-Bot)    Kampang - Bot
-*   [RaphielGang](https://github.com/RaphielGang)    Telegram - Paperplane
-*   [AvinashReddy3108](https://github.com/AvinashReddy3108)    PaperplaneExtended
-*   [TeamUserge](https://github.com/UsergeTeam/Userge)    Userge
+*
 *   [sandy1709](https://github.com/sandy1709/catuserbot)    CatUserbot
 *   DAN TERIMAKASIH BANYAK KEPADA USERBOT INDONESIA LAINNYA🙏
 
