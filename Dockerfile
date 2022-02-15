@@ -1,4 +1,4 @@
-FROM Rexashh/Xa-Userbot:buster
+FROM rexashh/xa-userbot:buster
 
 RUN git clone -b master https://github.com/Rexashh/Xa-Userbot  /home/userbot/ \
     && chmod 777 /home/userbot \
