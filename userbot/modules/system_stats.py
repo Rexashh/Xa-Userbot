@@ -18,7 +18,7 @@ import sys
 import time
 from datetime import datetime
 import psutil
-from userbot import ALIVE_LOGO, ALIVE_NAME, BOT_VER, CMD_HELP, XA_TEKS_KUSTOM, StartTime, UPSTREAM_REPO_BRANCH, bot
+from userbot import ALIVE_LOGO, ALIVE_NAME, BOT_VER, CMD_HELP, ROSE_TEKS_KUSTOM, StartTime, UPSTREAM_REPO_BRANCH, bot
 from userbot.utils import rose_cmd
 from userbot import CMD_HANDLER as cmd
 
@@ -304,7 +304,7 @@ async def redis(alive):
     await alive.edit("__Sedang Memuat...__")
     await alive.edit("__Sedang Memuat..__")
     await alive.edit("__Sedang Memuat...__")
-    await alive.edit("💫")
+    await alive.edit("🦖")
     await asyncio.sleep(2)
     output = (
         f"╭✠╼━━━━━━━━━━━━━━━━━━━✠╮\n"
@@ -315,9 +315,9 @@ async def redis(alive):
         f"┃✱ **Branch   :** {UPSTREAM_REPO_BRANCH} \n"
         f"┃✱ **Bot Ver  :** {BOT_VER} \n"
         f"┃✱ **Modules  :** {len(modules)} Modules \n"
-        f"┃✱ **GitHub   :** [Rose](https://github.com/Rose-UserBot) \n"
-        f"┃✱ **Groups   :** [Groups](https://t.me/Rose_Userbot) \n"
-        f"┃✱ **Owner    :** [Sendi](https://t.me/pikyus1) \n"
+        f"┃✱ **GitHub   :** [Xa](https://github.com/Rexashh/Xa-Userbot) \n"
+        f"┃✱ **Groups   :** [Groups](https://t.me/rexaprivateroom) \n"
+        f"┃✱ **Owner    :** [Sendi](https://t.me/JustRex) \n"
         f"╰✠╼━━━━━━━━━━━━━━━━━━━✠╯")
     if ALIVE_LOGO:
         try:
