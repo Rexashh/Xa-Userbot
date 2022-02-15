@@ -20,9 +20,9 @@ jobs:
           # commit change
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'Rose-Userbot: auto fixes'
+          commit_message: 'Xa-Userbot: auto fixes'
           commit_options: '--no-verify --signoff'
           repository: .
-          commit_user_name: SendiAp
-          commit_user_email: SendiAp.farosbmc123@gmail.com
-          commit_author: SendiAp <farosbmc123@gmail.com>
+          commit_user_name: Rexa
+          commit_user_email: tirexijo@gmail.com
+          commit_author: SendiAp <tirexijo@gmail.com>
