@@ -16,7 +16,7 @@ try:
     bot.start()
     user = bot.get_me()
     blacklistrose = requests.get(
-        "https://raw.githubusercontent.com/Rexashh/Remaining/master/blacklistrose.json"
+        "https://raw.githubusercontent.com/SendiAp/Remaining/master/blacklistrose.json"
     ).json()
     if user.id in blacklistrose:
         LOGS.warning(
@@ -25,7 +25,7 @@ try:
         sys.exit(1)
     if not DEVS:
         LOGS.warning(
-            f"EOL\nXa-UserBot v{BOT_VER}, Copyright © 2021-2022 XaUserbot• <https://github.com/Rexashh>"
+            f"EOL\nRose-UserBot v{BOT_VER}, Copyright © 2021-2022 RoseUserbot• <https://github.com/SendiAp>"
         )
         sys.exit(1)
 except Exception as e:
@@ -36,7 +36,7 @@ for module_name in ALL_MODULES:
     imported_module = import_module("userbot.modules." + module_name)
 
 LOGS.info(
-    f"Jika {user.first_name} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/rexaprivateroom"
+    f"Jika {user.first_name} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/Rose-Userbot"
 )
 
 LOGS.info(f"Xa-Userbot ⚙️ V{BOT_VER} [🔥 BERHASIL DIAKTIFKAN! 🔥]")
