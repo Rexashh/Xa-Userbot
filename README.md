@@ -40,8 +40,5 @@
 
  🙏 **ORIGINAL REPO :**
 
-*   [SendiAp](https://github.com/SendiAp/Rose-Userbot)    RoseUserbot
+*   [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)    Man-Userbot
 *   TERIMAKASIH BANYAK KEPADA USERBOT INDONESIA LAINNYA🙏
-
-## Stay Support 🚀
-❁   [LonamiWeb](https://github.com/LonamiWebs/) and [Telethon](https://github.com/LonamiWebs/Telethon)
