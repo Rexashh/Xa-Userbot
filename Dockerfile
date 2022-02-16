@@ -1,3 +1,3 @@
-FROM Rexashh/Xa-Userbot:slim-buster
+FROM rexashh/xa-userbot:slim-buster
 
 CMD [ "bash", "start" ]
