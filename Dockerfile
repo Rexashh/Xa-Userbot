@@ -9,7 +9,7 @@ RUN pip install --upgrade pip setuptools
 WORKDIR /root/userbot
 
 #Install python requirements
-RUN pip3 install -r https://raw.githubusercontent.com/Tonic990/Tonic-Userbot/Tonic-Userbot/requirements.txt
+RUN pip3 install -r https://raw.githubusercontent.com/RexAshh/Xa-Userbot/Xa-userbot/requirements.txt
 
 EXPOSE 80 443
 
