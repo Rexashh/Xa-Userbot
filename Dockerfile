@@ -1,7 +1,7 @@
 # Using Python Slim-Buster
 FROM kyyex/kyy-userbot:buster
 #━━━━━ Userbot Telegram ━━━━━
-#━━━━━ By Tonic-Userbot ━━━━━
+#━━━━━ By Kyy-Userbot ━━━━━
 
 RUN git clone -b Xa-Userbot https://github.com/Rexashh/Xa-Userbot  /home/userbot/
 RUN mkdir /root/userbot/.bin
