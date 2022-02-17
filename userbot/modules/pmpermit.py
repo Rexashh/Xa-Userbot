@@ -190,7 +190,6 @@ async def auto_accept(event):
                     )
 
 
-
 @Xa_cmd(pattern="notifoff$")
 async def notifoff(noff_event):
     """For .notifoff command, stop getting notifications from unapproved PMs."""
