@@ -44,25 +44,25 @@ def Xa_cmd(
         args["chats"] = black_list_chats
 
     if pattern is not None:
-        global xa_reg
+        global Xa_reg
         global sudo_reg
         if (
             pattern.startswith(r"\#")
             or not pattern.startswith(r"\#")
             and pattern.startswith(r"^")
         ):
-            xa_reg = sudo_reg = re.compile(pattern)
+            Xa_reg = sudo_reg = re.compile(pattern)
         else:
-            xa_ = "\\" + CMD_HANDLER
+            Xa_ = "\\" + CMD_HANDLER
             sudo_ = "\\" + SUDO_HANDLER
-            re.compile(xa_ + pattern)
+            re.compile(Xa_ + pattern)
             sudo_reg = re.compile(sudo_ + pattern)
             if command is not None:
-                cmd1 = kyy_ + command
+                cmd1 = Xa_ + command
                 cmd2 = sudo_ + command
             else:
                 cmd1 = (
-                    (xa_ +
+                    (Xa_ +
                      pattern).replace(
                         "$",
                         "").replace(
@@ -85,9 +85,9 @@ def Xa_cmd(
         if not disable_edited:
             bot.add_event_handler(
                 func, events.MessageEdited(
-                    **args, outgoing=True, pattern=kyy_reg))
+                    **args, outgoing=True, pattern=Xa_reg))
         bot.add_event_handler(
-            func, events.NewMessage(**args, outgoing=True, pattern=kyy_reg)
+            func, events.NewMessage(**args, outgoing=True, pattern=Xa_reg)
         )
         if allow_sudo:
             if not disable_edited:
