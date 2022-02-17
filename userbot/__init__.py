@@ -219,7 +219,7 @@ YOUTUBE_API_KEY = os.environ.get(
     "YOUTUBE_API_KEY") or "AIzaSyACwFrVv-mlhICIOCvDQgaabo6RIoaK8Dg"
 
 # Untuk Perintah .Xaalive
-Xa_TEKS_KUSTOM = os.environ.get("Xa_TEKS_KUSTOM", "I'am Using Xa-Userbot✨")
+XA_TEKS_KUSTOM = os.environ.get("XA_TEKS_KUSTOM", "I'am Using Xa-Userbot🦖")
 
 # Untuk Mengubah Pesan Welcome
 START_WELCOME = os.environ.get("START_WELCOME", None)
@@ -262,7 +262,7 @@ INLINE_PIC = os.environ.get(
     "INLINE_PIC") or "https://telegra.ph/file/0b30f41459130f3bcf1af.jpg"
 
 # Default emoji help
-EMOJI_HELP = os.environ.get("EMOJI_HELP") or "✨"
+EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🦖"
 
 # °Xa-Userbot°
 OWNER_URL = os.environ.get("OWNER_URL") or "https://t.me/JustRex"
@@ -556,7 +556,7 @@ with bot:
                 current_page_number = int(lockpage)
                 buttons = paginate_help(
                     current_page_number, dugmeler, "helpme")
-                text = f"**✨ Xa-Userbot Inline Menu ✨**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules"
+                text = f"**🦖 Xa-Userbot Inline Menu 🦖**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules"
                 await event.edit(
                     text,
                     file=roselogo,
