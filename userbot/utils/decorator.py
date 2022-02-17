@@ -55,7 +55,7 @@ def Xa_cmd(
         else:
             Xa_ = "\\" + CMD_HANDLER
             sudo_ = "\\" + SUDO_HANDLER
-            Xa_reg =.compile(Xa_ + pattern)
+            Xa_reg = .compile(Xa_ + pattern)
             sudo_reg = re.compile(sudo_ + pattern)
             if command is not None:
                 cmd1 = Xa_ + command
