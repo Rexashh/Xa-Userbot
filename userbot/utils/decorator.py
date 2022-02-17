@@ -112,7 +112,7 @@ def Xa_cmd(
     return decorator
 
 
-def xa_handler(
+def Xa_handler(
     **args,
 ):
     def decorator(func):
