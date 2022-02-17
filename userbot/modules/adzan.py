@@ -7,7 +7,7 @@ from userbot import CMD_HELP, CMD_HANDLER as cmd
 PLACE = ""
 
 
-@kyy_cmd(pattern="adzan(?: |$)(.*)")
+@Xa_cmd(pattern="adzan(?: |$)(.*)")
 async def get_adzan(adzan):
     if not adzan.pattern_match.group(1):
         LOCATION = PLACE
