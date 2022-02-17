@@ -14,10 +14,6 @@ from userbot import (
     CMD_HANDLER,
     CMD_LIST,
     LOAD_PLUG,
-    MAN2,
-    MAN3,
-    MAN4,
-    MAN5,
     SUDO_HANDLER,
     SUDO_USERS,
     bot,
@@ -25,7 +21,7 @@ from userbot import (
 )
 
 
-def man_cmd(
+def kyy_cmd(
     pattern: str = None,
     allow_sudo: bool = True,
     disable_edited: bool = False,
@@ -48,25 +44,25 @@ def man_cmd(
         args["chats"] = black_list_chats
 
     if pattern is not None:
-        global man_reg
+        global kyy_reg
         global sudo_reg
         if (
             pattern.startswith(r"\#")
             or not pattern.startswith(r"\#")
             and pattern.startswith(r"^")
         ):
-            man_reg = sudo_reg = re.compile(pattern)
+            kyy_reg = sudo_reg = re.compile(pattern)
         else:
-            man_ = "\\" + CMD_HANDLER
+            kyy_ = "\\" + CMD_HANDLER
             sudo_ = "\\" + SUDO_HANDLER
-            man_reg = re.compile(man_ + pattern)
+            kyy_reg = re.compile(kyy_ + pattern)
             sudo_reg = re.compile(sudo_ + pattern)
             if command is not None:
-                cmd1 = man_ + command
+                cmd1 = kyy_ + command
                 cmd2 = sudo_ + command
             else:
                 cmd1 = (
-                    (man_ +
+                    (kyy_ +
                      pattern).replace(
                         "$",
                         "").replace(
@@ -86,61 +82,26 @@ def man_cmd(
                 CMD_LIST.update({file_test: [cmd1]})
 
     def decorator(func):
-        if bot:
+        if not disable_edited:
+            bot.add_event_handler(
+                func, events.MessageEdited(
+                    **args, outgoing=True, pattern=kyy_reg))
+        bot.add_event_handler(
+            func, events.NewMessage(**args, outgoing=True, pattern=kyy_reg)
+        )
+        if allow_sudo:
             if not disable_edited:
                 bot.add_event_handler(
-                    func, events.MessageEdited(
-                        **args, outgoing=True, pattern=man_reg))
-            bot.add_event_handler(
-                func, events.NewMessage(**args, outgoing=True, pattern=man_reg)
-            )
-        if bot:
-            if allow_sudo:
-                if not disable_edited:
-                    bot.add_event_handler(
-                        func,
-                        events.MessageEdited(
-                            **args,
-                            from_users=list(SUDO_USERS),
-                            pattern=sudo_reg),
-                    )
-                bot.add_event_handler(
                     func,
-                    events.NewMessage(
+                    events.MessageEdited(
                         **args, from_users=list(SUDO_USERS), pattern=sudo_reg
                     ),
                 )
-        if MAN2:
-            if not disable_edited:
-                MAN2.add_event_handler(
-                    func, events.MessageEdited(
-                        **args, outgoing=True, pattern=man_reg))
-            MAN2.add_event_handler(
-                func, events.NewMessage(**args, outgoing=True, pattern=man_reg)
-            )
-        if MAN3:
-            if not disable_edited:
-                MAN3.add_event_handler(
-                    func, events.MessageEdited(
-                        **args, outgoing=True, pattern=man_reg))
-            MAN3.add_event_handler(
-                func, events.NewMessage(**args, outgoing=True, pattern=man_reg)
-            )
-        if MAN4:
-            if not disable_edited:
-                MAN4.add_event_handler(
-                    func, events.MessageEdited(
-                        **args, outgoing=True, pattern=man_reg))
-            MAN4.add_event_handler(
-                func, events.NewMessage(**args, outgoing=True, pattern=man_reg)
-            )
-        if MAN5:
-            if not disable_edited:
-                MAN5.add_event_handler(
-                    func, events.MessageEdited(
-                        **args, outgoing=True, pattern=man_reg))
-            MAN5.add_event_handler(
-                func, events.NewMessage(**args, outgoing=True, pattern=man_reg)
+            bot.add_event_handler(
+                func,
+                events.NewMessage(
+                    **args, from_users=list(SUDO_USERS), pattern=sudo_reg
+                ),
             )
         try:
             LOAD_PLUG[file_test].append(func)
@@ -151,30 +112,11 @@ def man_cmd(
     return decorator
 
 
-def man_handler(
+def kyy_handler(
     **args,
 ):
     def decorator(func):
-        if bot:
-            bot.add_event_handler(
-                func, events.NewMessage(
-                    **args, incoming=True))
-        if MAN2:
-            MAN2.add_event_handler(
-                func, events.NewMessage(
-                    **args, incoming=True))
-        if MAN3:
-            MAN3.add_event_handler(
-                func, events.NewMessage(
-                    **args, incoming=True))
-        if MAN4:
-            MAN4.add_event_handler(
-                func, events.NewMessage(
-                    **args, incoming=True))
-        if MAN5:
-            MAN5.add_event_handler(
-                func, events.NewMessage(
-                    **args, incoming=True))
+        bot.add_event_handler(func, events.NewMessage(**args, incoming=True))
         return func
 
     return decorator
@@ -195,24 +137,9 @@ def asst_cmd(**args):
     return decorator
 
 
-def chataction(**args):
-    def decorator(func):
-        if bot:
-            bot.add_event_handler(func, events.ChatAction(**args))
-        if MAN2:
-            MAN2.add_event_handler(func, events.ChatAction(**args))
-        if MAN3:
-            MAN3.add_event_handler(func, events.ChatAction(**args))
-        if MAN4:
-            MAN4.add_event_handler(func, events.ChatAction(**args))
-        if MAN5:
-            MAN5.add_event_handler(func, events.ChatAction(**args))
-        return func
-
-    return decorator
-
-
 def callback(**args):
+    """Assistant's callback decorator"""
+
     def decorator(func):
         if tgbot:
             tgbot.add_event_handler(func, events.CallbackQuery(**args))

