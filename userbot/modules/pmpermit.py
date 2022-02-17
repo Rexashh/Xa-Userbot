@@ -140,7 +140,6 @@ async def permitpm(event):
                     )
 
 
-                    
 @register(disable_edited=True, outgoing=True, disable_errors=True)
 async def auto_accept(event):
     """Will approve automatically if you texted them first."""
