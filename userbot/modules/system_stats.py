@@ -165,7 +165,7 @@ async def bot_ver(event):
 
         await event.edit(
             "**⸙-**🦖Xa-Userbot🦖 Versi:** \n "
-            f"heads/Kyy-Userbot-0-x634i7u1"
+            f"heads/Xa-Userbot-0-x634i7u1"
             "\n**⸙-**Revisi:**\n "
             f"{revout}"
         )
