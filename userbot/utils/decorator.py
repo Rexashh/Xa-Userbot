@@ -66,8 +66,14 @@ def man_cmd(
                 cmd2 = sudo_ + command
             else:
                 cmd1 = (
-                    (man_ + pattern).replace("$", "").replace("\\", "").replace("^", "")
-                )
+                    (man_ +
+                     pattern).replace(
+                        "$",
+                        "").replace(
+                        "\\",
+                        "").replace(
+                        "^",
+                        ""))
                 cmd2 = (
                     (sudo_ + pattern)
                     .replace("$", "")
@@ -83,8 +89,8 @@ def man_cmd(
         if bot:
             if not disable_edited:
                 bot.add_event_handler(
-                    func, events.MessageEdited(**args, outgoing=True, pattern=man_reg)
-                )
+                    func, events.MessageEdited(
+                        **args, outgoing=True, pattern=man_reg))
             bot.add_event_handler(
                 func, events.NewMessage(**args, outgoing=True, pattern=man_reg)
             )
@@ -94,8 +100,9 @@ def man_cmd(
                     bot.add_event_handler(
                         func,
                         events.MessageEdited(
-                            **args, from_users=list(SUDO_USERS), pattern=sudo_reg
-                        ),
+                            **args,
+                            from_users=list(SUDO_USERS),
+                            pattern=sudo_reg),
                     )
                 bot.add_event_handler(
                     func,
@@ -106,32 +113,32 @@ def man_cmd(
         if MAN2:
             if not disable_edited:
                 MAN2.add_event_handler(
-                    func, events.MessageEdited(**args, outgoing=True, pattern=man_reg)
-                )
+                    func, events.MessageEdited(
+                        **args, outgoing=True, pattern=man_reg))
             MAN2.add_event_handler(
                 func, events.NewMessage(**args, outgoing=True, pattern=man_reg)
             )
         if MAN3:
             if not disable_edited:
                 MAN3.add_event_handler(
-                    func, events.MessageEdited(**args, outgoing=True, pattern=man_reg)
-                )
+                    func, events.MessageEdited(
+                        **args, outgoing=True, pattern=man_reg))
             MAN3.add_event_handler(
                 func, events.NewMessage(**args, outgoing=True, pattern=man_reg)
             )
         if MAN4:
             if not disable_edited:
                 MAN4.add_event_handler(
-                    func, events.MessageEdited(**args, outgoing=True, pattern=man_reg)
-                )
+                    func, events.MessageEdited(
+                        **args, outgoing=True, pattern=man_reg))
             MAN4.add_event_handler(
                 func, events.NewMessage(**args, outgoing=True, pattern=man_reg)
             )
         if MAN5:
             if not disable_edited:
                 MAN5.add_event_handler(
-                    func, events.MessageEdited(**args, outgoing=True, pattern=man_reg)
-                )
+                    func, events.MessageEdited(
+                        **args, outgoing=True, pattern=man_reg))
             MAN5.add_event_handler(
                 func, events.NewMessage(**args, outgoing=True, pattern=man_reg)
             )
@@ -149,15 +156,25 @@ def man_handler(
 ):
     def decorator(func):
         if bot:
-            bot.add_event_handler(func, events.NewMessage(**args, incoming=True))
+            bot.add_event_handler(
+                func, events.NewMessage(
+                    **args, incoming=True))
         if MAN2:
-            MAN2.add_event_handler(func, events.NewMessage(**args, incoming=True))
+            MAN2.add_event_handler(
+                func, events.NewMessage(
+                    **args, incoming=True))
         if MAN3:
-            MAN3.add_event_handler(func, events.NewMessage(**args, incoming=True))
+            MAN3.add_event_handler(
+                func, events.NewMessage(
+                    **args, incoming=True))
         if MAN4:
-            MAN4.add_event_handler(func, events.NewMessage(**args, incoming=True))
+            MAN4.add_event_handler(
+                func, events.NewMessage(
+                    **args, incoming=True))
         if MAN5:
-            MAN5.add_event_handler(func, events.NewMessage(**args, incoming=True))
+            MAN5.add_event_handler(
+                func, events.NewMessage(
+                    **args, incoming=True))
         return func
 
     return decorator
