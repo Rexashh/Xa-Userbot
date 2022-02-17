@@ -459,7 +459,7 @@ async def alvlogo(event):
             )
         await setit(event, var, themssg)
         await conv.send_message(
-            f"**ALIVE_LOGO Berhasil di Ganti Menjadi** `{themssg}`\n\nSedang MeRestart Heroku untuk Menerapkan Perubahan.",
+            f"**ALIVE_LOGO Berhasil di Ganti Menjadi** `{themssg}`\n\nSabar cok lagi Restart Heroku buat Ganti Perasaan.",
             buttons=get_back_button("alivemenu"),
         )
 
@@ -503,7 +503,7 @@ async def bot_start(event):
             start_msg = f"**Users**: {mention}\
                         \n\n**Bot**: [{OWNER}](tg://user?id={OWNER_ID}) \
                         \n**Forward**: True\
-                        \n\n**Powered by**: [Kyy-Userbot](https://github.com/muhammadrizky16/Kyy-Userbot)"
+                        \n\n**Powered by**: [Xa-Userbot](https://github.com/Rexashh/Xa-Userbot)"
             buttons = [
                 (
                     Button.inline("ɪɴꜰᴏ", data="infor"),
@@ -562,7 +562,7 @@ async def _(event):
 async def infor(event):
     await tgbot.send_message(
         event.chat_id,
-        message=f"**Groups**: [sᴜᴘᴘᴏʀᴛ](t.me/NastySupportt)\n**Github**: [Kyy-Userbot](https://github.com/muhammadrizky16/Kyy-Userbot)\n**Deploy**: [Heroku](https://dashboard.heroku.com/new?template=https://github.com/muhammadrizky16/templat-userbot2)",
+        message=f"**Groups**: [sᴜᴘᴘᴏʀᴛ](t.me/rexaprivateroom)\n**Github**: [Xa-Userbot](https://github.com/Rexashh/Xa-Userbot)\n**Deploy**: [Heroku](https://dashboard.heroku.com/new?template=https://github.com/Rexashh/templat-userbot2)",
         buttons=[
             [
                 custom.Button.inline(
