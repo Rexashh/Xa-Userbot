@@ -98,7 +98,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             return await event.delete()
         else:
             await event.edit(
-                "`Kyy-Userbot Berhasil DiUpdate🛃,Restart Tunggu Sebentar`"
+                "`Xa-Userbot Berhasil DiUpdate🔥,Restart Tunggu Sebentar`"
             )
             await asyncio.sleep(15)
             await event.delete()
@@ -221,7 +221,7 @@ async def upstream(event):
         else:
             await event.edit(changelog_str)
         return await event.respond(
-            f"**Perintah Untuk Update, Sebagai Berikut.**\n🔰 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`{cmd}update now` (Sementara)\n🔰 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`{cmd}update deploy` (Permanen)\n\n__Untuk Meng Update Fitur Terbaru Dari 🦖xᴀ-υѕᴇʀʙᴏᴛ🦖.__"
+            f"**Perintah Untuk Update, Sebagai Berikut.**\n⚡ 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`{cmd}update now` (Sementara)\n⚡ 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`{cmd}update deploy` (Permanen)\n\n__Untuk Meng Update Fitur Terbaru Dari 🦖xᴀ-υѕᴇʀʙᴏᴛ🦖.__"
         )
 
     if force_update:
