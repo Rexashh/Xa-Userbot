@@ -40,5 +40,8 @@
 
  🙏 **ORIGINAL REPO :**
 
-*   [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)    Man-Userbot
+*   [Kyy-Userbot](https://github.com/muhammadrizky16/Kyy-Userbot)    Kyy-Userbot
+*   BERIBU RIBU TERIMAKASIH KEPADA [TONIC](https://github.com/Tonic990) YANG SUDAH SELALU MENJAWAB SEMUA PERTANYAAN SAYA KETIKA SAYA MENGALAMI KESALAHAN
+*   BERIBU RIBU TERIMAKASIH KEPADA [KYY](https://github.com/muhammadrizky16) YANG SUDAH MENGIJINKAN SAYA MENGCLONE, DAN SUDAH MERESPON SAYA :) 
 *   TERIMAKASIH BANYAK KEPADA USERBOT INDONESIA LAINNYA🙏
+
