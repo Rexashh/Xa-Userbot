@@ -20,7 +20,7 @@
 </p>
 
 <h4 align="center"> ⚠️DEPLOY TO HEROKU BOT⚠️ </p>
-<p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=UmV4YXNoaC9YYS1Vc2VyYm90IG1hc3Rlcg"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-indigo?style=flat&logo=heroku" width="250" height="38.60" /></a></p>
+<p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=UmV4YXNoaC9YYS1Vc2VyYm90IFhhLVVzZXJib3Q"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-indigo?style=flat&logo=heroku" width="250" height="38.60" /></a></p>
 
 <h4 align="center"> ⚠️DEPLOY TO HEROKU⚠️ </p>
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Rexashh/Xa-Userbot/tree/master"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-indigo?style=flat&logo=heroku" width="250" height="38.60" /></a></p>
