@@ -38,7 +38,7 @@
 <details>
   <summary><b>© Credits</b></summary>
 
- 🙏 **ORIGINAL REPO :**
+ 🙏 **ORIGINAL REPO & SPECIAL THANKS :**
 
 *   [Kyy-Userbot](https://github.com/muhammadrizky16/Kyy-Userbot)    Kyy-Userbot
 *   BERIBU RIBU TERIMAKASIH KEPADA [TONIC](https://github.com/Tonic990) YANG SUDAH SELALU MENJAWAB SEMUA PERTANYAAN SAYA KETIKA SAYA MENGALAMI KESALAHAN
