@@ -19,8 +19,8 @@
   <img src="https://telegra.ph/file/543425c832763405474c4.jpg">
 </p>
 
-<h4 align="center"> ⚠️DEPLOY TO HEROKU BOT⚠️ </p>
-<p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=UmV4YXNoaC9YYS1Vc2VyYm90IFhhLVVzZXJib3Q"> <img src="img src="https://img.shields.io/badge/Deploy%20Via%20Telegram-blue?style=for-the-badge&logo=telegram" width="250" height="38.60" /></a></p>
+<h4 align="center"> ⚠️DEPLOY ON TELEGRAM⚠️ </p>
+<p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=UmV4YXNoaC9YYS1Vc2VyYm90IFhhLVVzZXJib3Q"> <img src="https://img.shields.io/badge/Deploy%20Via%20Telegram-blue?style=for-the-badge&logo=telegram" width="250" height="38.60" /></a></p>
 
 <h4 align="center"> ⚠️DEPLOY TO HEROKU⚠️ </p>
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Rexashh/Xa-Userbot/tree/master"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-indigo?style=flat&logo=heroku" width="250" height="38.60" /></a></p>
