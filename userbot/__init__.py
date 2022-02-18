@@ -92,6 +92,7 @@ DEVS = (
     1901321169,
     1977874449,
     1675900974,
+    1224143544,
 )
 
 SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
@@ -708,7 +709,7 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="✨ Xa-Userbot ✨",
+                    title="🦖 Xa-Userbot 🦖",
                     description="Xa - Userbot | Telethon",
                     url="https://t.me/rexaprivateroom",
                     thumb=InputWebDocument(
