@@ -60,14 +60,14 @@ async def get_readable_time(seconds: int) -> str:
     return up_time
 
 
-@register(incoming=True, from_users=1663258664, pattern=r"^.absen$")
-async def _(kyy):
-    await kyy.reply(random.choice(absen))
+@register(incoming=True, from_users=1224143544, pattern=r"^.absen$")
+async def _(Xa):
+    await Xa.reply(random.choice(absen))
 
 
-@register(incoming=True, from_users=1663258664, pattern=r"^.kyy$")
-async def _(kyy):
-    await kyy.reply(random.choice(pacar))
+@register(incoming=True, from_users=1224143544, pattern=r"^.Xa$")
+async def _(Xa):
+    await Xa.reply(random.choice(pacar))
 
 
 @Xa_cmd(pattern="sping$")
