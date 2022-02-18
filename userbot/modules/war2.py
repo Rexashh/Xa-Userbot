@@ -11,7 +11,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 # ============================================
 
 
-@kyy_cmd(pattern="emak(?: |$)(.*)")
+@Xa_cmd(pattern="emak(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
@@ -19,14 +19,14 @@ async def typewriter(typew):
     )
 
 
-@kyy_cmd(pattern="ehh(?: |$)(.*)")
+@Xa_cmd(pattern="ehh(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
         "**EHH TOLOL PEKERJAAN KAKEK LO DULU ITU JADI BABU BABU KOMPENI YANG DI SURUH BIKININ KOPI TERUS MOTONG RUMPUT DI HALAMAN RUMAH YAELAH KASIAN BAT KASIAN KAKEK LO ITU UDAH KONTET KURUS KERING KEREMPENG LAGI KAKEK LO DULU MATINYA KE ABISAN TENAGA PAS NYABUTIN RUMPUT TOLOL HAHA NENEK LO JUGA JADI LACUR KOMPENI NENEK LO AJE JADI LACUR KOMPENI CUMA DI BAYAR PAKE SINGKONG REBUS DOANG SATU BIJI TERUS NENEK LO ITU MATINYA PAS DI GANGBANG SAMA TENTARA KOMPENI MEMEK NENEK LO ITU DI SODOK SODOK MAKE SENAPAN NOH SAMPE MEMEKNYA LOBEH LEBAR BAT LEBAR KEK JALAN RAYA HAHA.BADUR BADUT IYE GUE TAU LO MAIN TELE ITU DI JADIIN BADUT ALIANSI KAN HAHAHA MANGKANYA BANG KALO JADI ORANG PAS DI SENGGOL LAWAN JANGAN DIEM BAE KEK BATU HAHA DI JADIIN BADUT KAN LO DI LEDEK LEDEKIN SAMA SEMUA ALIANSI,GUE TAU TUJUAN LO MAEN TELE ITU UNTUK MENCARI MEMEK MEMEK SEGAR KAN HAHA KETAUAN ORANG ORANG KEK LO OTAK SANGEAN YANG HAUS AKAN MEMEK DAN TOKET SAKING GK MAU MODAL DI RL BUAT NYEWA LACUR JADI LO MEMILIH BIAT MAIN TELE BORO BORO DAPET LAH LU KAGA DAPET SAMA SEKALI MANGKANYA GANTENG KONTOL LO UDAH JELEK PENGENNYA YANG BAGUS BAGUS NYADAR DIRI LO ITU UDAH JELEK TERUS MISKIN LAGI**")
 
 
-@kyy_cmd(pattern="mas(?: |$)(.*)")
+@Xa_cmd(pattern="mas(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
@@ -34,7 +34,7 @@ async def typewriter(typew):
     )
 
 
-@kyy_cmd(pattern="dih(?: |$)(.*)")
+@Xa_cmd(pattern="dih(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
@@ -42,21 +42,21 @@ async def typewriter(typew):
     )
 
 
-@kyy_cmd(pattern="gcs(?: |$)(.*)")
+@Xa_cmd(pattern="gcs(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**GC SAMPAH KAYA GINI, BUBARIN AJA GOBLOK!!**"
                      )
 
 
-@kyy_cmd(pattern="skb(?: |$)(.*)")
+@Xa_cmd(pattern="skb(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**EMANG KITA KENAL? KAGA GOBLOK SOKAB BANGET LU GOBLOK**"
                      )
 
 
-@kyy_cmd(pattern="an(?: |$)(.*)")
+@Xa_cmd(pattern="an(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
@@ -64,7 +64,7 @@ async def typewriter(typew):
     )
 
 
-@kyy_cmd(pattern="bk(?: |$)(.*)")
+@Xa_cmd(pattern="bk(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
@@ -72,7 +72,7 @@ async def typewriter(typew):
     )
 
 
-@kyy_cmd(pattern="gj(?: |$)(.*)")
+@Xa_cmd(pattern="gj(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
@@ -80,7 +80,7 @@ async def typewriter(typew):
     )
 
 
-@kyy_cmd(pattern="gh(?: |$)(.*)")
+@Xa_cmd(pattern="gh(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
@@ -88,7 +88,7 @@ async def typewriter(typew):
     )
 
 
-@kyy_cmd(pattern="lol(?: |$)(.*)")
+@Xa_cmd(pattern="lol(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
