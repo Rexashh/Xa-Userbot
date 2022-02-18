@@ -3,10 +3,10 @@ from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
 from userbot import bot, CMD_HELP, CMD_HANDLER as cmd
-from userbot.utils import kyy_cmd
+from userbot.utils import Xa_cmd
 
 
-@kyy_cmd(pattern="truth(?: |$)(.*)")
+@Xa_cmd(pattern="truth(?: |$)(.*)")
 async def _(event):
     await event.edit("Mengirim pesan truth...")
     async with bot.conversation("@truthordares_bot") as conv:
@@ -23,7 +23,7 @@ async def _(event):
         await event.edit(f"**Pesan truth**\n\n{response.message.message}")
 
 
-@kyy_cmd(pattern="dare(?: |$)(.*)")
+@Xa_cmd(pattern="dare(?: |$)(.*)")
 async def _(event):
     await event.edit("Mengirim pesan dare...")
     async with bot.conversation("@truthordares_bot") as conv:
@@ -40,7 +40,7 @@ async def _(event):
         await event.edit(f"**Pesan dare**\n\n{response.message.message}")
 
 
-@kyy_cmd(pattern="spill(?: |$)(.*)")
+@Xa_cmd(pattern="spill(?: |$)(.*)")
 async def _(event):
     await event.edit("Mengirim pesan spill...")
     async with bot.conversation("@Spillgame_bot") as conv:
