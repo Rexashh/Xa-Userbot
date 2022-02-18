@@ -23,7 +23,7 @@
 <p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=UmV4YXNoaC9YYS1Vc2VyYm90IFhhLVVzZXJib3Q"> <img src="https://img.shields.io/badge/Deploy%20On%20Telegram-blue?style=for-the-badge&logo=telegram" width="200" height="35.60" /></a></p>
 
 <h4 align="center"> ⚠️DEPLOY TO HEROKU⚠️ </p>
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Rexashh/Xa-Userbot/tree/master"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-indigo?style=flat&logo=heroku" width="200" height="35.60" /></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Rexashh/Xa-Userbot/tree/master"> <img src="https://img.shields.io/badge/DEPLOY%20TO%20HEROKU-indigo?style=flat&logo=heroku" width="200" height="35.60" /></a></p>
 
 
 ### Follow Me:
