@@ -10,8 +10,7 @@ from importlib import import_module
 from telethon.tl.functions.channels import InviteToChannelRequest as Addbot
 
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
-from userbot import BOTLOG_CHATID, BOT_USERNAME, BOT_TOKEN, BOT_VER, LOGS, ALIVE_NAME, bot
-
+from userbot import BOTLOG_CHATID, BOT_USERNAME, BOT_TOKEN, BOT_VER, LOGS, ALIVE_NAME, ALIVE_LOGO, bot
 from userbot.modules import ALL_MODULES
 from userbot.utils import autobot
 
@@ -35,7 +34,7 @@ LOGS.info(
 async def check_alive():
     try:
         if BOTLOG_CHATID != 0:
-            await bot.send_message(BOTLOG_CHATID, "**xᴀ ᴜsᴇʀʙᴏᴛ ʙᴇʀʜᴀsɪʟ ᴅɪᴀᴋᴛɪғᴋᴀɴ 🦖**\n━━━━━━━━━━━━━━━━━━━\n❃ **ʙʀᴀɴᴄʜ :** `Xa-Userbot`\n❃ **ʙᴏᴛ ᴠᴇʀ :** 8.0\n━━━━━━━━━━━━━━━━━━━\n❃ **sᴜᴘᴘᴏʀᴛ​ :** @rexaprivateroom\n❃ **ᴄʜᴀɴɴᴇʟ​ :** @tirexgugel \n━━━━━━━━━━━━━━━━━━━")
+            await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"🦖 **Xa Userbot Has Been Actived**!!\n━━━━━━━━━━━━━━━\n➠ **Userbot Version** - 8.0@master\n━━━━━━━━━━━━━━━\n➠ **Powered By:** @tirexgugel ")
     except Exception as e:
         LOGS.info(str(e))
     try:
