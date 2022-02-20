@@ -82,7 +82,7 @@ if CONFIG_CHECK:
     )
     quit(1)
 
-#DEVS
+# DEVS
 DEVS = (
     1416529201,
     1403094256,
