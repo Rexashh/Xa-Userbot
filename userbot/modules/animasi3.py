@@ -1625,13 +1625,13 @@ async def nih(e):
                      "`\n💖<\\  *Tapi Bo'ong`")
 
 
-@register(outgoing=True, pattern=r"^\.fag$")
+@register(outgoing=True, pattern=r"^\.trex$")
 async def gtfo(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("`\n█████████`"
                      "`\n█▄█████▄█`"
                      "`\n█▼▼▼▼▼`"
-                     "`\n█       STFU FAGGOT'S`"
+                     "`\n█       RAWWWRRRRRRRRRRR`"
                      "`\n█▲▲▲▲▲`"
                      "`\n█████████`"
                      "`\n ██   ██`")
@@ -1642,7 +1642,7 @@ async def taco(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("\n{\\__/}"
                      "\n(●_●)"
-                     "\n( >💩 Mau Tai Ku?")
+                     "\n( >💩 Kamu Mau ee?")
 
 
 @register(outgoing=True, pattern=r"^\.paw$")
@@ -1870,7 +1870,7 @@ CMD_HELP.update({
     "\n\n>`.decide` [Alternatif: (.yes, .no, .maybe)]"
     "\nUsage: Buat keputusan cepat."
     "\n\n> `.nou` `.bot` `.rock` `.gey` `.tf` `.paw` `.tai` `.nih`"
-    "\n> `.fag` `.gtfo`; `.stfu` `.lolz` `.lool` `.fail` `.leave`"
+    "\n> `.trex` `.gtfo`; `.stfu` `.lolz` `.lool` `.fail` `.leave`"
     "\n> `.iwi` `.sayhi` `.koc` `.gas` `.earth` `.love` `.rain`"
     "\n> `.penis` `.emo` `.fuck` `.skull`  `.monyet`\nUsage: Cobain aja"
     "\n\n\n**Semoga Harimu Menyenangkan**\n"
