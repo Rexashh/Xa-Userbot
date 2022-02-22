@@ -46,7 +46,7 @@ async def check_alive():
 bot.loop.run_until_complete(check_alive())
 if not BOT_TOKEN:
     LOGS.info(
-        "BOT_TOKEN Vars tidak terisi, Memulai Membuat BOT Otomatis di @Botfather..."
+        "BOT_TOKEN Vars Gaada njir, Bentar Lagi Bikinin BOT Otomatis di @Botfather..."
     )
     bot.loop.run_until_complete(autobot())
 
