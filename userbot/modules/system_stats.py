@@ -230,14 +230,14 @@ async def amireallyalive(alive):
     output = (
         f" **🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖** \n\n"
         f"\n__**{XA_TEKS_KUSTOM}**__\n\n\n"
-        f"╭֍╼━━━━━━━━━━━━━━━֍╮\n"
-        f"◙ `Name       :` {DEFAULTUSER} \n"
-        f"◙ `Username   :` @{user.username} \n"
-        f"◙ `Telethon   :` {version.__version__} \n"
-        f"◙ `Python     :` {python_version()} \n"
-        f"◙ `Bot Ver    :` {BOT_VER} \n"
-        f"◙ `Modules    :` {len(modules)} \n"
-        f"╰֍╼━━━━━━━━━━━━━━━֍╯\n"
+        f"╭᪥ᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔ᪥╮\n"
+        f"☢ `Name       :` {DEFAULTUSER} \n"
+        f"☢ `Username   :` @{user.username} \n"
+        f"☢ `Telethon   :` {version.__version__} \n"
+        f"☢ `Python     :` {python_version()} \n"
+        f"☢ `Bot Ver    :` {BOT_VER} \n"
+        f"☢ `Modules    :` {len(modules)} \n"
+        f"╰֍ᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔ֍╯\n"
         f"[ɢʀᴏᴜᴘꜱ](https://t.me/rexaprivateroom) | [ᴄʜᴀɴɴᴇʟ](https://t.me/tirexgugel) | [ᴏᴡɴᴇʀ](https://t.me/JustRex) | [ɢɪᴛʜᴜʙ](https://github.com/Rexashh/Xa-Userbot)")
     if ALIVE_LOGO:
         try:
@@ -306,18 +306,18 @@ async def redis(alive):
     await alive.edit("⚡")
     await asyncio.sleep(2)
     output = (
-        f"┏━━━━🦖xᴀ-υѕᴇʀʙᴏᴛ🦖━━━━ \n"
-        f"┣  `Name     :` {DEFAULTUSER} \n"
-        f"┣  `Username :` @{user.username} \n"
-        f"┣  `Telethon :` Ver {version.__version__} \n"
-        f"┣  `Python   :` Ver {python_version()} \n"
-        f"┣  `Branch   :` {UPSTREAM_REPO_BRANCH} \n"
-        f"┣  `Bot Ver  :` {BOT_VER} \n"
-        f"┣  `Modules  :` {len(modules)} Modules \n"
-        f"┣  `GitHub   :` [Xa](https://github.com/Rexashh/Xa-Userbot) \n"
-        f"┣  `Support  :` [Groups](https://t.me/rexaprivateroom) \n"
-        f"┣  `Owner    :` [Rexa](https://t.me/JustRex) \n"
-        f"┗━━━━━━━━━━━━━━━━━━━━━")
+        f"╔═══════🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖════ \n"
+        f"╠  `Name     :` {DEFAULTUSER} \n"
+        f"╠  `Username :` @{user.username} \n"
+        f"╠  `Telethon :` Ver {version.__version__} \n"
+        f"╠  `Python   :` Ver {python_version()} \n"
+        f"╠  `Branch   :` {UPSTREAM_REPO_BRANCH} \n"
+        f"╠  `Bot Ver  :` {BOT_VER} \n"
+        f"╠  `Modules  :` {len(modules)} Modules \n"
+        f"╠  `GitHub   :` [Xa](https://github.com/Rexashh/Xa-Userbot) \n"
+        f"╠  `Support  :` [Groups](https://t.me/rexaprivateroom) \n"
+        f"╠  `Owner    :` [Rexa](https://t.me/JustRex) \n"
+        f"╚╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
