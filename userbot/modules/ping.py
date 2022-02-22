@@ -70,7 +70,6 @@ async def _(Xa):
     await Xa.reply(random.choice(pacar))
 
 
-
 @Xa_cmd(pattern="sping$")
 async def redis(pong):
     """For .ping command, ping the userbot from any chat."""
