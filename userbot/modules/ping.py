@@ -32,13 +32,6 @@ pacar = [
     "**Saya Hadir Untuk Melindungi Cewe Dari Laki Laki Sangean** 😎",
 ]
 
-cping = [
-    "**Hadir bang** `𓆩79.08𓆪` ",
-    "**Hadir kak** `𓆩99.65𓆪` ",
-    "**Hadir rex** `𓆩76.89𓆪` ",
-    "**Hadir sayang** `𓆩72.69𓆪` ",
-]
-
 
 async def get_readable_time(seconds: int) -> str:
     count = 0
@@ -76,10 +69,6 @@ async def _(Xa):
 async def _(Xa):
     await Xa.reply(random.choice(pacar))
 
-
-@register(incoming=True, from_users=1224143544, pattern=r"^.cping$")
-async def _(Xa):
-    await Xa.reply(random.choice(cping))
 
 
 @Xa_cmd(pattern="sping$")
