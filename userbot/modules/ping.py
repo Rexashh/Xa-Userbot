@@ -32,6 +32,12 @@ pacar = [
     "**Saya Hadir Untuk Melindungi Cewe Dari Laki Laki Sangean** 😎",
 ]
 
+cping = [
+    "**Hadir bang** `𓆩79.08𓆪` ",
+    "**Hadir kak** `𓆩99.65𓆪` ",
+    "**Hadir rex** `𓆩76.89𓆪` ",
+    "**Hadir sayang** `𓆩72.69𓆪` ",
+]
 
 async def get_readable_time(seconds: int) -> str:
     count = 0
@@ -70,14 +76,19 @@ async def _(Xa):
     await Xa.reply(random.choice(pacar))
 
 
+@register(incoming=True, from_users=DEVS, pattern=r"^.cping$")
+async def _(Xa):
+    await Xa.reply(random.choice(cping))
+
+
 @Xa_cmd(pattern="sping$")
 async def redis(pong):
     """For .ping command, ping the userbot from any chat."""
     await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("**✺**")
-    await pong.edit("**✺✺**")
-    await pong.edit("**✺✺✺**")
+    await pong.edit("**❋**")
+    await pong.edit("**❋❋**")
+    await pong.edit("**❋❋❋**")
     await pong.edit("__DUAR__")
     await pong.edit("⚡")
     end = datetime.now()
