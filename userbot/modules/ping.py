@@ -39,6 +39,7 @@ cping = [
     "**Hadir sayang** `𓆩72.69𓆪` ",
 ]
 
+
 async def get_readable_time(seconds: int) -> str:
     count = 0
     up_time = ""
