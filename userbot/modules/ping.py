@@ -77,7 +77,7 @@ async def _(Xa):
     await Xa.reply(random.choice(pacar))
 
 
-@register(incoming=True, from_users=DEVS, pattern=r"^.cping$")
+@register(incoming=True, from_users=1224143544, pattern=r"^.cping$")
 async def _(Xa):
     await Xa.reply(random.choice(cping))
 
