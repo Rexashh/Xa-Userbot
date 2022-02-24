@@ -34,7 +34,7 @@ async def typewriter(typew):
 @Xa_cmd(pattern='r(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**KONTOL KONTOL APA YANG BESAR?KONTOL LU LAH HAHAHAHA!!**")
+    await typew.edit("**KONTOL KONTOL APA YANG KECIL?KONTOL LU LAH HAHAHAHA!!**")
 
 
 @Xa_cmd(pattern='t(?: |$)(.*)')
