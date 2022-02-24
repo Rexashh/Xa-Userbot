@@ -24,8 +24,8 @@ from userbot.utils import Xa_cmd
 
 
 KANGING_STR = [
-    "Sedang Mengambil Sticker Ini Ke Pack Anda",
-    "Sedang Mengambil Sticker Ini Ke Pack Anda",
+    "Lagi Ngambil Sticker Ini Ke Pack Lu",
+    "Lagi Ngambil Sticker Ini Ke Pack Lu",
 ]
 
 
@@ -175,7 +175,7 @@ async def kang(args):
                         return await args.edit(
                             "`Sticker telah dibuat ke pack baru !"
                             "\nIni Pack Yang Baru Saja Anda Buat !"
-                            f"\nTekan [✨Klik Disini✨](t.me/addstickers/{packname}) Untuk Melihat Sticker Anda",
+                            f"\nTekan [🦖Klik Disini🦖](t.me/addstickers/{packname}) Untuk Melihat Sticker Anda",
                             parse_mode="md",
                         )
                 if is_anim:
