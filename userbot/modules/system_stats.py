@@ -231,12 +231,12 @@ async def amireallyalive(alive):
         f" **🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖** \n\n"
         f"\n__**{XA_TEKS_KUSTOM}**__\n\n\n"
         f"╭᪥ᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔ᪥╮\n"
-        f"☢ `Name       :` {DEFAULTUSER} \n"
-        f"☢ `Username   :` @{user.username} \n"
-        f"☢ `Telethon   :` {version.__version__} \n"
-        f"☢ `Python     :` {python_version()} \n"
-        f"☢ `Bot Ver    :` {BOT_VER} \n"
-        f"☢ `Modules    :` {len(modules)} \n"
+        f"⚚ `Name       :` {DEFAULTUSER} \n"
+        f"⚚ `Username   :` @{user.username} \n"
+        f"⚚ `Telethon   :` {version.__version__} \n"
+        f"⚚ `Python     :` {python_version()} \n"
+        f"⚚ `Bot Ver    :` {BOT_VER} \n"
+        f"⚚ `Modules    :` {len(modules)} \n"
         f"╰֍ᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔ֍╯\n"
         f"[ɢʀᴏᴜᴘꜱ](https://t.me/rexaprivateroom) | [ᴄʜᴀɴɴᴇʟ](https://t.me/tirexgugel) | [ᴏᴡɴᴇʀ](https://t.me/JustRex) | [ɢɪᴛʜᴜʙ](https://github.com/Rexashh/Xa-Userbot)")
     if ALIVE_LOGO:
@@ -317,7 +317,7 @@ async def redis(alive):
         f"╠  `GitHub   :` [Xa](https://github.com/Rexashh/Xa-Userbot) \n"
         f"╠  `Support  :` [Groups](https://t.me/rexaprivateroom) \n"
         f"╠  `Owner    :` [Rexa](https://t.me/JustRex) \n"
-        f"╚╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧")
+        f"╚═══════════════════════")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
