@@ -15,7 +15,7 @@ async def _(event):
         await event.client.send_file(event.chat_id, response["url"])
         await event.delete()
     except Exception:
-        await event.edit("**Tidak bisa menemukan video asupan.**")
+        await event.edit("**Lagi ga ada Asupannya, Tahan dulu aja Sangenya.**")
 
 
 @Xa_cmd(pattern="chika$")
