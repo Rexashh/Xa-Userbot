@@ -12,7 +12,7 @@ async def startupmessage():
             await tgbot.send_file(
                 BOTLOG_CHATID,
                 "https://telegra.ph/file/9b010ead0692e3bc28df6.jpg",
-                caption="🦖 **Xa Userbot Has Been Actived**!!\n━━━━━━━━━━━━━━━\n➠ **Userbot Version** - 8.0@master\n━━━━━━━━━━━━━━━\n➠ **Powered By:** @rexaprivateroom ",
+                caption="🦖 **Xa Userbot Has Been Actived**!!\n━━━━━━━━━━━━━\n⌬ **Userbot Version** - 8.0@Xa-Userbot\n━━━━━━━━━━━━━\n⌬ **Powered By:** @tirexgugel ",
                 buttons=[(Button.url("ꜱᴜᴘᴘᴏʀᴛ", "https://t.me/tirexgugel"),)],
             )
     except Exception as e:
