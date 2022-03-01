@@ -72,7 +72,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             )
             return repo.__del__()
         await event.edit(
-            "`Heroku :` `Sedang MengUpdate`" "\n`Mohon Menunggu 5-7 Menit`"
+            "`Heroku :` `Sedang MengUpdate`" "\n`Tunggu sekitar 5-7 Menit y bro`"
         )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -98,14 +98,14 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             return await event.delete()
         else:
             await event.edit(
-                "`Xa-Userbot Berhasil DiUpdate🔥,Restart Tunggu Sebentar`"
+                "`Xa-Userbot Berhasil DiUpdate🔥,Restart Tunggu bentar`"
             )
             await asyncio.sleep(15)
             await event.delete()
 
         if BOTLOG:
             await event.client.send_message(
-                BOTLOG_CHATID, "#BOT \n" "`Xa-Userbot Berhasil Di Update`"
+                BOTLOG_CHATID, "#BOT \n" "`Xa-Userbot udah Berhasil Di Update`"
             )
 
     else:
@@ -127,13 +127,13 @@ async def update(event, repo, ups_rem, ac_br):
     await asyncio.sleep(1)
     await event.edit("**🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖** `Di Restart....`")
     await asyncio.sleep(1)
-    await event.edit("`Mohon Menunggu Beberapa Detik.`")
+    await event.edit("`Tunggu bentar cok.`")
     await asyncio.sleep(10)
     await event.delete()
 
     if BOTLOG:
         await event.client.send_message(
-            BOTLOG_CHATID, "#BOT \n" "**🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖 Telah Di Perbarui.**"
+            BOTLOG_CHATID, "#BOT \n" "**🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖 Udah Di perbarui.**"
         )
         await asyncio.sleep(100)
         await event.delete()
@@ -197,7 +197,7 @@ async def upstream(event):
 
     if changelog == "" and force_update is False:
         await event.edit(
-            f"\n🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖 Sudah Versi Terbaru || Tunggu Update Terbaru\n"
+            f"\n🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖 Udah Versi Terbaru || Tunggu Update Terbaru Cok\n"
         )
         await asyncio.sleep(15)
         await event.delete()
@@ -235,7 +235,7 @@ async def upstream(event):
         await event.edit("` Proses Update 🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖, Loading....77%`")
         await event.edit("` Proses Update 🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖, Updating...90%`")
         await event.edit(
-            "` Proses Update 🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖, Mohon Tunggu Sebentar....100%`"
+            "` Proses Update 🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖, Tunggu Bentar....100%`"
         )
 
     if conf == "now":
