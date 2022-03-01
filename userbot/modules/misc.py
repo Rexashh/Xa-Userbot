@@ -75,7 +75,7 @@ async def killdabot(event):
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#RESTARTBOT \n"
-                                        "`Userbot Udah Di Restart ya jing`")
+                                        "`Userbot Udah Berhasil di Restart ya jing`")
     # Spin a new instance of bot
     args = [sys.executable, "-m", "userbot"]
     execle(sys.executable, *args, environ)
@@ -85,7 +85,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Here's Something for You to Read :\n"
-        "\n[✨ Xa-Userbot Repo](https://github.com/muhammadrizky16/Xa-Userbot/blob/Kyy-Userbot/README.md)"
+        "\n[✨ Xa-Userbot Repo](https://github.com/Rexashh/Xa-Userbot/blob/Xa-Userbot/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Special - Note](https://telegra.ph/Special-Note-11-02)")
 
@@ -109,13 +109,13 @@ async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
         "**Hey**, I am using **🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖** \n"
-        "⸙━━━━━━━━━━━━━━━━━━━━━━⸙\n"
-        "➣ **Repo Userbot :** [ɢɪᴛʜᴜʙ](https://github.com/Rexashh/Xa-Userbot)\n"
-        "➣ **Owner Bot       :** [xᴀ](t.me/JustRex)\n"
-        "卍━━━━━━━━━━━━━━━━━━━━━━卍\n"
-        "➣ **Support           :** [sᴜᴘᴘᴏʀᴛ](https://t.me/rexaprivateroom)\n"
-        "➣ **Channel           :** [ᴄʜᴀɴɴᴇʟ](https://t.me/tirexgugel)\n"
-        "⸙━━━━━━━━━━━━━━━━━━━━━━⸙\n"
+        "━━━━━━━━━━━━━━━━━━━━━━\n"
+        "⌬ **Repo Userbot :** [ɢɪᴛʜᴜʙ](https://github.com/Rexashh/Xa-Userbot)\n"
+        "⌬ **Owner Bot       :** [xᴀ](t.me/JustRex)\n"
+        "━━━━━━━━━━━━━━━━━━━━━━\n"
+        "⌬ **Support           :** [sᴜᴘᴘᴏʀᴛ](https://t.me/rexaprivateroom)\n"
+        "⌬ **Channel           :** [ᴄʜᴀɴɴᴇʟ](https://t.me/tirexgugel)\n"
+        "━━━━━━━━━━━━━━━━━━━━━━\n"
     )
 
 
