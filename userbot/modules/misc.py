@@ -19,7 +19,7 @@ from PIL import Image
 # ================= CONSTANT =================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 REPOLINK = str(
-    UPSTREAM_REPO_URL) if UPSTREAM_REPO_URL else "https://github.com/muhammadrizky16/Kyy-Userbot"
+    UPSTREAM_REPO_URL) if UPSTREAM_REPO_URL else "https://github.com/muhammadrizky16/Xa-Userbot"
 # ============================================
 
 opener = urllib.request.build_opener()
@@ -45,7 +45,7 @@ async def randomise(items):
 async def sleepybot(time):
     """ For .sleep command, let the userbot snooze for a few second. """
     counter = int(time.pattern_match.group(1))
-    await time.edit("`I am sulking and snoozing...`")
+    await time.edit("`Gua Tidur dulu yaa...`")
     if BOTLOG:
         str_counter = time_formatter(counter)
         await time.client.send_message(
@@ -53,13 +53,13 @@ async def sleepybot(time):
             f"You put the bot to sleep for {str_counter}.",
         )
     sleep(counter)
-    await time.edit("`OK, I'm awake now.`")
+    await time.edit("`Okay, gua udah bangun.`")
 
 
 @Xa_cmd(pattern="shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await event.edit("`Mematikan Kyy-Userbot....`")
+    await event.edit("`Mematikan Xa-Userbot....`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
@@ -70,12 +70,12 @@ async def killdabot(event):
 
 @Xa_cmd(pattern="restart$")
 async def killdabot(event):
-    await event.edit("`Restarting Kyy-Userbot...`")
+    await event.edit("`Bentar cok, Lagi Restart Xa-Userbot...`")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#RESTARTBOT \n"
-                                        "`Userbot Telah Di Restart`")
+                                        "`Userbot Udah Di Restart ya jing`")
     # Spin a new instance of bot
     args = [sys.executable, "-m", "userbot"]
     execle(sys.executable, *args, environ)
@@ -85,7 +85,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Here's Something for You to Read :\n"
-        "\n[✨ Kyy-Userbot Repo](https://github.com/muhammadrizky16/Kyy-Userbot/blob/Kyy-Userbot/README.md)"
+        "\n[✨ Xa-Userbot Repo](https://github.com/muhammadrizky16/Xa-Userbot/blob/Kyy-Userbot/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Special - Note](https://telegra.ph/Special-Note-11-02)")
 
