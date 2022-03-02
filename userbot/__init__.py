@@ -161,9 +161,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/muhammadrizky16/Kyy-Userbot")
+    "https://github.com/Rexashh/Xa-Userbot")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Kyy-Userbot")
+    "UPSTREAM_REPO_BRANCH", "Xa-Userbot")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -233,7 +233,7 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 YOUTUBE_API_KEY = os.environ.get(
     "YOUTUBE_API_KEY") or "AIzaSyACwFrVv-mlhICIOCvDQgaabo6RIoaK8Dg"
 
-# Untuk Perintah .kyyalive
+# Untuk Perintah .Xaalive
 KYY_TEKS_KUSTOM = os.environ.get("XA_TEKS_KUSTOM", "I'am Using Xa-Userbot🦖")
 
 # Untuk Mengubah Pesan Welcome
@@ -386,7 +386,7 @@ for binary, path in binaries.items():
 if STRING_SESSION:
     session = StringSession(str(STRING_SESSION))
 else:
-    session = "Kyy-UserBot"
+    session = "Xa-UserBot"
 try:
     bot = TelegramClient(
         session=session,
