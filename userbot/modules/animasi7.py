@@ -52,6 +52,7 @@ async def koc(e):
         sleep(1)
         await e.edit("AKU SANGE SAYANG💞")
 
+
 @Xa_cmd(pattern="orgil(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
