@@ -233,7 +233,7 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 YOUTUBE_API_KEY = os.environ.get(
     "YOUTUBE_API_KEY") or "AIzaSyACwFrVv-mlhICIOCvDQgaabo6RIoaK8Dg"
 
-# Untuk Perintah .Xaalive
+# Untuk Perintah .xaalive
 KYY_TEKS_KUSTOM = os.environ.get("XA_TEKS_KUSTOM", "I'am Using Xa-Userbot🦖")
 
 # Untuk Mengubah Pesan Welcome
