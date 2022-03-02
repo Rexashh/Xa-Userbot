@@ -82,7 +82,7 @@ async def autobot():
             await asyncio.sleep(1)
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
-            await bot.send_file(bf, "resources/extras/20220205_123518-picsay.jpg")
+            await bot.send_file(bf, "resources/extras/1646180477-picsa.jpg")
             await asyncio.sleep(3)
             await bot.send_message(bf, "/setabouttext")
             await asyncio.sleep(1)
@@ -118,7 +118,7 @@ async def autobot():
         await asyncio.sleep(1)
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
-        await bot.send_file(bf, "resources/extras/20220205_123518-picsay.jpg")
+        await bot.send_file(bf, "resources/extras/1646180477-picsa.jpg")
         await asyncio.sleep(3)
         await bot.send_message(bf, "/setabouttext")
         await asyncio.sleep(1)
@@ -139,7 +139,7 @@ async def autobot():
         )
         await bot.send_message(
             BOTLOG_CHATID,
-            "**Tunggu Sebentar, Sedang MeRestart Heroku untuk Menerapkan Perubahan.**",
+            "**Tunggu Bentar ya, Heroku lu lagi di restart biar berubah kek sikap dia.**",
         )
         heroku_var["BOT_TOKEN"] = token
         heroku_var["BOT_USERNAME"] = f"@{username}"
