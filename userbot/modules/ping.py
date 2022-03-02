@@ -75,17 +75,17 @@ async def redis(pong):
     """For .ping command, ping the userbot from any chat."""
     await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("**߷**")
-    await pong.edit("**߷߷**")
-    await pong.edit("**߷߷߷**")
+    await pong.edit("**֎**")
+    await pong.edit("**֎֎**")
+    await pong.edit("**֎֎֎**")
     await pong.edit("__SSTTT__")
     await pong.edit("⚡")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
         f"**{ALIVE_NAME}**        \n"
-        f"**≽Kecepatan : ** '%sms'  \n"
-        f"**≽Branch : ** 'Xa-Userbot` \n" % (duration)
+        f"**⌬ Kecepatan : ** '%sms'  \n"
+        f"**⌬ Branch : ** 'Xa-Userbot` \n" % (duration)
     )
 
 
@@ -99,9 +99,9 @@ async def redis(pong):
     duration = (end - start).microseconds / 1000
     await pong.edit(
         f"**`{ALIVE_NAME}`**\n"
-        f"✧ **-ꜱɪɢɴᴀʟ- :** "
+        f"⌬ **-ꜱɪɢɴᴀʟ- :** "
         f"`%sms` \n"
-        f"✧ **-ᴜᴘᴛɪᴍᴇ- :** "
+        f"⌬ **-ᴜᴘᴛɪᴍᴇ- :** "
         f"`{uptime}` \n" % (duration)
     )
 
@@ -124,9 +124,9 @@ async def redis(pong):
     duration = (end - start).microseconds / 1000
     await pong.edit(
         f"**🦖xᴀ ᴜsᴇʀʙᴏᴛ🦖**\n"
-        f"➾ __Signal__    __:__ "
+        f"⌬ __Signal__    __:__ "
         f"`%sms` \n"
-        f"➾ __Uptime__ __:__ "
+        f"⌬ __Uptime__ __:__ "
         f"`{uptime}` \n" % (duration)
     )
 
@@ -148,11 +148,11 @@ async def redis(pong):
     duration = (end - start).microseconds / 1000
     await pong.edit(
         f"**🦖 xᴀ-ᴜsᴇʀʙᴏᴛ 🦖**\n\n"
-        f"** ⌲  Sɪɢɴᴀʟ   :** "
+        f"** ⌬  Sɪɢɴᴀʟ   :** "
         f"`%sms` \n"
-        f"** ⌲  Uᴘᴛɪᴍᴇ  :** "
+        f"** ⌬  Uᴘᴛɪᴍᴇ  :** "
         f"`{uptime}` \n"
-        f"** ⌲  Oᴡɴᴇʀ   :** `{ALIVE_NAME}` \n" % (duration)
+        f"** ⌬  Oᴡɴᴇʀ   :** `{ALIVE_NAME}` \n" % (duration)
     )
 
 
@@ -190,17 +190,17 @@ async def speedtst(spd):
     await spd.edit(
         "**Kecepatan Jaringan:\n**"
         " ━━━━━━━━━━━━━━━━━ \n"
-        f"✧ **Dimulai Pada :**  \n"
+        f"⌬ **Dimulai Pada :**  \n"
         f"`{result['timestamp']}` \n"
-        "✧ **Download:** "
+        "⌬ **Download:** "
         f"`{speed_convert(result['download'])}` \n"
-        "✧ **Upload:** "
+        "⌬ **Upload:** "
         f"`{speed_convert(result['upload'])}` \n"
-        "✧ **Signal:** "
+        "⌬ **Signal:** "
         f"`{result['ping']}` \n"
-        "✧ **ISP:** "
+        "⌬ **ISP:** "
         f"`{result['client']['isp']}` \n"
-        "✧ **BOT:** 🦖 xᴀ-ᴜsᴇʀʙᴏᴛ 🦖"
+        "⌬ **BOT:** 🦖 xᴀ-ᴜsᴇʀʙᴏᴛ 🦖"
     )
 
 
@@ -235,23 +235,23 @@ async def redis(pong):
     """For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("8✊===D")
-    await pong.edit("8=✊==D")
-    await pong.edit("8==✊=D")
-    await pong.edit("8===✊D")
-    await pong.edit("8==✊=D")
-    await pong.edit("8=✊==D")
-    await pong.edit("8✊===D")
-    await pong.edit("8=✊==D")
-    await pong.edit("8==✊=D")
-    await pong.edit("8===✊D")
-    await pong.edit("8==✊=D")
-    await pong.edit("8=✊==D")
-    await pong.edit("8✊===D")
-    await pong.edit("8=✊==D")
-    await pong.edit("8==✊=D")
-    await pong.edit("8===✊D")
-    await pong.edit("8===✊D💦")
+    await pong.edit("8✊🏻===D")
+    await pong.edit("8=✊🏻==D")
+    await pong.edit("8==✊🏻=D")
+    await pong.edit("8===✊🏻D")
+    await pong.edit("8==✊🏻=D")
+    await pong.edit("8=✊🏻==D")
+    await pong.edit("8✊🏻===D")
+    await pong.edit("8=✊🏻==D")
+    await pong.edit("8==✊🏻=D")
+    await pong.edit("8===✊🏻D")
+    await pong.edit("8==✊🏻=D")
+    await pong.edit("8=✊🏻==D")
+    await pong.edit("8✊🏻===D")
+    await pong.edit("8=✊🏻==D")
+    await pong.edit("8==✊🏻=D")
+    await pong.edit("8===✊🏻D")
+    await pong.edit("8===✊🏻D💦")
     await pong.edit("8====D💦💦")
     await pong.edit("**CROOTTTT ENAKKK!**")
     end = datetime.now()
