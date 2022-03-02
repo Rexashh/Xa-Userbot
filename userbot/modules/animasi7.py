@@ -4,54 +4,53 @@ from userbot import CMD_HELP, CMD_HANDLER as cmd
 from userbot.utils import Xa_cmd
 
 
-@Xa_cmd(pattern="bii$")
+@Xa_cmd(pattern="sange$")
 async def koc(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("BIIIIIIIIIII⭐")
+        await e.edit("SAYANGGGGGGGGG 💕")
         sleep(1)
-        await e.edit("💜⭐✨🌠")
+        await e.edit("💝💘💓💗")
         sleep(1)
-        await e.edit("💜💜💜💜")
+        await e.edit("💞💕💗💘")
         sleep(1)
-        await e.edit("⭐✨🌠💜")
+        await e.edit("💝💘💓💗")
         sleep(1)
-        await e.edit("BII🌠✨")
+        await e.edit("💞💕💗💘")
         sleep(1)
-        await e.edit("BINTANG💜💜")
+        await e.edit("💘💞💗💕")
         sleep(1)
-        await e.edit("🌠⭐💜✨")
+        await e.edit("💘💞💕💗")
         sleep(1)
-        await e.edit("BII CANTIK💜")
+        await e.edit("EMMMMMM🥺🥺🥺")
         sleep(1)
-        await e.edit("💜⭐🌠✨")
-        await e.edit("💜💜💜💜")
-        await e.edit("⭐🌠✨💜")
-        await e.edit("BII IMUT")
+        await e.edit("💝💘💓💗")
+        await e.edit("💞💕💗💘")
+        await e.edit("💘💞💕💗")
+        await e.edit("SAYANG")
         sleep(1)
-        await e.edit("BIIII LUCU")
+        await e.edit("AKU 👉👈")
         sleep(1)
-        await e.edit("BI SUKA UNGU")
+        await e.edit("SANGE 👉👈 😘😘")
         sleep(1)
-        await e.edit("✨💜🌠⭐")
+        await e.edit("💘💘💘💘")
         sleep(1)
-        await e.edit("BII BAIK")
+        await e.edit("SAYANG")
         sleep(1)
-        await e.edit("CUMA MAU BILANG")
+        await e.edit("AYO NGEWE🤭🤭")
         sleep(1)
-        await e.edit("BII CANTIK BANGET💜")
+        await e.edit("PLISS🥺🥺")
         sleep(1)
-        await e.edit("TAPI NGESELIN HUU🤣")
+        await e.edit("AKU SANGE😋😋")
         sleep(1)
-        await e.edit("BII BINTANG ⭐")
+        await e.edit("I LOVE YOUUUU")
         sleep(1)
-        await e.edit("CUMA MAU BILANG")
+        await e.edit("AH AH AH BEIBB")
         sleep(1)
-        await e.edit("BII LUCU")
+        await e.edit("💦💦💦💦")
         sleep(1)
-        await e.edit("BIIIIIIII⭐⭐⭐")
+        await e.edit("OH BABY")
         sleep(1)
-        await e.edit("POKOKNYA MAU BII💞")
-
+        await e.edit("AKU SANGE SAYANG💞")
 
 @Xa_cmd(pattern="orgil(?: |$)(.*)")
 async def typewriter(typew):
@@ -146,6 +145,6 @@ CMD_HELP.update({
 CMD_HELP.update({
     "animasi8": f"`{cmd}cinta`\
     \nUsage: mengirim cintamu ke seseorang.\
-    \n\n`{cmd}bii` :\
-    \nUsage: Special command for @Aiibiie ."
+    \n\n`{cmd}sange` :\
+    \nUsage: Coba aja kntlll ."
 })
