@@ -20,7 +20,7 @@ GCAST_BLACKLIST = [
     -1001752592753,  # SkyzuSupport
     -1001430568914,  # FlicksSupport
     -1001683749664,  # XaSupport
-
+    -1001473548283,  # Sharinguserbot
 ]
 
 
