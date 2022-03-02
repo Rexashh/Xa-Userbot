@@ -279,7 +279,7 @@ INLINE_PIC = os.environ.get(
 # Default emoji help
 EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🦖"
 
-# °Kyy-Userbot°
+# °Xa-Userbot°
 OWNER_URL = os.environ.get("OWNER_URL") or "https://t.me/JustRex"
 
 # Last.fm Module
