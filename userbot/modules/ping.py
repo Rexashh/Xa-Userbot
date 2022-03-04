@@ -14,7 +14,7 @@ from datetime import datetime
 from speedtest import Speedtest
 from userbot import CMD_HELP, StartTime, ALIVE_NAME, CMD_HANDLER as cmd
 from userbot.events import register
-from userbot.utils import Xa_cmd
+from userbot.utils import edit_or_reply, Xa_cmd
 
 absen = [
     "**Hadir ganteng** 🥵",
@@ -111,15 +111,15 @@ async def redis(pong):
     """For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("__Sedang Memuat.__")
-    await pong.edit("__Sedang Memuat..__")
-    await pong.edit("__Sedang Memuat...__")
-    await pong.edit("__Sedang Memuat.__")
-    await pong.edit("__Sedang Memuat..__")
-    await pong.edit("__Sedang Memuat...__")
-    await pong.edit("__Sedang Memuat.__")
-    await pong.edit("__Sedang Memuat..__")
-    await pong.edit("__Sedang Memuat...__")
+    await pong.edit("__Bentar jing.__")
+    await pong.edit("__Bentar jing..__")
+    await pong.edit("__Bentar jing...__")
+    await pong.edit("__Bentar jing.__")
+    await pong.edit("__Bentar jing..__")
+    await pong.edit("__Bentar jing...__")
+    await pong.edit("__Bentar jing.__")
+    await pong.edit("__Bentar jing..__")
+    await pong.edit("__Bentar jing...__")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
@@ -161,19 +161,18 @@ async def pingme(pong):
     """For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("**𖣘**")
-    await pong.edit("**𖣘𖣘**")
-    await pong.edit("**𖣘𖣘𖣘**")
+    ping = await edit_or_reply(pong, "**⌬**")
+    await ping.edit("**⌬⌬**")
+    await ping.edit("**⌬⌬⌬**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(
+    await ping.edit(
         f"**PONG!!!🏓**\n"
-        f"⌬ **ᴘɪɴɢᴇʀ** ⪼ "
+        f"• **Pɪɴɢᴇʀ** ⪼ "
         f"`%sms` \n"
-        f"⌬ **ᴜᴘᴛɪᴍᴇ** ⪼ "
+        f"• **Uᴘᴛɪᴍᴇ** ⪼ "
         f"`{uptime}` \n" % (duration)
     )
-
 
 @Xa_cmd(pattern="kecepatan$")
 async def speedtst(spd):
