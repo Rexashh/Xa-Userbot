@@ -174,6 +174,7 @@ async def pingme(pong):
         f"`{uptime}` \n" % (duration)
     )
 
+
 @Xa_cmd(pattern="kecepatan$")
 async def speedtst(spd):
     """For .speed command, use SpeedTest to check server speeds."""
