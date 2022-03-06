@@ -168,9 +168,9 @@ async def pingme(pong):
     duration = (end - start).microseconds / 1000
     await ping.edit(
         f"**PONG!!!🏓**\n"
-        f"• **ᴘɪɴɢᴇʀ** ≫ "
+        f"• **Pɪɴɢᴇʀ** ≫ "
         f"`%sms` \n"
-        f"• **ᴜᴘᴛɪᴍᴇ** ≫ "
+        f"• **Uᴘᴛɪᴍᴇ** ≫ "
         f"`{uptime}` \n" % (duration)
     )
 
