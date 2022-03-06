@@ -161,16 +161,16 @@ async def pingme(pong):
     """For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    ping = await edit_or_reply(pong, "**⌬**")
-    await ping.edit("**⌬⌬**")
-    await ping.edit("**⌬⌬⌬**")
+    ping = await edit_or_reply(pong, "**𖣘**")
+    await ping.edit("**𖣘**")
+    await ping.edit("**𖣘𖣘𖣘**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await ping.edit(
         f"**PONG!!!🏓**\n"
-        f"• **Pɪɴɢᴇʀ** ⪼ "
+        f"• **ᴘɪɴɢᴇʀ** ≫ "
         f"`%sms` \n"
-        f"• **Uᴘᴛɪᴍᴇ** ⪼ "
+        f"• **ᴜᴘᴛɪᴍᴇ** ≫ "
         f"`{uptime}` \n" % (duration)
     )
 
@@ -221,13 +221,13 @@ def speed_convert(size):
 async def pingme(pong):
     """For .ping command, ping the userbot from any chat."""
     start = datetime.now()
-    await pong.edit("**◕‿- PONG!!🏓**")
+    await pong.edit("**(＾∇＾)ﾉ PONG!!🏓**")
     await asyncio.sleep(1)
-    await pong.edit("🦖")
+    await pong.edit("💀")
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 9000
-    await pong.edit(f"**🦖XaName : {ALIVE_NAME}**\n📗 `%sms`" % (duration))
+    await pong.edit(f"**⌬ Name : {ALIVE_NAME}**\n⌬ `%sms`" % (duration))
 
 
 @Xa_cmd(pattern="pink$")
