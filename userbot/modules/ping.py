@@ -162,15 +162,15 @@ async def pingme(pong):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
     ping = await edit_or_reply(pong, "**𖣘**")
-    await ping.edit("**𖣘**")
+    await ping.edit("**𖣘𖣘**")
     await ping.edit("**𖣘𖣘𖣘**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await ping.edit(
         f"**PONG!!!🏓**\n"
-        f"• **Pɪɴɢᴇʀ** ≫ "
+        f"• **ᴘɪɴɢᴇʀ** ⪼ "
         f"`%sms` \n"
-        f"• **Uᴘᴛɪᴍᴇ** ≫ "
+        f"• **ᴜᴘᴛɪᴍᴇ** ⪼ "
         f"`{uptime}` \n" % (duration)
     )
 
