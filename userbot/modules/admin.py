@@ -518,6 +518,7 @@ async def gspider(gspdr):
                 f"GRUP: {gspdr.chat.title}(`{gspdr.chat_id}`)",
             )
 
+
 @Xa_cmd(pattern="zombies(?: |$)(.*)")
 async def rm_deletedacc(show):
 
