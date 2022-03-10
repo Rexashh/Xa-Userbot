@@ -31,7 +31,11 @@ from telethon.tl.types import (
 )
 
 from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP
-from userbot.utils import Xa_cmd
+from userbot.utils import (
+    edit_delete,
+    edit_or_reply,
+    Xa_cmd,
+)
 from userbot import CMD_HANDLER as cmd
 from userbot.events import register
 
@@ -304,12 +308,13 @@ async def nothanos(unbon):
 
 
 @Xa_cmd(pattern="mute(?: |$)(.*)")
+@register(pattern=r"^\.cmute(?: |$)(.*)", sudo=True)
 async def spider(spdr):
     # Check if the function running under SQL mode
     try:
         from userbot.modules.sql_helper.spam_mute_sql import mute
     except AttributeError:
-        return await spdr.edit(NO_SQL)
+        return await edit_or_reply(spdr, NO_SQL)
 
     # Admin or creator check
     chat = await spdr.get_chat()
@@ -318,8 +323,8 @@ async def spider(spdr):
 
     # If not admin and not creator, return
     if not admin and not creator:
-        return await spdr.edit(NO_ADMIN)
-
+        return await edit_or_reply(spdr, NO_ADMIN)
+    Xa = await edit_or_reply(spdr, "`Sedang melakukan Mute...`")
     user, reason = await get_user_from_event(spdr)
     if not user:
         return
@@ -327,23 +332,23 @@ async def spider(spdr):
     self_user = await spdr.client.get_me()
 
     if user.id == self_user.id:
-        return await spdr.edit(
-            "`Ngapain bisuin diri sendiri gblk!ヘ(￣ω￣ヘ)`"
-        )
+        return await edit_or_reply(Xa,
+                                   "`Tangan Terlalu Pendek, Tidak Bisa Membisukan Diri Sendiri...\n(ヘ･_･)ヘ┳━┳`"
+                                   )
 
     # If everything goes well, do announcing and mute
-    await spdr.edit("`Telah Dibisukan!`")
+    await Xa.edit("`Telah Dibisukan!`")
     if mute(spdr.chat_id, user.id) is False:
-        return await spdr.edit("`Pengguna Sudah Dibisukan!`")
+        return await Xa.edit("`Pengguna Sudah Dibisukan!`")
     else:
         try:
             await spdr.client(EditBannedRequest(spdr.chat_id, user.id, MUTE_RIGHTS))
 
             # Announce that the function is done
             if reason:
-                await spdr.edit(f"**Pengguna Telah Dibisukan!**\n**Alasan:** `{reason}`")
+                await Xa.edit(f"**Pengguna Telah Dibisukan!**\n**Alasan:** `{reason}`")
             else:
-                await spdr.edit("`Telah Dibisukan!`")
+                await Xa.edit("`Telah Dibisukan!`")
 
             # Announce to logging group
             if BOTLOG:
@@ -354,10 +359,11 @@ async def spider(spdr):
                     f"GRUP: {spdr.chat.title}(`{spdr.chat_id}`)",
                 )
         except UserIdInvalidError:
-            return await spdr.edit("`Terjadi Kesalahan!`")
+            return await edit_delete(kyy, "`Terjadi Kesalahan!`")
 
 
 @Xa_cmd(pattern="unmute(?: |$)(.*)")
+@register(pattern=r"^\.cunmute(?: |$)(.*)", sudo=True)
 async def unmoot(unmot):
     # Admin or creator check
     chat = await unmot.get_chat()
@@ -366,7 +372,7 @@ async def unmoot(unmot):
 
     # If not admin and not creator, return
     if not admin and not creator:
-        return await unmot.edit(NO_ADMIN)
+        return await edit_delete(unmot, NO_ADMIN)
 
     # Check if the function running under SQL mode
     try:
@@ -375,23 +381,21 @@ async def unmoot(unmot):
         return await unmot.edit(NO_SQL)
 
     # If admin or creator, inform the user and start unmuting
-    await unmot.edit("```Melakukan Unmute...```")
+    Xa = await edit_or_reply(unmot, "```Melakukan Unmute...```")
     user = await get_user_from_event(unmot)
     user = user[0]
     if not user:
         return
 
     if unmute(unmot.chat_id, user.id) is False:
-        return await unmot.edit("`Pengguna Sudah Tidak Dibisukan!`")
+        return await edit_delete(unmot, "`Pengguna Sudah Tidak Dibisukan!`")
     else:
 
         try:
             await unmot.client(EditBannedRequest(unmot.chat_id, user.id, UNBAN_RIGHTS))
-            await unmot.edit("```Berhasil Melakukan Unmute! Silahkan membacot kembali```")
-            await sleep(3)
-            await unmot.delete()
+            await edit_delete(kyy, "```Berhasil Melakukan Unmute! Pengguna Sudah Tidak Dibisukan```")
         except UserIdInvalidError:
-            return await unmot.edit("`Terjadi Kesalahan!`")
+            return await edit_delete(Xa, "`Terjadi Kesalahan!`")
 
         if BOTLOG:
             await unmot.client.send_message(
@@ -434,6 +438,7 @@ async def muter(moot):
 
 
 @Xa_cmd(pattern="ungmute(?: |$)(.*)")
+@register(pattern=r"^\.cungmute(?: |$)(.*)", sudo=True)
 async def ungmoot(un_gmute):
     # Admin or creator check
     chat = await un_gmute.get_chat()
@@ -442,29 +447,27 @@ async def ungmoot(un_gmute):
 
     # If not admin and not creator, return
     if not admin and not creator:
-        return await un_gmute.edit(NO_ADMIN)
+        return await edit_delete(un_gmute, NO_ADMIN)
 
     # Check if the function running under SQL mode
     try:
         from userbot.modules.sql_helper.gmute_sql import ungmute
     except AttributeError:
-        return await un_gmute.edit(NO_SQL)
-
+        return await edit_or_reply(un_gmute, NO_SQL)
+    Xa = await edit_or_reply(un_gmute, "`Sedang melakukan membuka Global Mute...`")
     user = await get_user_from_event(un_gmute)
     user = user[0]
     if not user:
         return
 
     # If pass, inform and start ungmuting
-    await un_gmute.edit("```Membuka Global Mute Pengguna...```")
+    await Xa.edit("```Membuka Global Mute Pengguna...```")
 
     if ungmute(user.id) is False:
-        await un_gmute.edit("`Pengguna Sedang Tidak Di Gmute!`")
+        await Xa.edit("`Pengguna Sedang Tidak Di Gmute!`")
     else:
         # Inform about success
-        await un_gmute.edit("```Berhasil! Pengguna Sudah Tidak Lagi Dibisukan```")
-        await sleep(3)
-        await un_gmute.delete()
+        await edit_delete(un_gmute, "```Berhasil! Pengguna Sudah Tidak Lagi Dibisukan```")
 
         if BOTLOG:
             await un_gmute.client.send_message(
@@ -476,6 +479,7 @@ async def ungmoot(un_gmute):
 
 
 @Xa_cmd(pattern="gmute(?: |$)(.*)")
+@register(pattern=r"^\.cgmute(?: |$)(.*)", sudo=True)
 async def gspider(gspdr):
     # Admin or creator check
     chat = await gspdr.get_chat()
@@ -484,25 +488,25 @@ async def gspider(gspdr):
 
     # If not admin and not creator, return
     if not admin and not creator:
-        return await gspdr.edit(NO_ADMIN)
+        return await edit_delete(gspdr, NO_ADMIN)
 
     # Check if the function running under SQL mode
     try:
         from userbot.modules.sql_helper.gmute_sql import gmute
     except AttributeError:
-        return await gspdr.edit(NO_SQL)
-
+        return await edit_delete(gspdr, NO_SQL)
+    Xa = await edit_or_reply(gspdr, "`Processing...`")
     user, reason = await get_user_from_event(gspdr)
     if not user:
         return
 
     # If pass, inform and start gmuting
-    await gspdr.edit("`Pengguna Berhasil Dibisukan!`")
+    await Xa.edit("`Pengguna Berhasil Dibisukan!`")
     if gmute(user.id) is False:
-        await gspdr.edit("`Kesalahan! Pengguna Sudah Dibisukan.`")
+        await edit_delete(gspdr, "`Kesalahan! Pengguna Sudah Dibisukan.`")
     else:
         if reason:
-            await gspdr.edit(f"**Dibisukan Secara Global!**\n**Alasan:** `{reason}`")
+            await Xa.edit(f"**Dibisukan Secara Global!**\n**Alasan:** `{reason}`")
         else:
             await gspdr.edit("`Berhasil Membisukan Pengguna Secara Global!`")
 
@@ -513,7 +517,6 @@ async def gspider(gspdr):
                 f"PENGGUNA: [{user.first_name}](tg://user?id={user.id})\n"
                 f"GRUP: {gspdr.chat.title}(`{gspdr.chat_id}`)",
             )
-
 
 @Xa_cmd(pattern="zombies(?: |$)(.*)")
 async def rm_deletedacc(show):
