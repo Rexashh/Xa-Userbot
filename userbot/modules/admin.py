@@ -306,6 +306,7 @@ async def nothanos(unbon):
     except UserIdInvalidError:
         await unbon.edit("`Sepertinya Terjadi Kesalahan!`")
 
+
 @Xa_cmd(pattern="mute(?: |$)(.*)")
 @register(pattern=r"^\.cmute(?: |$)(.*)", sudo=True)
 async def spider(spdr):
