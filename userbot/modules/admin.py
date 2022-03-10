@@ -357,7 +357,7 @@ async def spider(spdr):
             return await spdr.edit("`Terjadi Kesalahan!`")
 
 
-@Xa_cmd(pattern="mute(?: |$)(.*)")
+@Xa_cmd(pattern="unmute(?: |$)(.*)")
 async def unmoot(unmot):
     # Admin or creator check
     chat = await unmot.get_chat()
