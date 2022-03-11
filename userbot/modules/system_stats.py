@@ -296,17 +296,17 @@ async def amireallyalive(alive):
 async def redis(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
-    await alive.edit("__𝘚𝘌𝘋𝘈𝘕𝘎 𝘔𝘌𝘔𝘜𝘈𝘛.__")
-    await alive.edit("__𝘚𝘌𝘋𝘈𝘕𝘎 𝘔𝘌𝘔𝘜𝘈𝘛..__")
-    await alive.edit("__𝘚𝘌𝘋𝘈𝘕𝘎 𝘔𝘌𝘔𝘜𝘈𝘛.__")
-    await alive.edit("__𝘚𝘌𝘋𝘈𝘕𝘎 𝘔𝘌𝘔𝘜𝘈𝘛..__")
-    await alive.edit("__𝘚𝘌𝘋𝘈𝘕𝘎 𝘔𝘌𝘔𝘜𝘈𝘛...__")
-    await alive.edit("__𝘚𝘌𝘋𝘈𝘕𝘎 𝘔𝘌𝘔𝘜𝘈𝘛..__")
-    await alive.edit("__𝘚𝘌𝘋𝘈𝘕𝘎 𝘔𝘌𝘔𝘜𝘈𝘛...__")
+    await alive.edit("__𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵.__")
+    await alive.edit("__𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵..__")
+    await alive.edit("__𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵.__")
+    await alive.edit("__𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵..__")
+    await alive.edit("__𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵...__")
+    await alive.edit("__𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵..__")
+    await alive.edit("__𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵...__")
     await alive.edit("⚡")
     await asyncio.sleep(2)
     output = (
-        f"╔═══════🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖════ \n"
+        f"╔═══════🦖𝗫𝗔-𝗨𝗦𝗘𝗥𝗕𝗢𝗧🦖════ \n"
         f"╠  `Name     :` {DEFAULTUSER} \n"
         f"╠  `Username :` @{user.username} \n"
         f"╠  `Telethon :` Ver {version.__version__} \n"
@@ -317,7 +317,7 @@ async def redis(alive):
         f"╠  `GitHub   :` [Xa](https://github.com/Rexashh/Xa-Userbot) \n"
         f"╠  `Support  :` [Groups](https://t.me/rexaprivateroom) \n"
         f"╠  `Owner    :` [Rexa](https://t.me/JustRex) \n"
-        f"╚═══════════════════════")
+        f"╚══════════════════════")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
