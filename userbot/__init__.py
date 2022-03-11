@@ -27,7 +27,7 @@ from telethon import Button
 from telethon.sync import TelegramClient, custom, events
 from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
 from telethon.tl.functions.channels import JoinChannelRequest as GetSec
-from telethon.network.connection.tcpabridge import ConnectionTcpAbridged
+from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
 from telethon.sessions import StringSession
 from telethon.sync import TelegramClient, custom, events
 from telethon import Button, events, functions, types
@@ -37,11 +37,8 @@ from telethon.utils import get_display_name
 from .storage import Storage
 
 
-def STORAGE(n)
-
-
-return Storage(Path("data") / n)
-
+def STORAGE(n):
+    return Storage(Path("data") / n)
 
 redis_db = None
 
