@@ -20,8 +20,8 @@ async def _(typew):
                      "▒▒▒██▒▒▀▀▀▀▀▀▀▀▒▒██▒▒▒\n"
                      "▒▒▒▐██▄▒▒▒▒▒▒▒▒▄██▌▒▒▒\n"
                      "▒▒▒▒▀████████████▀▒▒▒▒\n")
-    
-    
+
+
 @Xa_cmd(pattern=r"hem(?: |$)(.*)")
 async def _(typew):
     await typew.edit(" ╭━┳━╭━╭━╮╮\n"
@@ -33,26 +33,26 @@ async def _(typew):
                      "   ╲┃┈┈┈┈╭━┳━━━━╯\n"
                      "   ╲┣━━━━━━┫\n"
                      "      **MENCURIGAKAN**\n")
-    
+
 
 @Xa_cmd(pattern=r"wle(?: |$)(.*)")
 async def _(typew):
-    await typew.edit("┈╭━━━━━━━━━━━╮┈\n" 
-                     "╭╯┈╭━━╮┈╭━━╮┈╰╮\n" 
-                     "┃┈┃┃╭╮┃┈┃╭╮┃┃┈┃\n" 
-                     "┃┈┃┻┻┻┛┈┗┻┻┻┃┈┃\n" 
-                     " ┃┈┃╭╮┈◢▇◣┈╭╮┃┈┃\n" 
-                     "╰┳╯┃╰━━┳┳┳╯┃╰┳╯\n" 
-                     "┈┃┈╰━━━┫┃┣━╯┈┃┈\n" 
+    await typew.edit("┈╭━━━━━━━━━━━╮┈\n"
+                     "╭╯┈╭━━╮┈╭━━╮┈╰╮\n"
+                     "┃┈┃┃╭╮┃┈┃╭╮┃┃┈┃\n"
+                     "┃┈┃┻┻┻┛┈┗┻┻┻┃┈┃\n"
+                     " ┃┈┃╭╮┈◢▇◣┈╭╮┃┈┃\n"
+                     "╰┳╯┃╰━━┳┳┳╯┃╰┳╯\n"
+                     "┈┃┈╰━━━┫┃┣━╯┈┃┈\n"
                      "┈┃┈┈┈┈┈╰━╯┈┈┈┃┈\n")
-    
-    
+
+
 @Xa_cmd(pattern=r"peler(?: |$)(.*)")
 async def _(typew):
     await typew.edit("`MAU LIAT PELER GA???`")
     sleep(1)
     await typew.edit("`NIHHHH DIAA`")
-    sleep(1)  
+    sleep(1)
     await typew.edit("░░░░█─────────────█──▀──\n"
                      "░░░░▓█───────▄▄▀▀█──────\n"
                      "░░░░▒░█────▄█▒░░▄░█─────\n"
@@ -66,8 +66,8 @@ async def _(typew):
                      "▓██▓▒▒▒▒▒▒▒▒▒█░░░░█─────\n"
                      "▓▓█▓▒▒▒▒▒▒▓▒▒█░░░░░█────\n"
                      "░▒▒▀▀▄▄▄▄█▄▄▀░░░░░░░█─\n")
-    
-    
+
+
 @Xa_cmd(pattern=r"ahh(?: |$)(.*)")
 async def _(typew):
     await typew.edit("ahhh")
@@ -93,8 +93,8 @@ async def _(typew):
                      "⠄⠄⢀⣿⣿⠏⢸⡟⢿⣿⣿⣸⣿⣿⣿⣿⢏⣾⣿⣿⣏⣷⠄\n"
                      "⠄⠄⣸⣿⠏⢀⣼⣿⣎⡻⢿⣿⣿⣿⠿⣣⣾⣿⣿⣿⣿⣽⠄\n"
                      "⠄⠄⣿⡿⣰⣿⣿⣿⣿⣿ AHHH ⣰⣿⣿⣿⣿⣿⣿⣿\n")
-    
-   
+
+
 CMD_HELP.update(
     {
         "animasi9": f"**Plugin : **`animasi8`\
