@@ -38,8 +38,6 @@ from .storage import Storage
 
 
 def STORAGE(n)
-
-
 return Storage(Path("data") / n)
 
 
