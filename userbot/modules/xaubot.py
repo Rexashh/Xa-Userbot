@@ -174,6 +174,7 @@ async def typewriter(typew):
     sleep(3)
     await typew.edit("**SEMOGA CEPET SADAR YA HAHAHAHA**")
 
+
 @Xa_cmd(pattern="kiyomasa(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
