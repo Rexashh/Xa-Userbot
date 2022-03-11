@@ -36,8 +36,12 @@ from telethon.utils import get_display_name
 
 from .storage import Storage
 
+
 def STORAGE(n)
-    return Storage(Path("data") / n)
+
+
+return Storage(Path("data") / n)
+
 
 redis_db = None
 
@@ -63,8 +67,8 @@ StartTime = time.time()
 
 # Bot Logs setup:
 logging.basicConfig(
-        format="[%(name)s] - [%(levelname)s] - %(message)s",
-        level=logging.INFO,
+    format="[%(name)s] - [%(levelname)s] - %(message)s",
+    level=logging.INFO,
 )
 logging.getLogger("asyncio").setLevel(logging.ERROR)
 logging.getLogger("pytgcalls").setLevel(logging.ERROR)
@@ -841,7 +845,7 @@ with bot:
                     )
                 )
             else:
-               reply_pop_up_alert = f"⛔!WARNING!⛔ Jangan Dipake, Ini Userbot milik {owner}"
+                reply_pop_up_alert = f"⛔!WARNING!⛔ Jangan Dipake, Ini Userbot milik {owner}"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     except BaseException:
@@ -852,5 +856,5 @@ with bot:
     try:
         bot.loop.run_until_complete(check_botlog_chatid())
     except BaseException as e:
-        LOGS.exception(f"[BOTLOG] - {e}") 
+        LOGS.exception(f"[BOTLOG] - {e}")
         sys.exit(1)
