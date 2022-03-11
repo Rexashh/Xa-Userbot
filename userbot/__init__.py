@@ -9,6 +9,7 @@ import random
 import pybase64
 import sys
 
+from base64 import b64decode
 from sys import version_info
 from logging import basicConfig, getLogger, INFO, DEBUG
 from distutils.util import strtobool as sb
@@ -16,6 +17,7 @@ from math import ceil
 
 from pylast import LastFMNetwork, md5
 from pySmartDL import SmartDL
+from pytgcalls import PyTgCalls
 from pymongo import MongoClient
 from datetime import datetime
 from redis import StrictRedis
@@ -25,11 +27,17 @@ from telethon import Button
 from telethon.sync import TelegramClient, custom, events
 from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
 from telethon.tl.functions.channels import JoinChannelRequest as GetSec
+from telethon.network.connection.tcpabridge import ConnectionTcpAbridged
 from telethon.sessions import StringSession
+from telethon.sync import TelegramClient, custom, events
 from telethon import Button, events, functions, types
 from telethon.tl.types import InputWebDocument
 from telethon.utils import get_display_name
 
+from .storage import Storage
+
+def STORAGE(n)
+    return Storage(Path("data") / n)
 
 redis_db = None
 
@@ -54,6 +62,17 @@ load_dotenv("config.env")
 StartTime = time.time()
 
 # Bot Logs setup:
+logging.basicConfig(
+        format="[%(name)s] - [%(levelname)s] - %(message)s",
+        level=logging.INFO,
+)
+logging.getLogger("asyncio").setLevel(logging.ERROR)
+logging.getLogger("pytgcalls").setLevel(logging.ERROR)
+logging.getLogger("telethon.network.mtprotosender")setLevel(logging.ERROR)
+logging.getLogger(
+    "telethon.network.connection.connection").setLevel(logging.ERROR)
+LOGS = getLogger(__name__)
+
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
 
 if CONSOLE_LOGGER_VERBOSE:
@@ -94,7 +113,7 @@ DEVS = (
     1977874449,
     2130526178,
 )
-# Blacklist User for use RAM-UBOT
+# Blacklist User for use Xa-Userbot
 while 0 < 6:
     _BLACKLIST = get(
         "https://raw.githubusercontent.com/muhammadrizky16/Kyyblack/master/kyyblacklist.json"
@@ -260,7 +279,7 @@ BITLY_TOKEN = os.environ.get(
 TERM_ALIAS = os.environ.get("TERM_ALIAS", "Xa-Userbot")
 
 # Bot Version
-BOT_VER = os.environ.get("BOT_VER", "8.0")
+BOT_VER = os.environ.get("BOT_VER", "8.1")
 
 # Default .alive Username
 ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
@@ -574,7 +593,7 @@ with bot:
                 text = f"**🦖 Xa-Userbot Inline Menu 🦖**\n\n⌬ **Owner** [{user.first_name}](tg://user?id={user.id})\n⌬ **Jumlah** `{len(dugmeler)}` Modules"
                 await event.edit(
                     text,
-                    file=roselogo,
+                    file=Xalogo,
                     buttons=buttons,
                     link_preview=False,
                 )
@@ -661,7 +680,7 @@ with bot:
             if event.query.user_id == uid and query.startswith("@XaUserbot"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
-                    file=roselogo,
+                    file=Xalogo,
                     link_preview=False,
                     text=f"**🦖 Xa-Userbot Inline Menu 🦖**\n\n⌬ **Owner** [{user.first_name}](tg://user?id={user.id})\n⌬ **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
@@ -822,16 +841,16 @@ with bot:
                     )
                 )
             else:
-                f"⛔!WARNING!⛔ Jangan Dipake, Ini Milik {DEFAULTUSER} Lu bukan siapa siapa bego."
+               reply_pop_up_alert = f"⛔!WARNING!⛔ Jangan Dipake, Ini Userbot milik {owner}"
+            await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     except BaseException:
         LOGS.info(
-            "Mode Inline Bot Mu Nonaktif. "
-            "Untuk Mengaktifkannya, Silahkan Pergi Ke @BotFather Lalu, Settings Bot > Pilih Mode Inline > Turn On. ")
+            "Mode Inline Bot Mu Tidak aktif. tidak di aktifkan juga tidak apa-apa. "
+            "Untuk Mengaktifkannya Buat bot di @BotFatget lalu Tsmbahkan var BOT_TOKEN dan BOT_USERNAME."
+            "Pergi Ke @BotFather Lalu, Settings Bot > Pilih Mode Inline > Turn On. ")
     try:
         bot.loop.run_until_complete(check_botlog_chatid())
-    except BaseException:
-        LOGS.info(
-            "BOTLOG_CHATID Environment Variable Isn't a "
-            "Valid Entity. Please Check Your Environment variables/config.env File.")
-        quit(1)
+    except BaseException as e:
+        LOGS.exception(f"[BOTLOG] - {e}") 
+        sys.exit(1)
