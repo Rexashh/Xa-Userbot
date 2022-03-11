@@ -35,7 +35,7 @@ LOGS.info(
 async def check_alive():
     try:
         if BOTLOG_CHATID != 0:
-            await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"🦖 **Xa Userbot Has Been Actived**!!\n━━━━━━━━━━━━━━━\n⌬ **Userbot Version** - 8.0@Xa-Userbot\n━━━━━━━━━━━━━━━\n⌬ **Powered By:** @tirexgugel ")
+            await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"🦖 **Xa Userbot Has Been Actived**!!\n━━━━━━━━━━━━━━━\n⌬ **Userbot Version** - 8.1@Xa-Userbot\n━━━━━━━━━━━━━━━\n⌬ **Powered By:** @tirexgugel ")
     except Exception as e:
         LOGS.info(str(e))
     try:
