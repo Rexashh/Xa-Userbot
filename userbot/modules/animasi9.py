@@ -63,7 +63,7 @@ async def _(event):
     await xx.edit("`Dah la besok besok ga mau lagi`")
 
 
-@xa_cmd(pattern="ange(?: |$)(.*)")
+@Xa_cmd(pattern="ange(?: |$)(.*)")
 async def _(event):
     xx = await edit_or_reply(event, f"`Ayanggggg😖`")
     sleep(1)
