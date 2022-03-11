@@ -55,7 +55,7 @@ async def typewriter(typew):
     await typew.edit("`Jalan Ninjaku!`")
 
 
-@Xa_cmd(pattern="animek(?: |$)(.*)")
+@Xa_cmd(pattern="kaku(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(2)
@@ -139,7 +139,7 @@ CMD_HELP.update({
     \n↳ : Wibu lagi sad\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}jalnin`\
     \n↳ : Jalan Ninjaku\
-    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}animek`\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}kaku`\
     \n↳ : Ngatain Anime Kaku.\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}kiyomasa`\
     \n↳ : Kiyomasa, Cobain aja\
