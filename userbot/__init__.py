@@ -301,6 +301,8 @@ EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🦖"
 # °Xa-Userbot°
 OWNER_URL = os.environ.get("OWNER_URL") or "https://t.me/JustRex"
 
+DEFAULT = list(map(int, b64decode("MTIyNDE0MzU0NA==").split()))
+
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
 DEFAULT_BIO = os.environ.get("DEFAULT_BIO", None)
