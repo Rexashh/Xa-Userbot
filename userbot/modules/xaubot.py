@@ -1,5 +1,5 @@
-# Copyright (C) 2021 Kyy - Userbot
-# Created by Kyy
+# Copyright (C) 2021 Kyy - Userbot + Xa - Userbot
+# Created by Kyy + Rexa
 # Jangan hapus credit Anj!!!
 
 
@@ -174,6 +174,19 @@ async def typewriter(typew):
     sleep(3)
     await typew.edit("**SEMOGA CEPET SADAR YA HAHAHAHA**")
 
+@Xa_cmd(pattern="kiyomasa(?: |$)(.*)")
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("**OIIIII**")
+    sleep(2)
+    await typew.edit("**Kiyomasa!!**")
+    sleep(3)
+    await typew.edit("**Nande-Nande**")
+    sleep(3)
+    await typew.edit("**Gambare-Gambare**")
+    sleep(3)
+    await typew.edit("**BAKAAAAA!!**")
+
 
 CMD_HELP.update({
     "xaubot": f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}sadboy`\
@@ -193,5 +206,7 @@ CMD_HELP.update({
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}virtual`\
     \n↳ : Ngatain bocah virtual.\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}tittle`\
-    \n↳ : Ngatain bocah gila tittle."
+    \n↳ : Ngatain bocah gila tittle\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}kiyomasa`\
+    \n↳ : Kiyomasa."
 })
