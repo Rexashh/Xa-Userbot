@@ -682,7 +682,7 @@ with bot:
             if event.query.user_id == uid and query.startswith("@XaUserbot"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
-                    file=Xalogo,
+                    file=xalogo,
                     link_preview=False,
                     text=f"**🦖 Xa-Userbot Inline Menu 🦖**\n\n⌬ **Owner** [{user.first_name}](tg://user?id={user.id})\n⌬ **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
