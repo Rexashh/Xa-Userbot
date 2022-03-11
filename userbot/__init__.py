@@ -70,7 +70,7 @@ logging.basicConfig(
 )
 logging.getLogger("asyncio").setLevel(logging.ERROR)
 logging.getLogger("pytgcalls").setLevel(logging.ERROR)
-logging.getLogger("telethon.network.mtprotosender")setLevel(logging.ERROR)
+logging.getLogger("telethon.network.mtprotosender").setLevel(logging.ERROR)
 logging.getLogger(
     "telethon.network.connection.connection").setLevel(logging.ERROR)
 LOGS = getLogger(__name__)
