@@ -38,7 +38,9 @@ from .storage import Storage
 
 
 def STORAGE(n)
-    return Storage(Path("data") / n)
+
+
+return Storage(Path("data") / n)
 
 
 redis_db = None
