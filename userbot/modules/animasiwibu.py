@@ -22,11 +22,11 @@ async def typewriter(typew):
     sleep(3)
     await typew.wdit("`(•‿•)`")
     sleep(2)
-    
 
-@Xa_cmd(pattern="wisad"(?:|$)(.*)")
+
+@Xa_cmd(pattern="wisad"(?: |$)(.*)")
 async def typewriter(typew):
-    typew.pattern_match.group(1) 
+    typew.pattern_match.group(1)
     sleep(2)
     await typew.edit("`Menunggumu Menyukaimu..`")
     sleep(2)
@@ -36,11 +36,11 @@ async def typewriter(typew):
     sleep(3)
     await typew.edit("`Karena itu Sangat Tidak Mungkin Terjadi...`")
     sleep(3)
-    
 
-@Xa_cmd(pattern="jalnin"(?:|$)(.*)")
+
+@Xa_cmd(pattern="jalnin"(?: |$)(.*)")
 async def typewriter(typew):
-    typew.pattern_match.group(1) 
+    typew.pattern_match.group(1)
     sleep(2)
     await typew.edit("`Aku..`")
     sleep(2)
@@ -56,9 +56,9 @@ async def typewriter(typew):
     sleep(3)
     await typew.edit("`Jalan Ninjaku!`")
     sleep(3)
-    
 
-@Xa_cmd(pattern="animek"(?:|$)(.*)")
+
+@Xa_cmd(pattern="animek"(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(2)
@@ -77,7 +77,7 @@ async def typewriter(typew):
     await typew.edit("`AWOKAWOAKWOAKWOAK`")
     sleep(3)
 
-    
+
 @Xa_cmd(pattern="kiyomasa(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -90,8 +90,8 @@ async def typewriter(typew):
     await typew.edit("**Gambare-Gambare**")
     sleep(3)
     await typew.edit("**BAKAAAAA!!**")
-    
-    
+
+
 @Xa_cmd(pattern="baka1(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -103,8 +103,8 @@ async def typewriter(typew):
     sleep(2)
     await typew.edit("`BUKKOROSHITE YARUUU!!`")
     sleep(3)
-    
-    
+
+
 @Xa_cmd(pattern="wgbt(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -134,9 +134,8 @@ async def typewriter(typew):
     sleep(3)
     await typew.edit("`Mata yooo!!!⊂(◉‿◉)つ`")
     sleep(3)
-    
-    
-    
+
+
 CMD_HELP.update({
     "animasiwibu": f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}awibu`\
     \n↳ : Singkatan wibu\
