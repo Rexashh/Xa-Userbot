@@ -62,7 +62,7 @@ async def _(event):
     sleep(2)
     await xx.edit("`Dah la besok besok ga mau lagi`")
 
-    
+
 @xa_cmd(pattern="ange(?: |$)(.*)")
 async def _(event):
     xx = await edit_or_reply(event, f"`Ayanggggg😖`")
@@ -89,7 +89,7 @@ async def _(event):
     await xx.edit("Ayo kita happy")
     sleep(1)
     await xx.edit("Tapi pake pengaman")
-  
+
 
 @Xa_cmd(pattern="dahla(?: |$)(.*)")
 async def _(event):
@@ -97,7 +97,7 @@ async def _(event):
     sleep(2)
     await xx.edit("**`Ngapain Semangat`**")
 
-    
+
 @Xa_cmd(pattern="ehm(?: |$)(.*)")
 async def _(event):
     xx = await edit_or_reply(event, f"Eh..")
@@ -125,12 +125,12 @@ async def _(event):
     sleep(2)
     await xx.edit("Nanti aku tf deh janjii")
 
-    
-#P o c o n g U s e r b o t
+
+# P o c o n g U s e r b o t
 
 CMD_HELP.update(
     {
-    "animasi10": f"Perintah: **animasi10**\
+        "animasi10": f"Perintah: **animasi10**\
     \n**Total Command: 4**\
     \nNih buat lo yg sangean anjg\
     \n\nㅤㅤ•**Syntax**: {cmd}hujan\
@@ -141,5 +141,5 @@ CMD_HELP.update(
     \n•**Function**: __Ketik Ini Kalo Lu Lagi Sange__\
     \n\nㅤㅤ•**Syntax**: {cmd}vc\
     \n•**Function**: __Buat ngajakin kakak cantik vcs🥺__"
-    
-})
+
+    })
