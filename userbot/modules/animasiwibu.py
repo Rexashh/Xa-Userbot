@@ -23,7 +23,7 @@ async def typewriter(typew):
     await typew.wdit("`(•‿•)`")
 
 
-@Xa_cmd(pattern="wisad(?:  |$)(.*)")
+@Xa_cmd(pattern="wisad(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(2)
@@ -36,7 +36,7 @@ async def typewriter(typew):
     await typew.edit("`Karena itu Sangat Tidak Mungkin Terjadi...`")
 
 
-@Xa_cmd(pattern="jalnin(?:  |$)(.*)")
+@Xa_cmd(pattern="jalnin(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(2)
@@ -89,7 +89,7 @@ async def typewriter(typew):
     await typew.edit("**BAKAAAAA!!**")
 
 
-@Xa_cmd(pattern="baka1(?:|$)(.*)")
+@Xa_cmd(pattern="baka1(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`BAKAAAA!!`")
@@ -101,7 +101,7 @@ async def typewriter(typew):
     await typew.edit("`BUKKOROSHITE YARUUU!!`")
 
 
-@Xa_cmd(pattern="wgbt(?:|$)(.*)")
+@Xa_cmd(pattern="wgbt(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`Konnichiwa!!`")
