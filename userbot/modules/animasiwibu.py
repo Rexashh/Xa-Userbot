@@ -8,7 +8,7 @@ from userbot import CMD_HELP, CMD_HANDLER as cmd
 from userbot.utils import Xa_cmd
 
 
-@Xa_cmd(pattern="awibu(?: |$)(.*)")
+@Xa_cmd(pattern="awibu(?:|$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(2)
@@ -21,10 +21,9 @@ async def typewriter(typew):
     await typew.edit("`U : Unggul`")
     sleep(3)
     await typew.wdit("`(•‿•)`")
-    sleep(2)
 
 
-@Xa_cmd(pattern="wisad"(?: |$)(.*)")
+@Xa_cmd(pattern="wisad"(?:|$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(2)
@@ -35,10 +34,10 @@ async def typewriter(typew):
     await typew.edit("`Anime No Game No Life Session 2...`")
     sleep(3)
     await typew.edit("`Karena itu Sangat Tidak Mungkin Terjadi...`")
-    sleep(3)
 
 
-@Xa_cmd(pattern="jalnin"(?: |$)(.*)")
+
+@Xa_cmd(pattern="jalnin"(?:|$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(2)
@@ -55,10 +54,9 @@ async def typewriter(typew):
     await typew.edit("`Karena itulah`")
     sleep(3)
     await typew.edit("`Jalan Ninjaku!`")
-    sleep(3)
 
 
-@Xa_cmd(pattern="animek"(?: |$)(.*)")
+@Xa_cmd(pattern="animek"(?:|$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(2)
@@ -78,7 +76,7 @@ async def typewriter(typew):
     sleep(3)
 
 
-@Xa_cmd(pattern="kiyomasa(?: |$)(.*)")
+@Xa_cmd(pattern="kiyomasa(?:|$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**OIIIII**")
@@ -92,7 +90,7 @@ async def typewriter(typew):
     await typew.edit("**BAKAAAAA!!**")
 
 
-@Xa_cmd(pattern="baka1(?: |$)(.*)")
+@Xa_cmd(pattern="baka1(?:|$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`BAKAAAA!!`")
@@ -102,10 +100,9 @@ async def typewriter(typew):
     await typew.edit("`KUSSO!!`")
     sleep(2)
     await typew.edit("`BUKKOROSHITE YARUUU!!`")
-    sleep(3)
 
 
-@Xa_cmd(pattern="wgbt(?: |$)(.*)")
+@Xa_cmd(pattern="wgbt(?:|$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`Konnichiwa!!`")
