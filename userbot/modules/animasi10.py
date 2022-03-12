@@ -1,4 +1,4 @@
-# @greyyvbss 
+# @greyyvbss
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
@@ -47,7 +47,7 @@ async def _(event):
         "┈┃┃┃┃┈┈┈┃┃┃┃┈┈┈\n"
         "┈┗┛┗┛┈┈┈┗┛┗┛┈┈┈")
 
-    
+
 @Xa_cmd(pattern="gajah(?: |$)(.*)")
 async def _(event):
     await edit_or_reply(
@@ -61,11 +61,11 @@ async def _(event):
         "╯▏┈╲╱▔╲▅▅▏┈┈┈┈\n"
         "┈╲▅▅▏▕▔▔▔▔▏┈┈┈┈")
 
-    
+
 @Xa_cmd(pattern="liat(?: |$)(.*)")
 async def _(event):
     await edit_or_reply(
-        event,    
+        event,
         "┈┈┈╭━━━━━╮┈┈┈┈┈\n"
         "┈┈┈┃┊┊┊┊┊┃┈┈┈┈┈\n"
         "┈┈┈┃┊┊╭━╮┻╮┈┈┈┈\n"
@@ -78,7 +78,7 @@ async def _(event):
 
 CMD_HELP.update(
     {
-    "animasi10": f"➢ **Plugin : **`animasi10`\
+        "animasi10": f"➢ **Plugin : **`animasi10`\
     \n\n ┌✪ **Command :** `{cmd}sponge`\
     \n └✪ **Function : **Mengirim Gambar SpongeBoob.\
     \n\n ┌✪ **Command :** `{cmd}ngok`\
@@ -88,5 +88,5 @@ CMD_HELP.update(
     \n\n ┌✪ **Command :** `{cmd}gajah`\
     \n └✪ **Function : **Mengirim Gambar Gajah.\
     \n\n ┌✪ **Command :** `{cmd}liat`\
-    \n └✪ **Function : **Mengirim Gambar see."   
-})
+    \n └✪ **Function : **Mengirim Gambar see."
+    })
