@@ -78,7 +78,7 @@ async def _(event):
 
 CMD_HELP.update(
     {
-    "animasi20": f"➢ **Plugin : **`animasi10`\
+    "animasi10": f"➢ **Plugin : **`animasi10`\
     \n\n ┌✪ **Command :** `{cmd}sponge`\
     \n └✪ **Function : **Mengirim Gambar SpongeBoob.\
     \n\n ┌✪ **Command :** `{cmd}ngok`\
