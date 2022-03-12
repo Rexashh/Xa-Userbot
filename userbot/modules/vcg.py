@@ -36,8 +36,8 @@ def vcmention(user):
 
 
 async def get_call(kyybot):
-    kyy = await kyy.client(getchat(kyy.chat_id))
-    await kyy.client(getvc(kyy.full_chat.call))
+    Xa = await Xa.client(getchat(Xa.chat_id))
+    await Xa.client(getvc(Xa.full_chat.call))
     return hehe.call
 
 
