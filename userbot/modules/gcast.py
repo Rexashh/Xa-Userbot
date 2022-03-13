@@ -11,7 +11,7 @@
 # t.me/SharingUserbot & t.me/Lunatic0de
 
 from userbot import CMD_HELP, CMD_HANDLER as cmd
-from userbot.utils import Xa_cmd
+from userbot.utils import edit_or_reply, edit_delete, Xa_cmd
 from userbot.events import register
 
 GCAST_BLACKLIST = [
@@ -63,9 +63,8 @@ async def gucast(event):
     elif event.is_reply:
         msg = await event.get_reply_message()
     else:
-        await event.edit("**Berikan Sebuah Pesan atau Reply**")
-        return
-    kk = await event.edit("`Gcast LO lagi OTW Y ANJJJ SABAR JAN MARAH MARAH PANTEE... 📢`")
+        return await edit_delete(event, "**Berikan Sebuah Pesan atau Reply**")
+    kk = await edit_or_reply(event, "`Gcast LO lagi OTW Y ANJJJ SABAR JAN MARAH MARAH PANTEE... 📢`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
