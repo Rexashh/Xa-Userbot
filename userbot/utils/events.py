@@ -68,5 +68,3 @@ async def get_user_from_event(
     if not noedits:
         await edit_delete(Xaevent, "__Couldn't fetch user to proceed further__")
     return None, None
-
-
