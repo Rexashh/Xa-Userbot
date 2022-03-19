@@ -89,5 +89,5 @@ CMD_HELP.update({
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}xquote`\
 \n↳ : Mengubah Pesan Menjadi sticker.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}q` <username>`\
-\n↳ : Membuat pesan menjadi sticker dengan custom username user tele yang diberikan.\"
+n↳: Membuat pesan menjadi sticker dengan custom username user tele yang diberikan.\"
 })
