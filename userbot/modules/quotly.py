@@ -82,12 +82,17 @@ async def quotly(event):
     await msg.delete()
     return message
 
-CMD_HELP.update({
-    "quotly":
-    f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}q`\
-\n↳ : Mengubah Pesan Menjadi sticker.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}xquote`\
-\n↳ : Mengubah Pesan Menjadi sticker.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}q` <username>`\
-n↳: Membuat pesan menjadi sticker dengan custom username user tele yang diberikan.\"
-})
+CMD_HELP.update(
+    {
+        "quotly": f"**Plugin : **`quotly`\
+        \n\n  •  **Syntax :** `{cmd}q`\
+        \n  •  **Function : **Membuat pesan menjadi sticker dengan random background.\
+        \n\n  •  **Syntax :** `{cmd}q` <angka>\
+        \n  •  **Function : **Membuat pesan menjadi sticker dengan custom jumlah pesan yang diberikan.\
+        \n\n  •  **Syntax :** `{cmd}q` <warna>\
+        \n  •  **Function : **Membuat pesan menjadi sticker dengan custom warna background yang diberikan.\
+        \n\n  •  **Syntax :** `{cmd}q` <username>\
+        \n  •  **Function : **Membuat pesan menjadi sticker dengan custom username user tele yang diberikan.\
+    "
+    }
+)
