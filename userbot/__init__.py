@@ -416,19 +416,20 @@ for binary, path in binaries.items():
 if STRING_SESSION:
     session = StringSession(str(STRING_SESSION))
 else:
-    session = "Xa-UserBot"
+    session = "Xa-Userbot"
 try:
     bot = TelegramClient(
         session=session,
         api_id=API_KEY,
         api_hash=API_HASH,
+        connection=ConnectionTcpAbridged,
         auto_reconnect=True,
         connection_retries=None,
     )
+    call_py = PyTgCalls(bot)
 except Exception as e:
     print(f"STRING_SESSION - {e}")
     sys.exit()
-
 
 async def checking():
     gocheck = str(pybase64.b64decode("QHRpcmV4Z3VnZWw="))[2:15]
