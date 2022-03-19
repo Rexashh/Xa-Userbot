@@ -431,6 +431,7 @@ except Exception as e:
     print(f"STRING_SESSION - {e}")
     sys.exit()
 
+
 async def checking():
     gocheck = str(pybase64.b64decode("QHRpcmV4Z3VnZWw="))[2:15]
     checker = str(pybase64.b64decode("QHJleGFwcml2YXRlcm9vbQ=="))[2:16]
