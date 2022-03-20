@@ -34,7 +34,7 @@ CMD_HELP.update(
     {
         "sadvideo": f"**Plugin : **sadvideo\
         \n\n  ⌬  **Syntax :** {cmd}sadvid\
-        \n  ⌬  **Function : **Untuk Mengirim video asupan secara random.\
+        \n  ⌬  **Function : **Untuk Mengirim video sedih secara random.\
     "
     }
 )
