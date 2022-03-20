@@ -21,11 +21,11 @@ async def typewriter(typew):
 # Menjawab Salam
 
 
-@Xa_cmd(pattern="rexa(?: |$)(.*)")
+@Xa_cmd(pattern="naon(?: |$)(.*)")
 async def perkenalan(event):
     event.pattern_match.group(1)
-    await event.edit("`REXA BAIK KAN?`")
-# Istigfar
+    await event.edit("`naon sih sia ?`")
+# naon
 
 
 @Xa_cmd(pattern="perkenalan(?: |$)(.*)")
@@ -40,6 +40,59 @@ async def perkenalan(event):
     await event.edit("`Udah Gitu Aja :v`")
 # Perkenalan
 
+@Xa_cmd(pattern="ox(?: |$)(.*)")
+async def perkenalan(event):
+    event.pattern_match.group(1)
+    await event.edit(f"`Hai Guys , Perkenalkan Nama Gua Rexa Aditya`")
+    sleep(2)
+    await event.edit(f"`Gua Tinggal Di Kota Paling Panas Katanya sih`")
+    sleep(2)
+    await event.edit(f"`Tau Kota Bekashit kan?`")
+    sleep(2)
+    await event.edit(f"`Nah disitu gua tinggal`")
+    sleep(2)
+    await event.edit(f"`Anu`")
+    sleep(1.5)
+    await event.edit(f"`Umur gua`")
+    sleep(2)
+    await event.edit(f"`20 tahun, ga tua ga muda kan hehe`")
+    sleep(2)
+    await event.edit(f"`Hobi gua apa ya`")
+    sleep(2)
+    await event.edit(f"`hmmmm`")
+    sleep(1)
+    await event.edit(f"`Selain Mageran`")
+    sleep(2)
+    await event.edit(f"`Gua Suka baca novel`")
+    sleep(2)
+    await event.edit(f"`Nonton Anime`")
+    sleep(2)
+    await event.edit(f"`Drakor`")
+    sleep(1.5)
+    await event.edit(f"`Western`")
+    sleep(1.5)
+    await event.edit(f"`banyak pokoknya`")
+    sleep(1.5)
+    await event.edit(f"`termasuk bokep`")
+    sleep(2)
+    await event.edit(f"`genre musik ku`")
+    sleep(2)
+    await event.edit(f"`hmmmm`")
+    sleep(1.5)
+    await event.edit(f"`yang paling fav sih POP PUNK`")
+    sleep(2)
+    await event.edit(f"`Udah gitu aja wkwk`")
+    sleep(2)
+    await event.edit(f"`Terakhir deh`")
+    sleep(2)
+    await event.edit(f"`Gua addict sama boba`")
+    sleep(2)
+    await event.edit(f"`Dahhh Makasih, babayyy`)
+    sleep(2)
+    await event.edit("`Salam Kenal...`")
+    sleep(2)
+# Perkenalan rexa
+
 
 CMD_HELP.update({
     "gabut": f"**Modules** - `Gabut`\
@@ -49,4 +102,8 @@ CMD_HELP.update({
     \nUsage : Memperkenalkan Diri\
     \n\n Cmd : `{cmd}p`\
     \nUsage : Untuk Memberi Salam."
+    \n\n Cmd : `{cmd}naon`\
+    \nUsage : coba aja sendiri
+    \n\n Cmd : `{cmd}ox`\
+    \nUsage : Perkenalan Owner Xa-Userbot
 })
