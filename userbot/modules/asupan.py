@@ -52,7 +52,7 @@ async def _(event):
         await event.edit("Tidak bisa menemukan desahan.")
         
   
-  @Xa_cmd(pattern="vf$")
+  @Xa_cmd(pattern="fv$")
 async def _(event):
     try:
         desahnya = [
