@@ -70,8 +70,8 @@ async def _(event):
         await event.delete()
     except Exception:
         await event.edit("Tidak bisa menemukan video lucu.")
-      
-  
+
+
 CMD_HELP.update(
     {
         "asupan": f"**Plugin : **asupan\
