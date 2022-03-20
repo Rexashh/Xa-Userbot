@@ -88,7 +88,7 @@ async def perkenalan(event):
     sleep(2)
     await event.edit(f"`Gua addict sama boba`")
     sleep(2)
-    await event.edit(f"`Dahhh Makasih, babayyy`)
+    await event.edit(f"`Dahhh Makasih, babayyy`")
     sleep(2)
     await event.edit("`Salam Kenal...`")
     sleep(2)
