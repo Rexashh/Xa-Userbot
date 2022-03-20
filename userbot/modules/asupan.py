@@ -57,7 +57,7 @@ async def _(event):
     try:
         desahnya = [
             desah
-            async for desah in event.client.iter_messages(
+            async for vl in event.client.iter_messages(
                 "@videolucuxauserbot", filter=InputMessagesFilterVoice
             )
         ]
