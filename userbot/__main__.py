@@ -45,7 +45,7 @@ for module_name in ALL_MODULES:
 
 # bot.loop.run_until_complete(checking())
 LOGS.info(
-    f"Jika {ALIVE_NAME} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/rexaprivateroom")
+    f"Jika {user.first_name} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/rexaprivateroom")
 LOGS.info(
     f"🦖Xa-Userbot🦖 ⚙️ V{BOT_VER} [TELAH DIAKTIFKAN!]")
 
