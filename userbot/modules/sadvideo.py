@@ -8,7 +8,6 @@ from userbot.utils import Xa_cmd
 import random
 from userbot import owner
 from telethon.tl.types import InputMessagesFilterVideo
-from telethon.tl.types import InputMessagesFilterVoice
 
 
 @Xa_cmd(pattern="sadvid$")
