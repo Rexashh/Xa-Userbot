@@ -1,7 +1,7 @@
 # © @tofik_dn
 # ⚠️ Do not remove credits
 # recode by @greyyvbss
-
+# video lucu by @JustRex
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
@@ -50,8 +50,28 @@ async def _(event):
         await event.delete()
     except Exception:
         await event.edit("Tidak bisa menemukan desahan.")
-
-
+        
+  
+  @Xa_cmd(pattern="vf$")
+async def _(event):
+    try:
+        desahnya = [
+            desah
+            async for desah in event.client.iter_messages(
+                "@videolucuxauserbot", filter=InputMessagesFilterVoice
+            )
+        ]
+        aing = await event.client.get_me()
+        await event.client.send_file(
+            event.chat_id,
+            file=random.choice(desahnya),
+            caption=f"Nih kak video lucunya [{owner}](tg://user?id={aing.id})",
+        )
+        await event.delete()
+    except Exception:
+        await event.edit("Tidak bisa menemukan video lucu.")
+      
+  
 CMD_HELP.update(
     {
         "asupan": f"**Plugin : **asupan\
@@ -59,6 +79,8 @@ CMD_HELP.update(
         \n  •  **Function : **Untuk Mengirim video asupan secara random.\
         \n\n  •  **Syntax :** {cmd}desah\
         \n  •  **Function : **Untuk Mengirim voice desah secara random.\
+        \n\n  •  **Syntax :** {cmd}fv\
+        \n  •  **Function : **Untuk Mengirim video lucu secara random.\
     "
     }
 )
