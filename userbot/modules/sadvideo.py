@@ -13,8 +13,8 @@ from telethon.tl.types import InputMessagesFilterVideo
 @Xa_cmd(pattern="sadvid$")
 async def _(event):
     try:
-        asupannya = [
-            asupan
+        sadvidnya = [
+            sadvid
             async for sadvid in event.client.iter_messages(
                 "@sadvideorexa", filter=InputMessagesFilterVideo
             )
@@ -22,7 +22,7 @@ async def _(event):
         aing = await event.client.get_me()
         await event.client.send_file(
             event.chat_id,
-            file=random.choice(sadvideo),
+            file=random.choice(sadvidnya),
             caption=f"Jangan Terlalu Sedih ya kak [{owner}](tg://user?id={aing.id})",
         )
         await event.delete()
