@@ -52,7 +52,7 @@ async def _(event):
         await event.edit("Tidak bisa menemukan desahan.")
 
 
-  @Xa_cmd(pattern="fv$")
+  @Xa_cmd(pattern="vl$")
 async def _(event):
     try:
         desahnya = [
@@ -64,7 +64,7 @@ async def _(event):
         aing = await event.client.get_me()
         await event.client.send_file(
             event.chat_id,
-            file=random.choice(desahnya),
+            file=random.choice(videolucunya),
             caption=f"Nih kak video lucunya [{owner}](tg://user?id={aing.id})",
         )
         await event.delete()
@@ -79,7 +79,7 @@ CMD_HELP.update(
         \n  •  **Function : **Untuk Mengirim video asupan secara random.\
         \n\n  •  **Syntax :** {cmd}desah\
         \n  •  **Function : **Untuk Mengirim voice desah secara random.\
-        \n\n  •  **Syntax :** {cmd}fv\
+        \n\n  •  **Syntax :** {cmd}vl\
         \n  •  **Function : **Untuk Mengirim video lucu secara random.\
     "
     }
