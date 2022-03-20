@@ -50,8 +50,8 @@ async def _(event):
         await event.delete()
     except Exception:
         await event.edit("Tidak bisa menemukan desahan.")
-        
-  
+
+
   @Xa_cmd(pattern="fv$")
 async def _(event):
     try:
