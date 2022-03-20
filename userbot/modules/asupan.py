@@ -52,7 +52,7 @@ async def _(event):
         await event.edit("Tidak bisa menemukan desahan.")
 
 
-  @Xa_cmd(pattern="vidlucu$")
+@Xa_cmd(pattern="vidlucu$")
 async def _(event):
     try:
         vidlucunya = [
