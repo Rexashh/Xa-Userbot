@@ -97,14 +97,16 @@ async def perkenalan(event):
 
 CMD_HELP.update({
     "gabut": f"**Modules** - `Gabut`\
+    \n\n Cmd : `{cmd}p`\
+    \nUsage : Untuk salam\
     \n\n Cmd : `{cmd}l`\
     \nUsage : Untuk Menjawab Salam\
     \n\n Cmd : `{cmd}perkenalan`\
     \nUsage : Memperkenalkan Diri\
     \n\n Cmd : `{cmd}p`\
-    \nUsage : Untuk Memberi Salam."
-    \n\n Cmd: `{cmd}naon`
-    \nUsage: coba aja sendiri
-    \n\n Cmd: `{cmd}ox`
-    \nUsage: Perkenalan Owner Xa - Userbot
+    \nUsage : Untuk Memberi Salam\
+    \n\n Cmd: `{cmd}naon`\
+    \nUsage: coba aja sendiri\
+    \n\n Cmd: `{cmd}ox`\
+    \nUsage: Perkenalan Owner Xa - Userbot."
 })
