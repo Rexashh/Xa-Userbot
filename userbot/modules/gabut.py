@@ -40,6 +40,7 @@ async def perkenalan(event):
     await event.edit("`Udah Gitu Aja :v`")
 # Perkenalan
 
+
 @Xa_cmd(pattern="ox(?: |$)(.*)")
 async def perkenalan(event):
     event.pattern_match.group(1)
@@ -102,8 +103,8 @@ CMD_HELP.update({
     \nUsage : Memperkenalkan Diri\
     \n\n Cmd : `{cmd}p`\
     \nUsage : Untuk Memberi Salam."
-    \n\n Cmd : `{cmd}naon`\
-    \nUsage : coba aja sendiri
-    \n\n Cmd : `{cmd}ox`\
-    \nUsage : Perkenalan Owner Xa-Userbot
+    \n\n Cmd: `{cmd}naon`
+    \nUsage: coba aja sendiri
+    \n\n Cmd: `{cmd}ox`
+    \nUsage: Perkenalan Owner Xa - Userbot
 })
