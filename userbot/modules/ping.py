@@ -13,8 +13,9 @@ import redis
 from datetime import datetime
 from speedtest import Speedtest
 from userbot import CMD_HELP, StartTime, ALIVE_NAME, CMD_HANDLER as cmd
-from userbot.events import register, DEVS
+from userbot.events import register
 from userbot.utils import edit_or_reply, Xa_cmd
+from userbot import DEVS
 
 absen = [
     "**Hadir ganteng** 🥵",
