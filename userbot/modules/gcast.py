@@ -22,6 +22,7 @@ GCAST_BLACKLIST = [
     -1001687155877,  # CilikSupport
     -1001683749664,  # XaSupport
     -1001473548283,  # Sharinguserbot
+    -1001795125065,  # Bagaskara
 ]
 
 
