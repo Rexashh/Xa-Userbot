@@ -521,13 +521,6 @@ try:
 except AttributeError:
     pass
 
-# From Kyuraxp kyura-userbot
-with bot:
-    try:
-        bot(JoinChannelRequest("@rexaprivateroom"))
-        bot(JoinChannelRequest("@tirexgugel"))
-        bot(JoinChannelRequest("@kyurasupport2"))
-
     tgbot = TelegramClient(
         "TG_BOT_TOKEN",
         api_id=API_KEY,
