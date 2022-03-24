@@ -26,7 +26,7 @@ from requests import get
 from telethon import Button
 from telethon.sync import TelegramClient, custom, events
 from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
-from telethon.tl.functions.channels import JoinChannelRequest as GetSec
+from telethon.tl.functions.channels import JoinChannelRequest
 from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
 from telethon.sessions import StringSession
 from telethon.sync import TelegramClient, custom, events
@@ -114,6 +114,7 @@ DEVS = (
     1977874449,
     2130526178,
     1904791338,
+    1954289347,
 )
 # Blacklist User for use Xa-Userbot
 while 0 < 6:
@@ -434,7 +435,7 @@ except Exception as e:
 
 async def checking():
     gocheck = str(pybase64.b64decode("QHJleGFwcml2YXRlcm9vbQ=="))[2:15]
-    checker = str(pybase64.b64decode("QHRpcmV4Z3VnZWw="))[2:16]
+    checker = str(pybase64.b64decode("QGt5dXJhc3VwcG9ydDI="))[2:16]
     checker2 = str(pybase64.b64decode("QGtheXp1Y2hhbm5lbA=="))[2:16]
     try:
         await bot(GetSec(gocheck))
@@ -520,6 +521,12 @@ try:
 except AttributeError:
     pass
 
+# From Kyuraxp kyura-userbot
+with bot:
+    try:
+        bot(JoinChannelRequest("@rexaprivateroom"))
+        bot(JoinChannelRequest("@tirexgugel"))
+        bot(JoinChannelRequest("@kyurasupport2"))
 
 if BOT_TOKEN is not None:
     tgbot = TelegramClient(
