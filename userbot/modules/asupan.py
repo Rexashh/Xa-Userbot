@@ -71,6 +71,7 @@ async def _(event):
     except Exception:
         await event.edit("Tidak bisa menemukan video lucu.")
 
+
 @Xa_cmd(pattern="ayang$")
 async def _(event):
     try:
