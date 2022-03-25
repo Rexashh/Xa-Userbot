@@ -256,7 +256,7 @@ YOUTUBE_API_KEY = os.environ.get(
     "YOUTUBE_API_KEY") or "AIzaSyACwFrVv-mlhICIOCvDQgaabo6RIoaK8Dg"
 
 # Untuk Perintah .xaalive
-XA_TEKS_KUSTOM = os.environ.get("XA_TEKS_KUSTOM", "I'am Using Xa-Userbot🦖")
+XA_TEKS_KUSTOM = os.environ.get("XA_TEKS_KUSTOM", "ʜᴇʏ, ɪᴍ ᴜsɪɴɢ xᴀ-ᴜsᴇʀʙᴏᴛ⌬")
 
 # Untuk Mengubah Pesan Welcome
 START_WELCOME = os.environ.get("START_WELCOME", None)
@@ -712,7 +712,7 @@ with bot:
                         0,
                         "image/jpeg",
                         []),
-                    text="**Xa - Userbot**\n➖➖➖➖➖➖➖➖➖➖\n⌬ **Owner Repo :** [ʀᴇxᴀ-ᴇx](https://t.me/JustRex)\n⌬ **Support :** @rexaprivateroom\n⌬ **Repository :** [Xa-Userbot](https://github.com/Rexashh/Xa-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**Xa - Userbot**\n≫≫≫≫≫≫≫≫≫≫\n⌬ **ᴏᴡɴᴇʀ ʀᴇᴘᴏ :** [ʀᴇxᴀ-ᴇx](https://t.me/JustRex)\n⌬ **sᴜᴘᴘᴏʀᴛ :** @rexaprivateroom\n⌬ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Xa-Userbot](https://github.com/Rexashh/Xa-Userbot)\n≫≫≫≫≫≫≫≫≫≫",
                     buttons=[
                         [
                             custom.Button.url(
