@@ -85,7 +85,7 @@ async def _(event):
         await event.client.send_file(
             event.chat_id,
             file=random.choice(ayangnya),
-            caption=f** Ayang nya **[{owner}](tg://user?id={aing.id})",
+            caption=f ** Ayang nya ** [{owner}](tg: // user?id={aing.id})",
 
         await event.delete()
     except Exception:
