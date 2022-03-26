@@ -78,7 +78,7 @@ async def _(event):
         ayangnya = [
             ayang
             async for ayang in event.client.iter_messages(
-                "@IndomieGantengV2", filter=InputMessagesFilterPhotos
+                "@CeweLogoPack", filter=InputMessagesFilterPhotos
             )
         ]
         aku = await event.client.get_me()
