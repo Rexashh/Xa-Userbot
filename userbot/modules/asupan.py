@@ -83,7 +83,7 @@ async def _(event):
                 "@CeweLogoPack", filter=InputMessagesFilterPhotos
             )
         ]
-        aku = await event.client.get_me()
+        await event.client.get_me()
         await event.client.send_file(
             event.chat_id,
             file=random.choice(ayangnya),
