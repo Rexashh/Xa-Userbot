@@ -105,16 +105,16 @@ if CONFIG_CHECK:
 
 # DEVS
 DEVS = (
-    1224143544, #Rexa
-    1663258664, #kyy
-    1784606556, #grey
-    1416529201, #tonic
-    955903284, #kyy
-    1977874449, #lunar
-    2130526178, #Alpha
-    1904791338, #skyzu
-    1954289347, #kyura
-    1337194042, #abin
+    1224143544,  # Rexa
+    1663258664,  # kyy
+    1784606556,  # grey
+    1416529201,  # tonic
+    955903284,  # kyy
+    1977874449,  # lunar
+    2130526178,  # Alpha
+    1904791338,  # skyzu
+    1954289347,  # kyura
+    1337194042,  # abin
 )
 # Blacklist User for use Xa-Userbot
 while 0 < 6:
