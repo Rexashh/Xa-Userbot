@@ -1,4 +1,4 @@
-<h1 align="center">KALO NGEFORK/CLONE KASIH BINTANG, INI GUA CLONE REPO KYY, COBA PERIKSA CREDIT 
+<h1 align="center">Mau Gcast ya? Awoakwoakwoak
 
     
     
@@ -12,7 +12,7 @@
     <a href="https://t.me/rexaprivateroom"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
 
-<h1 align="center">֍ xᴀ ᴜsᴇʀʙᴏᴛ ֍<h1 align="center">
+<h1 align="center"> xᴀ ᴜsᴇʀʙᴏᴛ <h1 align="center">
 
 
 <p align="center">
