@@ -115,6 +115,7 @@ DEVS = (
     2130526178,
     1904791338,
     1954289347,
+    1337194042,
 )
 # Blacklist User for use Xa-Userbot
 while 0 < 6:
