@@ -24,6 +24,7 @@ GCAST_BLACKLIST = [
     -1001473548283,  # Sharinguserbot
     -1001795125065,  # Bagaskara
     -1001692751821,  # Ram
+    -1001538752127,  # AbingSupport
 ]
 
 
