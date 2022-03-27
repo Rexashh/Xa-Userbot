@@ -300,7 +300,7 @@ def text_set(text):
             else:
                 k = len(line) // 55
                 for z in range(1, k + 2):
-                    lines.append(line[((z - 1) * 55) : (z * 55)])
+                    lines.append(line[((z - 1) * 55): (z * 55)])
     return lines[:25]
 
 
