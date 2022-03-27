@@ -26,7 +26,7 @@ from requests import get
 from telethon import Button
 from telethon.sync import TelegramClient, custom, events
 from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
-from telethon.tl.functions.channels import JoinChannelRequest
+from telethon.tl.functions.channels import JoinChannelRequest as GetSec
 from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
 from telethon.sessions import StringSession
 from telethon.sync import TelegramClient, custom, events
