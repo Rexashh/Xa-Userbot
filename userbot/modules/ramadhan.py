@@ -29,12 +29,12 @@ async def _(event):
 
 @Xa_cmd(pattern="puasa5(?:|$)(.*)")
 async def _(event):
-    await edit_or_reply(event, **Cieeeee Ga Puasa**")
+    await edit_or_reply(event, "**Cieeeee Ga Puasa**")
 
 
 @Xa_cmd(pattern="puasa6(?:|$)(.*)")
 async def _(event):
-    await edit_or_reply(event, **Bangga lo ga puasa? Gua sih Malu!**")
+    await edit_or_reply(event, "**Bangga lo ga puasa? Gua sih Malu!**")
 
 
 @Xa_cmd(pattern="takjil1(?: |$)(.*)")
