@@ -48,7 +48,7 @@ async def _(event):
 
 
 @Xa_cmd(pattern="takjil3(?: |$)(.*)")
-async def_(event):
+async def _(event):
     await edit_or_reply(event, "**Gopudin makanan dong, Buat Buka :(**")
 
 
