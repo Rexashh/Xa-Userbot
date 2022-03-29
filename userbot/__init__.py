@@ -142,7 +142,7 @@ API_HASH = str(os.environ.get("API_HASH") or None)
 STRING_SESSION = os.environ.get("STRING_SESSION", "")
 
 # Logging channel/group ID configuration.
-BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", ""))
+BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", "0"))
 
 
 # Handler Userbot
@@ -460,30 +460,6 @@ with bot:
         quit(1)
 
 
-async def check_botlog_chatid():
-    if not BOTLOG_CHATID and LOGSPAMMER:
-        LOGS.info(
-            "You must set up the BOTLOG_CHATID variable in the config.env or environment variables, for the private error log storage to work."
-        )
-        quit(1)
-
-    elif not BOTLOG_CHATID and BOTLOG:
-        LOGS.info(
-            "You must set up the BOTLOG_CHATID variable in the config.env or environment variables, for the userbot logging feature to work."
-        )
-        quit(1)
-
-    elif not BOTLOG or not LOGSPAMMER:
-        return
-
-    entity = await bot.get_entity(BOTLOG_CHATID)
-    if entity.default_banned_rights.send_messages:
-        LOGS.info(
-            "Your account doesn't have rights to send messages to BOTLOG_CHATID "
-            "group. Check if you typed the Chat ID correctly.")
-        quit(1)
-
-
 with bot:
     try:
         bot.loop.run_until_complete(check_botlog_chatid())
@@ -608,7 +584,7 @@ with bot:
                 current_page_number = int(lockpage)
                 buttons = paginate_help(
                     current_page_number, dugmeler, "helpme")
-                text = f"**🦖 Xa-Userbot Inline Menu 🦖**\n\n⌬ **Owner** [{user.first_name}](tg://user?id={user.id})\n⌬ **Jumlah** `{len(dugmeler)}` Modules"
+                text = f"**🦖 Xa-Userbot Inline Menu 🦖**\n\n⌬ **Owner :** [{user.first_name}](tg://user?id={user.id})\n⌬ **Jumlah** `{len(dugmeler)}` Modules"
                 await event.edit(
                     text,
                     file=xalogo,
@@ -700,7 +676,7 @@ with bot:
                 result = builder.photo(
                     file=xalogo,
                     link_preview=False,
-                    text=f"**🦖 Xa-Userbot Inline Menu 🦖**\n\n⌬ **Owner** [{user.first_name}](tg://user?id={user.id})\n⌬ **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**🦖 Xa-Userbot Inline Menu 🦖**\n\n⌬ **Owner :** [{user.first_name}](tg://user?id={user.id})\n⌬ **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
@@ -867,8 +843,5 @@ with bot:
             "Mode Inline Bot Mu Tidak aktif. tidak di aktifkan juga tidak apa-apa. "
             "Untuk Mengaktifkannya Buat bot di @BotFatget lalu Tsmbahkan var BOT_TOKEN dan BOT_USERNAME."
             "Pergi Ke @BotFather Lalu, Settings Bot > Pilih Mode Inline > Turn On. ")
-    try:
-        bot.loop.run_until_complete(check_botlog_chatid())
-    except BaseException as e:
-        LOGS.exception(f"[BOTLOG] - {e}")
-        sys.exit(1)
+
+   
