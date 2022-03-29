@@ -10,19 +10,20 @@ from importlib import import_module
 
 import requests
 from telethon.tl.functions.channels import InviteToChannelRequest as Addbot
-
 from userbot import (
     BOTLOG_CHATID,
     BOT_USERNAME,
     BOT_TOKEN,
     BOT_VER,
+    ALIVE_LOGO,
     LOGS,
     kyyblacklist,
     bot,
     call_py,
 )
+from userbot import CMD_HANDLER as cmd
 from userbot.modules import ALL_MODULES
-from userbot.utils import autobot
+from userbot.utils import autobot, autopilot
 
 try:
     bot.start()
@@ -43,7 +44,12 @@ except Exception as e:
 for module_name in ALL_MODULES:
     imported_module = import_module("userbot.modules." + module_name)
 
-# bot.loop.run_until_complete(checking())
+if not BOTLOG_CHATID:
+    LOGS.info(
+        "BOTLOG_CHATID Vars tidak terisi, Memulai Membuat Grup Otomatis..."
+    )
+    bot.loop.run_until_complete(autopilot())
+
 LOGS.info(
     f"Jika {user.first_name} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/rexaprivateroom")
 LOGS.info(
@@ -53,7 +59,7 @@ LOGS.info(
 async def check_alive():
     try:
         if BOTLOG_CHATID != 0:
-            await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"🦖 **Xa Userbot Has Been Actived**!!\n━━━━━━━━━━━━━━━\n⌬ **Userbot Version** - 8.1@Xa-Userbot\n━━━━━━━━━━━━━━━\n⌬ **Powered By:** @tirexgugel ")
+            await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"🦖**Xa Userbot Berhasil Diaktifkan**!!\n━━━━━━━━━━━━━━━\n➠ **Userbot Version** - `8.1@Xa-Userbot`\n➠ **Ketik** `{cmd}ping` **Untuk Mengecheck Bot**\n━━━━━━━━━━━━━━━\n➠ **Powered By:** @tirexgugel ")
     except Exception as e:
         LOGS.info(str(e))
     try:
@@ -64,7 +70,7 @@ async def check_alive():
 bot.loop.run_until_complete(check_alive())
 if not BOT_TOKEN:
     LOGS.info(
-        "BOT_TOKEN Vars Gaada njir, Bentar Lagi Bikinin BOT Otomatis di @Botfather..."
+        "BOT_TOKEN Vars tidak terisi, Memulai Membuat BOT Otomatis di @Botfather..."
     )
     bot.loop.run_until_complete(autobot())
 
