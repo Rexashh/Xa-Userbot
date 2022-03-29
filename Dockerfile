@@ -1,11 +1,14 @@
 # Using Python Slim-Buster
 FROM kyyex/kyy-userbot:busterv2
-#━━━━━ Userbot Telegram ━━━━━
-#━━━━━ By Kyy-Userbot ━━━━━━
+#━━━━━ XaUserbot ━━━━━
 
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install ffmpeg -y
-RUN git clone -b Xa-Userbot https://github.com/Rexashh/Xa-Userbot /root/userbot
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash - && \
+    apt-get install -y nodejs && \
+    npm i -g npm
+    
+RUN git clone -b AbingxUserbot https://github.com/Rexashh/Xa-Userbot /root/userbot
 RUN mkdir /root/userbot/.bin
 RUN pip install --upgrade pip setuptools
 WORKDIR /root/userbot
