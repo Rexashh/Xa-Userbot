@@ -843,5 +843,3 @@ with bot:
             "Mode Inline Bot Mu Tidak aktif. tidak di aktifkan juga tidak apa-apa. "
             "Untuk Mengaktifkannya Buat bot di @BotFatget lalu Tsmbahkan var BOT_TOKEN dan BOT_USERNAME."
             "Pergi Ke @BotFather Lalu, Settings Bot > Pilih Mode Inline > Turn On. ")
-
-   
