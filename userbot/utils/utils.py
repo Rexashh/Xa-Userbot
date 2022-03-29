@@ -1,3 +1,8 @@
+# Credits: @mrismanaziz
+# FROM Man-Userbot <https://github.com/mrismanaziz/Man-Userbot>
+# t.me/SharingUserbot & t.me/Lunatic0de
+# Ported By @sayaabing
+
 import asyncio
 import importlib
 import logging
@@ -7,7 +12,12 @@ from random import randint
 
 import heroku3
 from telethon.tl.functions.contacts import UnblockRequest
-
+from telethon.tl.functions.channels import (
+    CreateChannelRequest,
+)
+from telethon.tl.types import (
+    ChatAdminRights,
+)
 from userbot import (
     BOT_TOKEN,
     BOTLOG_CHATID,
@@ -32,14 +42,14 @@ async def autobot():
         return
     await bot.start()
     await bot.send_message(
-        BOTLOG_CHATID, "➕ **Sedang Membuat Bot Di @BotFather Harap Tunggu Beberapa Detik!**"
+        BOTLOG_CHATID, "**SEDANG MEMBUAT BOT TELEGRAM UNTUK ANDA DI @BotFather**"
     )
     who = await bot.get_me()
     name = who.first_name + " Assistant Bot"
     if who.username:
         username = who.username + "_ubot"
     else:
-        username = "Xa" + (str(who.id))[5:] + "ubot"
+        username = "xa" + (str(who.id))[5:] + "ubot"
     bf = "@BotFather"
     await bot(UnblockRequest(bf))
     await bot.send_message(bf, "/cancel")
@@ -49,9 +59,9 @@ async def autobot():
     await bot.send_message(bf, "/newbot")
     await asyncio.sleep(1)
     isdone = (await bot.get_messages(bf, limit=1))[0].text
-    if isdone.startswith("Itu tidak bisa saya lakukan."):
+    if isdone.startswith("That I cannot do."):
         LOGS.info(
-            "🚧 Silakan buat Bot dari @BotFather dan tambahkan tokennya di var BOT_TOKEN"
+            "Silakan buat Bot dari @BotFather dan tambahkan tokennya di var BOT_TOKEN"
         )
         sys.exit(1)
     await bot.send_message(bf, name)
@@ -72,30 +82,36 @@ async def autobot():
     await bot.send_read_acknowledge("botfather")
     if isdone.startswith("Sorry,"):
         ran = randint(1, 100)
-        username = "Xa" + (str(who.id))[6:] + str(ran) + "ubot"
+        username = "abing" + (str(who.id))[6:] + str(ran) + "ubot"
         await bot.send_message(bf, username)
         await asyncio.sleep(1)
         nowdone = (await bot.get_messages(bf, limit=1))[0].text
         if nowdone.startswith("Done!"):
             token = nowdone.split("`")[1]
+            await bot.send_message(bf, "/setinline")
+            await asyncio.sleep(1)
+            await bot.send_message(bf, f"@{username}")
+            await asyncio.sleep(1)
+            await bot.send_message(bf, "Search")
+            await asyncio.sleep(3)
             await bot.send_message(bf, "/setuserpic")
             await asyncio.sleep(1)
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
-            await bot.send_file(bf, "resources/extras/1646180477-picsa.jpg")
+            await bot.send_file(bf, "resources/extras/IMG_20220320_204738_835.jpg")
             await asyncio.sleep(3)
             await bot.send_message(bf, "/setabouttext")
             await asyncio.sleep(1)
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
-            await bot.send_message(bf, f"Managed With ☕️ By {who.first_name}")
+            await bot.send_message(bf, f"Managed With ❤️ By {who.first_name}")
             await asyncio.sleep(3)
             await bot.send_message(bf, "/setdescription")
             await asyncio.sleep(1)
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await bot.send_message(
-                bf, f"🦖 Owner ~ {who.first_name} 🦖\n\n🦖 Powered By ~ @rexaprivateroom 🦖"
+                bf, f"⚡️ Owner ~ {who.first_name} ⚡️\n\n⚡️ Powered By ~ @tirexgugel ⚡️"
             )
             await bot.send_message(
                 BOTLOG_CHATID,
@@ -109,29 +125,35 @@ async def autobot():
             heroku_var["BOT_USERNAME"] = f"@{username}"
         else:
             LOGS.info(
-                "🚧 Silakan Hapus Beberapa Bot Telegram Anda di @Botfather atau Set Var BOT_TOKEN dengan token bot"
+                "Silakan Hapus Beberapa Bot Telegram Anda di @Botfather atau Set Var BOT_TOKEN dengan token bot"
             )
             sys.exit(1)
     elif isdone.startswith("Done!"):
         token = isdone.split("`")[1]
+        await bot.send_message(bf, "/setinline")
+        await asyncio.sleep(1)
+        await bot.send_message(bf, f"@{username}")
+        await asyncio.sleep(1)
+        await bot.send_message(bf, "Search")
+        await asyncio.sleep(3)
         await bot.send_message(bf, "/setuserpic")
         await asyncio.sleep(1)
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
-        await bot.send_file(bf, "resources/extras/1646180477-picsa.jpg")
+        await bot.send_file(bf, "resources/extras/IMG_20220320_204738_835.jpg")
         await asyncio.sleep(3)
         await bot.send_message(bf, "/setabouttext")
         await asyncio.sleep(1)
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
-        await bot.send_message(bf, f"Managed With ☕️ By {who.first_name}")
+        await bot.send_message(bf, f"Managed With ❤️ By {who.first_name}")
         await asyncio.sleep(3)
         await bot.send_message(bf, "/setdescription")
         await asyncio.sleep(1)
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
         await bot.send_message(
-            bf, f"🔥 Owner ~ {who.first_name} 🦖\n\n🦖 Powered By ~ @rexaprivateroom 🦖"
+            bf, f"⚡️ Owner ~ {who.first_name} ⚡️\n\n⚡️ Powered By ~ @tirexgugel ⚡️"
         )
         await bot.send_message(
             BOTLOG_CHATID,
@@ -139,7 +161,7 @@ async def autobot():
         )
         await bot.send_message(
             BOTLOG_CHATID,
-            "**Tunggu Bentar ya, Heroku lu lagi di restart biar berubah kek sikap dia.**",
+            "**Tunggu Sebentar, Sedang MeRestart Heroku untuk Menerapkan Perubahan.**",
         )
         heroku_var["BOT_TOKEN"] = token
         heroku_var["BOT_USERNAME"] = f"@{username}"
@@ -216,6 +238,8 @@ def remove_plugin(shortname):
         raise ValueError
 
 
+# by Kyy-Userbot
+
 async def create_supergroup(group_name, client, botusername, descript):
     try:
         result = await client(
@@ -242,3 +266,50 @@ async def create_supergroup(group_name, client, botusername, descript):
     if not str(created_chat_id).startswith("-100"):
         created_chat_id = int("-100" + str(created_chat_id))
     return result, created_chat_id
+
+
+async def autopilot():
+    if BOTLOG_CHATID and str(BOTLOG_CHATID).startswith("-100"):
+        return
+    k = []  # To Refresh private ids
+    async for x in bot.iter_dialogs():
+        k.append(x.id)
+    if BOTLOG_CHATID:
+        try:
+            await bot.get_entity(int("BOTLOG_CHATID"))
+            return
+        except BaseException:
+            del heroku_var["BOTLOG_CHATID"]
+    try:
+        r = await bot(
+            CreateChannelRequest(
+                title="xa ʟᴏɢs",
+                about="ᴍʏ xᴀ ʟᴏɢs ɢʀᴏᴜᴘ\n\n Join @rexaprivateroom",
+                megagroup=True,
+            ),
+        )
+    except ChannelsTooMuchError:
+        LOGS.info(
+            "Terlalu banyak channel dan grup, hapus salah satu dan restart lagi"
+        )
+        exit(1)
+    except BaseException:
+        LOGS.info(
+            "Terjadi kesalahan, Buat sebuah grup lalu isi id nya di config var BOTLOG_CHATID."
+        )
+        exit(1)
+    chat_id = r.chats[0].id
+    if not str(chat_id).startswith("-100"):
+        heroku_var["BOTLOG_CHATID"] = "-100" + str(chat_id)
+    else:
+        heroku_var["BOTLOG_CHATID"] = str(chat_id)
+    rights = ChatAdminRights(
+        add_admins=True,
+        invite_users=True,
+        change_info=True,
+        ban_users=True,
+        delete_messages=True,
+        pin_messages=True,
+        anonymous=False,
+        manage_call=True,
+    )
