@@ -661,7 +661,7 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@KyyUserbot"):
+            if event.query.user_id == uid and query.startswith("@XaUserbot"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
                     file=xalogo,
