@@ -9,8 +9,7 @@ from userbot import CMD_HELP
 from userbot.utils import Xa_cmd
 
 from userbot import owner
-from telethon.tl.types import InputMessagesFilterVideo
-from telethon.tl.types import InputMessagesFilterPhotos
+
 
 @Xa_cmd(pattern="alquran$")
 async def _(event):
@@ -30,7 +29,8 @@ async def _(event):
         await event.delete()
     except Exception:
         await event.edit("Maaf, lagi ga ada suratnya .")
-        
+
+
 @Xa_cmd(pattern="sholawat$")
 async def _(event):
     try:
@@ -49,8 +49,8 @@ async def _(event):
         await event.delete()
     except Exception:
         await event.edit("Maaf, lagi ga ada suratnya .")
-        
-        
+
+
 @Xa_cmd(pattern="seger$")
 async def _(event):
     try:
