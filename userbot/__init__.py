@@ -667,7 +667,7 @@ with bot:
                     file=xalogo,
                     link_preview=False,
                     text=f"**🦖 Xa-Userbot Inline Menu 🦖**\n\n⌬ **Owner :** [{user.first_name}](tg://user?id={user.id})\n⌬ **Jumlah** `{len(dugmeler)}` Modules",
-                    buttons=main_help_button,
+                    buttons=button,
                 )
             elif query.startswith("repo"):
                 result = builder.article(
@@ -692,6 +692,7 @@ with bot:
                     ],
                     link_preview=False,
                 )
+           
             elif query.startswith("Inline buttons"):
                 markdown_note = query[14:]
                 prev = 0
@@ -726,15 +727,15 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="🦖 Xa-Userbot 🦖",
-                    description="Xa - Userbot | Telethon",
+                    title="⚡ xᴀυѕєявσт ⚡",
+                    description="Xa Userbot | Telethon",
                     url="https://t.me/tirexgugel",
                     thumb=InputWebDocument(
-                        INLINE_PIC,
+                        ALIVE_LOGO,
                         0,
                         "image/jpeg",
                         []),
-                    text=f"**Xa - Userbot**\n≻≻≻≻≻≻≻≻≻≻\n⌬ **Owner:** [{user.first_name}](tg://user?id={user.id})\n⌬ **Assistant:** {tgbotusername}\n≻≻≻≻≻≻≻≻≻≻\n**Updates:** @tirexgugel\n≻≻≻≻≻≻≻≻≻≻",
+                    text=f"**AbingxUserbot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✣ **ᴀssɪsᴛᴀɴᴛ:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs:** @AbingProject\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
@@ -765,7 +766,7 @@ with bot:
                 await event.edit(buttons=buttons)
             else:
                 reply_pop_up_alert = (
-                    f"Lu ga di izinin ya anjg, ini Userbot Milik {ALIVE_NAME}"
+                    f"Kamu Tidak diizinkan, ini Userbot Milik {owner}"
                 )
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
@@ -775,10 +776,10 @@ with bot:
                 openlagi = custom.Button.inline(
                     "• Re-Open Menu •", data="reopen")
                 await event.edit(
-                    "⚡ **Help Mode Button Ditutup!** ⚡", buttons=openlagi
+                    "⚜️ **ʜᴇʟᴘ ᴍᴏᴅᴇ ʙᴜᴛᴛᴏɴ ᴅɪᴛᴜᴛᴜᴘ!** ⚜️", buttons=openlagi
                 )
             else:
-                reply_pop_up_alert = f"Lu ga di Izinin ya anjg, ini Userbot Milik {owner}"
+                reply_pop_up_alert = f"Kamu Tidak diizinkan, ini Userbot Milik {owner}"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -794,7 +795,7 @@ with bot:
                     current_page_number - 1, dugmeler, "helpme")
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"Lu ga di Izinin ya anjg, ini Userbot Milik {owner}"
+                reply_pop_up_alert = f"Kamu Tidak diizinkan, ini Userbot Milik {owner}"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"ub_modul_(.*)")))
@@ -803,16 +804,17 @@ with bot:
                 modul_name = event.data_match.group(1).decode("UTF-8")
 
                 cmdhel = str(CMD_HELP[modul_name])
-                if len(cmdhel) > 150:
+                if len(cmdhel) > 950:
                     help_string = (
                         str(CMD_HELP[modul_name])
                         .replace("`", "")
-                        .replace("**", "")[:150]
+                        .replace("**", "")[:950]
                         + "..."
                         + "\n\nBaca Teks Berikutnya Ketik .help "
                         + modul_name
                         + " "
                     )
+
                 else:
                     help_string = (str(CMD_HELP[modul_name]).replace(
                         "`", "").replace("**", ""))
@@ -820,16 +822,19 @@ with bot:
                 reply_pop_up_alert = (
                     help_string
                     if help_string is not None
-                    else "{} No document has been written for module.".format(
+                    else "{} Tidak ada dokumen yang telah ditulis untuk modul.".format(
                         modul_name
                     )
                 )
+                await event.edit(
+                    reply_pop_up_alert, buttons=[Button.inline("Back", data="reopen")]
+                )
             else:
-                reply_pop_up_alert = f"⛔!WARNING!⛔ Jangan Dipake, Ini Userbot milik {owner}"
-            await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
+                reply_pop_up_alert = f"Kamu Tidak diizinkan, ini Userbot Milik {owner}"
+                await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     except BaseException:
         LOGS.info(
-            "Mode Inline Bot Mu Tidak aktif. tidak di aktifkan juga tidak apa-apa. "
-            "Untuk Mengaktifkannya Buat bot di @BotFatget lalu Tsmbahkan var BOT_TOKEN dan BOT_USERNAME."
-            "Pergi Ke @BotFather Lalu, Settings Bot > Pilih Mode Inline > Turn On. ")
+            "Help Mode Inline Bot Mu Tidak aktif. Tidak di aktifkan juga tidak apa-apa. "
+            "Untuk Mengaktifkannya Buat bot di @BotFather Lalu Tambahkan var BOT_TOKEN dan BOT_USERNAME. "
+            "Pergi Ke @BotFather lalu settings bot » Pilih mode inline » Turn On. ")
