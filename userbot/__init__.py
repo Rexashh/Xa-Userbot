@@ -663,11 +663,11 @@ with bot:
             query = event.text
             if event.query.user_id == uid and query.startswith("@XaUserbot"):
                 buttons = paginate_help(0, dugmeler, "helpme")
-                result = builder.photo(
+                result = await event.builder.photo(
                     file=xalogo,
                     link_preview=False,
-                    text=f"**🦖 Xa-Userbot Inline Menu 🦖**\n\n⌬ **Owner :** [{user.first_name}](tg://user?id={user.id})\n⌬ **Jumlah** `{len(dugmeler)}` Modules",
-                    buttons=button,
+                    text=f"**⚡ xᴀυѕєʀвᴏт ɪɴʟɪɴᴇ ᴍᴇɴᴜ ⚡**\n\n✣ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✣ **ᴊᴜᴍʟᴀʜ** `{len(dugmeler)}` **Modules**",
+                    buttons=buttons,
                 )
             elif query.startswith("repo"):
                 result = builder.article(
