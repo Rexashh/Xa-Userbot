@@ -9,6 +9,8 @@ from userbot import CMD_HELP
 from userbot.utils import Xa_cmd
 
 from userbot import owner
+from telethon.tl.types import InputMessagesFilterVideo
+from telethon.tl.types import InputMessagesFilterPhotos
 
 
 @Xa_cmd(pattern="alquran$")
