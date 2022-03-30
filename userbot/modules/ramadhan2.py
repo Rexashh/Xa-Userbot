@@ -10,6 +10,7 @@ from userbot.utils import Xa_cmd
 
 from userbot import owner
 from telethon.tl.types import InputMessagesFilterVoice
+from telethon.tl.types import InputMessagesFilterPhotos
 
 
 @Xa_cmd(pattern="alquran$")
@@ -58,7 +59,7 @@ async def _(event):
         segernya = [
             seger
             async for seger in event.client.iter_messages(
-                "@intinyabikinseger", filter=InputMessagesFilterPhoto
+                "@intinyabikinseger", filter=InputMessagesFilterPhotos
             )
         ]
         aing = await event.client.get_me()
