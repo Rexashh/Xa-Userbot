@@ -24,7 +24,7 @@ from userbot.utils import edit_or_reply, edit_delete, Xa_cmd
 
 user = bot.get_me()
 DEFAULTUSER = user.first_name
-CUSTOM_HELP_EMOJI = "🦖"
+CUSTOM_HELP_EMOJI = "✙"
 
 
 @Xa_cmd(pattern="help ?(.*)")
@@ -32,7 +32,7 @@ async def cmd_list(event):
     args = event.pattern_match.group(1).lower()
     if args:
         if args in CMD_HELP:
-            await edit_or_reply(event, f"**⌬ Commands available in {args} ⌬** \n\n" + str(CMD_HELP[args]) + "\n\n**⎊ @tirexgugel**")
+            await edit_or_reply(event, f"**✙ Commands available in {args} ✙** \n\n" + str(CMD_HELP[args]) + "\n\n**☞ @hiroshimabes**")
         else:
             await edit_delete(event, f"**Module** `{args}` **Tidak tersedia!**")
     else:
