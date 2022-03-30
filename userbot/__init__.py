@@ -299,7 +299,7 @@ INLINE_PIC = os.environ.get(
     "INLINE_PIC") or "https://telegra.ph/file/601763239d0bf2cf644af.jpg"
 
 # Default emoji help
-EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🦖"
+EMOJI_HELP = os.environ.get("EMOJI_HELP") or "✙"
 
 # °Xa-Userbot°
 OWNER_URL = os.environ.get("OWNER_URL") or "https://t.me/JustRex"
@@ -661,7 +661,7 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@XaUserbot"):
+            if event.query.user_id == uid and query.startswith("@KyyUserbot"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
                     file=xalogo,
