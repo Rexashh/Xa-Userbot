@@ -5,10 +5,10 @@
 
 from time import sleep
 from userbot import CMD_HELP, CMD_HANDLER as cmd
-from userbot.utils import Xa_cmd
+from userbot.utils import hiro_cmd
 
 
-@Xa_cmd(pattern="awibu(?: |$)(.*)")
+@hiro_cmd(pattern="awibu(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(2)
@@ -23,7 +23,7 @@ async def typewriter(typew):
     await typew.wdit("`(•‿•)`")
 
 
-@Xa_cmd(pattern="wisad(?: |$)(.*)")
+@hiro_cmd(pattern="wisad(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(2)
@@ -36,7 +36,7 @@ async def typewriter(typew):
     await typew.edit("`Karena itu Sangat Tidak Mungkin Terjadi...`")
 
 
-@Xa_cmd(pattern="jalnin(?: |$)(.*)")
+@hiro_cmd(pattern="jalnin(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(2)
@@ -55,7 +55,7 @@ async def typewriter(typew):
     await typew.edit("`Jalan Ninjaku!`")
 
 
-@Xa_cmd(pattern="kaku(?: |$)(.*)")
+@hiro_cmd(pattern="kaku(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(2)
@@ -75,7 +75,7 @@ async def typewriter(typew):
     sleep(3)
 
 
-@Xa_cmd(pattern="kiyomasa(?: |$)(.*)")
+@hiro_cmd(pattern="kiyomasa(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**OIIIII**")
@@ -89,7 +89,7 @@ async def typewriter(typew):
     await typew.edit("**BAKAAAAA!!**")
 
 
-@Xa_cmd(pattern="baka1(?: |$)(.*)")
+@hiro_cmd(pattern="baka1(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`BAKAAAA!!`")
@@ -101,7 +101,7 @@ async def typewriter(typew):
     await typew.edit("`BUKKOROSHITE YARUUU!!`")
 
 
-@Xa_cmd(pattern="wgbt(?: |$)(.*)")
+@hiro_cmd(pattern="wgbt(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`Konnichiwa!!`")
