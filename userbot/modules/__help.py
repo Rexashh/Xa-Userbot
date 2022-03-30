@@ -34,7 +34,7 @@ async def cmd_list(event):
         if args in CMD_HELP:
             await edit_or_reply(event, f"**⌬ Commands available in {args} ⌬** \n\n" + str(CMD_HELP[args]) + "\n\n**© @tirexgugel**")
         else:
-            await edit_delete(event, f"**Module** `{args}` **Tidak tersedia!**")
+            await edit_delete(event, f"**Module** `{args}` **Gak ada, Ngetik Yang bener!**")
     else:
         try:
             results = await bot.inline_query(  # pylint:disable=E0602
