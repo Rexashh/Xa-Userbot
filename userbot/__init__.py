@@ -667,7 +667,7 @@ with bot:
                     file=xalogo,
                     link_preview=False,
                     text=f"**🦖 Xa-Userbot Inline Menu 🦖**\n\n⌬ **Owner :** [{user.first_name}](tg://user?id={user.id})\n⌬ **Jumlah** `{len(dugmeler)}` Modules",
-                    buttons=buttons,
+                    buttons=main_help_button,
                 )
             elif query.startswith("repo"):
                 result = builder.article(
@@ -734,7 +734,7 @@ with bot:
                         0,
                         "image/jpeg",
                         []),
-                    text=f"**Xa - Userbot**\n➖➖➖➖➖➖➖➖➖➖\n⌬ **Owner:** [{user.first_name}](tg://user?id={user.id})\n⌬ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Updates:** @tirexgugel\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**Xa - Userbot**\n≻≻≻≻≻≻≻≻≻≻\n⌬ **Owner:** [{user.first_name}](tg://user?id={user.id})\n⌬ **Assistant:** {tgbotusername}\n≻≻≻≻≻≻≻≻≻≻\n**Updates:** @tirexgugel\n≻≻≻≻≻≻≻≻≻≻",
                     buttons=[
                         [
                             custom.Button.url(
