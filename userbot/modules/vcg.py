@@ -35,7 +35,7 @@ def vcmention(user):
     return f"[{full_name}](tg://user?id={user.id})"
 
 
-async def get_call(kyybot):
+async def get_call(xabot):
     Xa = await Xa.client(getchat(Xa.chat_id))
     await Xa.client(getvc(Xa.full_chat.call))
     return hehe.call
