@@ -72,7 +72,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             )
             return repo.__del__()
         await event.edit(
-            "`Heroku :` `Sedang MengUpdate`" "\n`Tunggu sekitar 5-7 Menit y bro`"
+            "`Heroku :` `Sedang MengUpdate`" "\n`Tunggu sekitar 5-10 Menit ya, maaf aga lama karena file besar`"
         )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -197,7 +197,7 @@ async def upstream(event):
 
     if changelog == "" and force_update is False:
         await event.edit(
-            f"\n🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖 Udah Versi Terbaru || Tunggu Update Terbaru Cok\n"
+            f"\n🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖 Udah Versi Terbaru || Tunggu Update Terbaru ya gaes\n"
         )
         await asyncio.sleep(15)
         await event.delete()
