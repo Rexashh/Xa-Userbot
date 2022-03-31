@@ -61,7 +61,7 @@ async def _(event):
         vidlucunya = [
             vidlucu
             async for vidlucu in event.client.iter_messages(
-                "@videolucuxauserbot", filter=InputMessagesFilterVoice
+                "@videolucuxauserbot", filter=InputMessagesFilterVideo
             )
         ]
         aing = await event.client.get_me()
