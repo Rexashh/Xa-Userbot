@@ -1,7 +1,7 @@
 # © @tofik_dn
 # ⚠️ Do not remove credits
 # recode by @greyyvbss
-# video lucu by @JustRex
+# video lucu & sad by @JustRex
 
 import random
 
@@ -84,16 +84,35 @@ async def _(event):
                 "@CeweLogoPack", filter=InputMessagesFilterPhotos
             )
         ]
-        await event.client.get_me()
+        aing = await event.client.get_me()
         await event.client.send_file(
             event.chat_id,
             file=random.choice(ayangnya),
-            caption=f"**Ayang by** [{owner}](tg://user?id={aing.id})",
+            caption=f"**Ayang nya** [{owner}](tg://user?id={aing.id})",
         )
         await event.delete()
     except Exception:
         await event.edit("**GA ADA YANG MAU SAMA LO, MAKANYA CAKEP!.**")
 
+
+@Xa_cmd(pattern="sadvid$")
+async def _(event):
+    try:
+        sadvidnya = [
+            sadvid
+            async for sadvid in event.client.iter_messages(
+                "@sadvideorexa", filter=InputMessagesFilterVideo
+            )
+        ]
+        aing = await event.client.get_me()
+        await event.client.send_file(
+            event.chat_id,
+            file=random.choice(sadvidnya),
+            caption=f"Jangan Terlalu Sedih ya kak [{owner}](tg://user?id={aing.id})",
+        )
+        await event.delete()
+    except Exception:
+        await event.edit("Maaf, kayaknya kamu ga pantes untuk sedih :) .")
 
 CMD_HELP.update(
     {
@@ -106,6 +125,8 @@ CMD_HELP.update(
         \n  ⌬  **𝙁𝙪𝙣𝙜𝙨𝙞 : **Untuk Mengirim video lucu secara random.\
         \n\n  •  **𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝 :** {cmd}ayang\
         \n  ⌬  **𝙁𝙪𝙣𝙜𝙨𝙞 : **Untuk Mendapatkan Ayang mu, hehe.\
+        \n\n  •  **𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝 :** {cmd}sadvid\
+        \n  ⌬  **𝙁𝙪𝙣𝙜𝙨𝙞 : **Untuk Melihat video sad random.\
 "
     }
 )
