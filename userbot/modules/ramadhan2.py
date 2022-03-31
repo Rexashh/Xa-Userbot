@@ -13,13 +13,13 @@ from telethon.tl.types import InputMessagesFilterVoice
 from telethon.tl.types import InputMessagesFilterPhotos
 
 
-@Xa_cmd(pattern="alquran$")
+@Xa_cmd(pattern="tobat$")
 async def _(event):
     try:
-        alqurannya = [
-            alquran
-            async for alquran in event.client.iter_messages(
-                "@alquranxauserbot", filter=InputMessagesFilterVoice
+        tobatnya = [
+            tobat
+            async for tobat in event.client.iter_messages(
+                "@tobatxa", filter=InputMessagesFilterVoice
             )
         ]
         aing = await event.client.get_me()
