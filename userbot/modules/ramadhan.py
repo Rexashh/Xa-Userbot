@@ -171,6 +171,22 @@ async def _(event):
 async def _(event):
     await edit_or_reply(event, "**Mau Bukber sama Ayang tapi ga punya**")
 
+
+@Xa_cmd(pattern="taraw1(?: |$)(.*)")
+async def _(event):
+    await edit_or_reply(event, "**TARAWEH GOBLOK!! JANGAN DITELE MULU**")
+
+
+@Xa_cmd(pattern="taraw2(?: |$)(.*)")
+async def _(event):
+    await edit_or_reply(event, "**CONTOH ORANG ORANG TOLOL YANG GA TARAWEH DEMI WAR DI TELE!**")
+
+
+@Xa_cmd(pattern="sholat(?: |$)(.*)")
+async def _(event):
+    await edit_or_reply(event, "**SHOLAT TOLOL! PERCUMA LO PUASA TAPI GA SHOLAT, NAHAN LAPER HAUS SIA SIA DOANG!! JANGAN MIKIRIN TELEGRAM TERUS, DI AKHIRAT GA BISA WAR SAMA MALAIKAT TOLOL!**")
+
+
 CMD_HELP.update(
     {
         "ramadhan": f"**Plugin : **`ramadhan`\
@@ -239,5 +255,11 @@ CMD_HELP.update(
         \n\n    **Perintah:** `{cmd}bukber4`\
         \n⌬    **Fungsi: **Ngajar Bukber.\
         \n\n    **Perintah:** `{cmd}puasasad`\
+        \n⌬    **Fungsi: **cobain aja ya.\
+        \n\n    **Perintah:** `{cmd}taraw1`\
+        \n⌬    **Fungsi: **ngebilangin orang taraweh.\
+        \n\n    **Perintah:** `{cmd}taraw2`\
+        \n⌬    **Fungsi: **cobain aja ya.\
+        \n\n    **Perintah:** `{cmd}sholat`\
         \n⌬    **Fungsi: **cobain aja ya."
     })
