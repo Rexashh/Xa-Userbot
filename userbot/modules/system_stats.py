@@ -270,9 +270,9 @@ async def amireallyalive(alive):
         f"⌬ 📂 ▫ `ᴍᴏᴅᴜʟᴇ    :`{len(modules)} \n"
     if ALIVE_LOGO:
         try:
-            logo = ALIVE_LOGO
+            logo=ALIVE_LOGO
             await alive.delete()
-            msg = await bot.send_file(alive.chat_id, logo, caption=output)
+            msg=await bot.send_file(alive.chat_id, logo, caption=output)
             await asyncio.sleep(200)
             await msg.delete()
         except BaseException:
@@ -288,9 +288,9 @@ async def amireallyalive(alive):
         await alive.delete()
 
 
-@Xa_cmd(pattern="(?:alive|on)\\s?(.)?")
+@ Xa_cmd(pattern="(?:alive|on)\\s?(.)?")
 async def redis(alive):
-    user = await bot.get_me()
+    user=await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     await alive.edit("__𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵.__")
     await alive.edit("__𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵..__")
@@ -301,7 +301,7 @@ async def redis(alive):
     await alive.edit("__𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵...__")
     await alive.edit("⚡")
     await asyncio.sleep(3)
-    output = (
+    output=(
         f"┏━━━━━━━🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖━━━ \n"
         f"┣  `Name     :` {DEFAULTUSER} \n"
         f"┣  `Username :` @{user.username} \n"
@@ -316,9 +316,9 @@ async def redis(alive):
         f"┗━━━━━━━━━━━━━━━━━━━━━")
     if ALIVE_LOGO:
         try:
-            logo = ALIVE_LOGO
+            logo=ALIVE_LOGO
             await alive.delete()
-            msg = await bot.send_file(alive.chat_id, logo, caption=output)
+            msg=await bot.send_file(alive.chat_id, logo, caption=output)
             await asyncio.sleep(500)
             await msg.delete()
         except BaseException:
@@ -334,23 +334,23 @@ async def redis(alive):
         await alive.delete()
 
 
-@Xa_cmd(pattern="aliveu")
+@ Xa_cmd(pattern="aliveu")
 async def amireallyaliveuser(username):
     """ For .aliveu command, change the username in the .alive command. """
-    message = username.text
-    output = ".aliveu [new username] tidak boleh kosong"
+    message=username.text
+    output=".aliveu [new username] tidak boleh kosong"
     if not (message == ".aliveu" and message[7:8] != " "):
-        newuser = message[8:]
+        newuser=message[8:]
         global DEFAULTUSER  # global statement
-        DEFAULTUSER = username
-        output = "Successfully changed user to " + newuser + "!"
+        DEFAULTUSER=username
+        output="Successfully changed user to " + newuser + "!"
     await username.edit("`" f"{output}" "`")
 
 
-@Xa_cmd(pattern="resetalive$")
+@ Xa_cmd(pattern="resetalive$")
 async def amireallyalivereset(ureset):
     global DEFAULTUSER  # global statement
-    DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
+    DEFAULTUSER=str(ALIVE_NAME) if ALIVE_NAME else uname().node
     await ureset.edit("`" "Successfully reset user for alive!" "`")
 
 
