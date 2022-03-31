@@ -230,14 +230,12 @@ async def amireallyalive(alive):
     output = (
         f" **⌬ɪᴍ ᴀʟɪᴠᴇ ғᴏʀ ʜᴇʟᴘɪɴɢ ʏᴏᴜ⌬** \n\n"
         f"\n__**{XA_TEKS_KUSTOM}**__\n\n\n"
-        f"╭⎉─────────────────⎉╮\n"
-        f"│⌬ `Name       :` {DEFAULTUSER} \n"
-        f"│⌬ `Username   :` @{user.username} \n"
-        f"│⌬ `Telethon   :` {version.__version__} \n"
-        f"│⌬ `Python     :` {python_version()} \n"
-        f"│⌬ `Bot Ver    :` {BOT_VER} \n"
-        f"│⌬ `Modules    :` {len(modules)} \n"
-        f"╰⎉─────────────────⎉╯\n"
+        f"⌬ `Name       :` {DEFAULTUSER} \n"
+        f"⌬ `Username   :` @{user.username} \n"
+        f"⌬ `Telethon   :` {version.__version__} \n"
+        f"⌬ `Python     :` {python_version()} \n"
+        f"⌬ `Bot Ver    :` {BOT_VER} \n"
+        f"⌬ `Modules    :` {len(modules)} \n"
         f"[ɢʀᴏᴜᴘꜱ](https://t.me/rexaprivateroom) | [ᴄʜᴀɴɴᴇʟ](https://t.me/tirexgugel) | [ᴏᴡɴᴇʀ](https://t.me/JustRex) | [ɢɪᴛʜᴜʙ](https://github.com/Rexashh/Xa-Userbot)")
     if ALIVE_LOGO:
         try:
@@ -264,19 +262,12 @@ async def amireallyalive(alive):
     await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"━━━━━━━━━━━━━━━━━━━━━ \n"
         f"⌬ 🤴 ▫ `ᴏᴡɴᴇʀ     :`[ʀᴇxᴀ](t.me/JustRex) \n"
-        f"━━━━━━━━━━━━━━━━━━━━━ \n"
         f"⌬ 🖥️ ▫ `sʏsᴛᴇᴍ    :`Ubuntu 20.10 \n"
-        f"━━━━━━━━━━━━━━━━━━━━━ \n"
         f"⌬ ⚙️ ▫ `ᴛᴇʟᴇᴛʜᴏɴ   :`v.{version.__version__} \n"
-        f"━━━━━━━━━━━━━━━━━━━━━ \n"
         f"⌬ 🐍 ▫ `ᴘʏᴛʜᴏɴ    :`v.{python_version()} \n"
-        f"━━━━━━━━━━━━━━━━━━━━━ \n"
         f"⌬ 👾 ▫ `ʙᴏᴛ       :`v.{BOT_VER} \n"
-        f"━━━━━━━━━━━━━━━━━━━━━ \n"
         f"⌬ 📂 ▫ `ᴍᴏᴅᴜʟᴇ    :`{len(modules)} \n"
-        f"━━━━━━━━━━━━━━━━━━━━━")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
