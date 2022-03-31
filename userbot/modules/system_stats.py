@@ -164,9 +164,9 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**⸙-**🦖Xa-Userbot🦖 Versi:** \n "
+            "**⌬-**🦖Xa-Userbot🦖 Versi:** \n "
             f"heads/Xa-Userbot-0-x634i7u1"
-            "\n**⸙-**Revisi:**\n "
+            "\n**⌬-**Revisi:**\n "
             f"{revout}"
         )
     else:
@@ -228,16 +228,16 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f" **🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖** \n\n"
+        f" **⌬ɪᴍ ᴀʟɪᴠᴇ ғᴏʀ ʜᴇʟᴘɪɴɢ ʏᴏᴜ⌬** \n\n"
         f"\n__**{XA_TEKS_KUSTOM}**__\n\n\n"
-        f"╭᪥ᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔ᪥╮\n"
-        f"⚚ `Name       :` {DEFAULTUSER} \n"
-        f"⚚ `Username   :` @{user.username} \n"
-        f"⚚ `Telethon   :` {version.__version__} \n"
-        f"⚚ `Python     :` {python_version()} \n"
-        f"⚚ `Bot Ver    :` {BOT_VER} \n"
-        f"⚚ `Modules    :` {len(modules)} \n"
-        f"╰֍ᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔ֍╯\n"
+        f"╭⎉─────────────────⎉╮\n"
+        f"│⌬ `Name       :` {DEFAULTUSER} \n"
+        f"│⌬ `Username   :` @{user.username} \n"
+        f"│⌬ `Telethon   :` {version.__version__} \n"
+        f"│⌬ `Python     :` {python_version()} \n"
+        f"│⌬ `Bot Ver    :` {BOT_VER} \n"
+        f"│⌬ `Modules    :` {len(modules)} \n"
+        f"╰⎉─────────────────⎉╯\n"
         f"[ɢʀᴏᴜᴘꜱ](https://t.me/rexaprivateroom) | [ᴄʜᴀɴɴᴇʟ](https://t.me/tirexgugel) | [ᴏᴡɴᴇʀ](https://t.me/JustRex) | [ɢɪᴛʜᴜʙ](https://github.com/Rexashh/Xa-Userbot)")
     if ALIVE_LOGO:
         try:
@@ -264,14 +264,19 @@ async def amireallyalive(alive):
     await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"●ᚒᚔᚔᚔᚔᚔᚔ᯽࿅༒࿅᯽ᚔᚔᚔᚔᚔᚔᚒ● \n"
-        f"⛥ 🤴 ◦ `ᴏᴡɴᴇʀ    :`[Xa](t.me/JustRex) \n"
-        f"⛥ 🖥️ ◦ `ꜱʏꜱᴛᴇᴍ   :`Ubuntu 20.10 \n"
-        f"⛥ ⚙️ ◦ `ᴛᴇʟᴇᴛʜᴏɴ :`v.{version.__version__} \n"
-        f"⛥ 🐍 ◦ `ᴘʏᴛʜᴏɴ   :`v.{python_version()} \n"
-        f"⛥ 👾 ◦ `ʙᴏᴛ      :`v.{BOT_VER} \n"
-        f"⛥ 📂 ◦ `ᴍᴏᴅᴜʟᴇ   :`{len(modules)} \n"
-        f"●ᚒᚔᚔᚔᚔᚔᚔ֍࿅⛤࿅֍ᚔᚔᚔᚔᚔᚔᚒ●")
+        f"━━━━━━━━━━━━━━━━━━━━━ \n"
+        f"⌬ 🤴 ▫ `ᴏᴡɴᴇʀ     :`[ʀᴇxᴀ](t.me/JustRex) \n"
+        f"━━━━━━━━━━━━━━━━━━━━━ \n"
+        f"⌬ 🖥️ ▫ `sʏsᴛᴇᴍ    :`Ubuntu 20.10 \n"
+        f"━━━━━━━━━━━━━━━━━━━━━ \n"
+        f"⌬ ⚙️ ▫ `ᴛᴇʟᴇᴛʜᴏɴ   :`v.{version.__version__} \n"
+        f"━━━━━━━━━━━━━━━━━━━━━ \n"
+        f"⌬ 🐍 ▫ `ᴘʏᴛʜᴏɴ    :`v.{python_version()} \n"
+        f"━━━━━━━━━━━━━━━━━━━━━ \n"
+        f"⌬ 👾 ▫ `ʙᴏᴛ       :`v.{BOT_VER} \n"
+        f"━━━━━━━━━━━━━━━━━━━━━ \n"
+        f"⌬ 📂 ▫ `ᴍᴏᴅᴜʟᴇ    :`{len(modules)} \n"
+        f"━━━━━━━━━━━━━━━━━━━━━")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -304,20 +309,20 @@ async def redis(alive):
     await alive.edit("__𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵..__")
     await alive.edit("__𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵...__")
     await alive.edit("⚡")
-    await asyncio.sleep(2)
+    await asyncio.sleep(3)
     output = (
-        f"╔═══════🦖𝗫𝗔-𝗨𝗦𝗘𝗥𝗕𝗢𝗧🦖════ \n"
-        f"╠  `Name     :` {DEFAULTUSER} \n"
-        f"╠  `Username :` @{user.username} \n"
-        f"╠  `Telethon :` Ver {version.__version__} \n"
-        f"╠  `Python   :` Ver {python_version()} \n"
-        f"╠  `Branch   :` {UPSTREAM_REPO_BRANCH} \n"
-        f"╠  `Bot Ver  :` {BOT_VER} \n"
-        f"╠  `Modules  :` {len(modules)} Modules \n"
-        f"╠  `GitHub   :` [Xa-Userbot](https://github.com/Rexashh/Xa-Userbot) \n"
-        f"╠  `Support  :` [Groups](https://t.me/rexaprivateroom) \n"
-        f"╠  `Owner    :` [ʀᴇxᴧ-ᴇx](https://t.me/JustRex) \n"
-        f"╚══════════════════════")
+        f"┏━━━━━━━🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖━━━ \n"
+        f"┣  `Name     :` {DEFAULTUSER} \n"
+        f"┣  `Username :` @{user.username} \n"
+        f"┣  `Telethon :` Ver {version.__version__} \n"
+        f"┣  `Python   :` Ver {python_version()} \n"
+        f"┣  `Branch   :` {UPSTREAM_REPO_BRANCH} \n"
+        f"┣  `Bot Ver  :` {BOT_VER} \n"
+        f"┣  `Modules  :` {len(modules)} Modules \n"
+        f"┣  `GitHub   :` [xᴀ-ᴜsᴇʀʙᴏᴛ](https://github.com/Rexashh/Xa-Userbot) \n"
+        f"┣  `Support  :` [ɢʀᴏᴜᴘ](https://t.me/rexaprivateroom) \n"
+        f"┣  `Owner    :` [ʀᴇxᴧ-ᴇx](https://t.me/JustRex) \n"
+        f"┗━━━━━━━━━━━━━━━━━━━━━")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
