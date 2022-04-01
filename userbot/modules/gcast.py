@@ -25,6 +25,7 @@ GCAST_BLACKLIST = [
     -1001795125065,  # Bagaskara
     -1001692751821,  # Ram
     -1001538752127,  # AbingSupport
+    -1001489233533,  # Rumahnya kitaro
 ]
 
 
