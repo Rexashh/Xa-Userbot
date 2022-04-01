@@ -84,8 +84,8 @@ async def project_xa(wannasee):
         f"⌬ **xᴀ ᴍᴜsɪᴄ       :** [ᴋʟɪᴋ ᴅɪsɪɴɪ](https://t.me/xamusicrobot)\n"
         f"⌬ **ʜɪᴋᴀʀɪ ʀᴏʙᴏᴛ    :** [ᴋʟɪᴋ ᴅɪsɪɴɪ](https://t.me/HikariManageRobot)\n"
         f"⌬ **xᴀ sᴛʀɪɴɢ ʀᴏʙᴏᴛ :** [ᴋʟɪᴋ ᴅɪsɪɴɪ](https://t.me/xastringrobot)\n"
-        f"sᴇᴍᴜᴀ ʙᴏᴛ sᴇʟᴀʟᴜ sᴀʏᴀ ᴜᴘᴅᴀᴛᴇ"\n"
-        f"ᴘᴇʀɪᴋsᴀ ᴄʜᴀɴɴᴇʟ :** [xᴀ ᴘʀᴏᴊᴇᴄᴛ](https://t.me/tirexgugel)")
+        f"⌬ **sᴇᴍᴜᴀ ʙᴏᴛ sᴇʟᴀʟᴜ sᴀʏᴀ ᴜᴘᴅᴀᴛᴇ\n"
+        f"⌬ **ᴘᴇʀɪᴋsᴀ ᴄʜᴀɴɴᴇʟ :** [xᴀ ᴘʀᴏᴊᴇᴄᴛ](https://t.me/tirexgugel)")
 
 
 @Xa_cmd(pattern="xabio(?: |$)(.*)")
