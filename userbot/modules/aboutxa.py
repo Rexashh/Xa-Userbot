@@ -69,10 +69,9 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("**Repo Music yang pertama kali gua pake itu levina**")
     sleep(1)
-    await typew.edit( gitu aja sih makasih wkwkwk**")
-    
-    
-    
+    await typew.edit(gitu aja sih makasih wkwkwk **")
+
+
 @Xa_cmd(pattern="xaintro3(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -87,8 +86,8 @@ async def project_xa(wannasee):
         f"⌬ **xᴀ sᴛʀɪɴɢ ʀᴏʙᴏᴛ :** [ᴋʟɪᴋ ᴅɪsɪɴɪ](https://t.me/xastringrobot)\n"
         f"sᴇᴍᴜᴀ ʙᴏᴛ sᴇʟᴀʟᴜ sᴀʏᴀ ᴜᴘᴅᴀᴛᴇ"\n"
         f"ᴘᴇʀɪᴋsᴀ ᴄʜᴀɴɴᴇʟ :** [xᴀ ᴘʀᴏᴊᴇᴄᴛ](https://t.me/tirexgugel)")
-        
-       
+
+
 @Xa_cmd(pattern="xabio(?: |$)(.*)")
 async def bio_xa(bioxa):
     await bioxa.edit(
@@ -100,8 +99,8 @@ async def bio_xa(bioxa):
         f"🎵 **Telegram     :**[Klik Disini](https://t.me/JustRex)\n"
         f"👨‍🚀 **Tiktok       :**[Klik Disini](https://vt.tiktok.com/ZSd2tSP21/)\n"
         f"Untuk lebih jelasnya tanya aja sendiri")
-        
-               
+
+
 CMD_HELP.update(
     {
         "aboutxa": f"**Plugin : **`aboutxa`\
@@ -109,9 +108,9 @@ CMD_HELP.update(
         \n⌬    **Fungsi : **Perkenalan tentang owner Xa-Userbot.\
         \n\n    **Perintah :** `{cmd}xaintro2`\
         \n⌬    **Fungsi : **Perkenalan tentang owner Xa-Userbot 2.\
-        \n\n    **Perintah :** `{cmd}xaintro3`\   
-        \n⌬    **Fungsi : **Perkenalan Tentang Owner Xa-Userbot 3.\
-        \n\n    **Perintah :**`{cmd}xaproject`\
-        \n⌬    **Fungsi : **Semua Tentang Project Bot Xa.\
-        \n\n    **Perintah :**`{cmd}xabio`\
-        \n⌬    **Fungsi : **Biodata Owner Xa-Userbot."
+n\n    **Perintah : ** `{cmd}xaintro3`
+        \n⌬ ** Fungsi: **Perkenalan Tentang Owner Xa - Userbot 3.
+        \n\n ** Perintah: **`{cmd}xaproject`
+        \n⌬ ** Fungsi: **Semua Tentang Project Bot Xa.
+        \n\n ** Perintah: **`{cmd}xabio`
+        \n⌬ ** Fungsi: **Biodata Owner Xa - Userbot."
