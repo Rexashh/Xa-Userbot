@@ -113,5 +113,5 @@ CMD_HELP.update(
         \n\n    **Perintah :** `{cmd}xaproject`\
         \n⌬    **Fungsi : **Semua Tentang Project Bot Xa.\
         \n\n    **Perintah :** `{cmd}xabio`\
-        \n⌬    **Fungsi : **Biodata Owner Xa - Userbot."\
+        \n⌬    **Fungsi : **Biodata Owner Xa - Userbot."
     })
