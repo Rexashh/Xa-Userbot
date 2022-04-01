@@ -12,7 +12,7 @@ async def typewriter(typew):
     sleep(1.5)
     await typew.edit("**TERIMAKASIH YANG SUDAH MENGGUNAKAN XA-USERBOT**")
     sleep(2)
-    await typew.edit("**Maaf Jika buatan Saya tidak sebagus yang lain **")
+    await typew.edit("**Maaf Jika buatan Saya tidak sebagus yang lain**")
     sleep(2)
     await typew.edit("**Tapi Saya Berusaha Untuk membuat kalian nyamam dengan buatan saya**")
     sleep(2)
@@ -26,7 +26,7 @@ async def typewriter(typew):
     sleep(1.5)
     await typew.edit("**Udah gitu aja sih**")
     sleep(1.5)
-    await typew.edit("**Lanjut ke Perintah yang lain yakk, **")
+    await typew.edit("**Lanjut ke Perintah yang lain yakk,**")
     sleep(1.5)
     await typew.edit("**Terimakasih**")
 
@@ -114,3 +114,4 @@ CMD_HELP.update(
         \n⌬    **Fungsi : **Semua Tentang Project Bot Xa.\
         \n\n    **Perintah :** `{cmd}xabio`\
         \n⌬    **Fungsi : **Biodata Owner Xa - Userbot."\
+    })
