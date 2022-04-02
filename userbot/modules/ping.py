@@ -33,6 +33,14 @@ pacar = [
     "**Saya Hadir Untuk Melindungi Cewe Dari Laki Laki Sangean** 😎",
 ]
 
+xaown = [
+    "**Ada apa bang rexa?** 😎 ",
+    "**Asikkk dipanggil bang rexa 😚**",
+    "**Kapan lagi dipanggil sama Rexa hehe**",
+    "**Halo bang apa kabar?** 😁",
+    "**Bang Rexa ganteng bgt anjg** 😘",
+]
+
 
 async def get_readable_time(seconds: int) -> str:
     count = 0
@@ -69,6 +77,11 @@ async def _(Xa):
 @register(incoming=True, from_users=1224143544, pattern=r"^.Xa$")
 async def _(Xa):
     await Xa.reply(random.choice(pacar))
+
+
+@register(incoming=True, from_users=1224143544, pattern=r"^.hifans$")
+async def _(Xa):
+    await Xa.reply(random.choice(xaown))
 
 
 @Xa_cmd(pattern="sping$")
