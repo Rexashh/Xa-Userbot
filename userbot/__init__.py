@@ -299,7 +299,7 @@ INLINE_PIC = os.environ.get(
     "INLINE_PIC") or "https://telegra.ph/file/601763239d0bf2cf644af.jpg"
 
 # Default emoji help
-EMOJI_HELP = os.environ.get("EMOJI_HELP") or "✙"
+EMOJI_HELP = os.environ.get("EMOJI_HELP") or "⚡"
 
 # °Xa-Userbot°
 OWNER_URL = os.environ.get("OWNER_URL") or "https://t.me/JustRex"
@@ -666,7 +666,7 @@ with bot:
                 result = await event.builder.photo(
                     file=xalogo,
                     link_preview=False,
-                    text=f"**⚡ xᴀυѕєʀвᴏт ɪɴʟɪɴᴇ ᴍᴇɴᴜ ⚡**\n\n✣ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✣ **ᴊᴜᴍʟᴀʜ** `{len(dugmeler)}` **Modules**",
+                    text=f"**⚡ xᴀυѕєʀвᴏт ɪɴʟɪɴᴇ ᴍᴇɴᴜ ⚡**\n\n⌬ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n⌬ **ᴊᴜᴍʟᴀʜ** `{len(dugmeler)}` **Modules**",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
@@ -735,7 +735,7 @@ with bot:
                         0,
                         "image/jpeg",
                         []),
-                    text=f"**XaUserbot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✣ **ᴀssɪsᴛᴀɴᴛ:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs:** @JustRex\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**XaUserbot**\n➖➖➖➖➖➖➖➖➖➖\n⌬ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n⌬ **ᴀssɪsᴛᴀɴᴛ:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs:** @tirexgugel\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
@@ -776,7 +776,7 @@ with bot:
                 openlagi = custom.Button.inline(
                     "• Re-Open Menu •", data="reopen")
                 await event.edit(
-                    "⚜️ **ʜᴇʟᴘ ᴍᴏᴅᴇ ʙᴜᴛᴛᴏɴ ᴅɪᴛᴜᴛᴜᴘ!** ⚜️", buttons=openlagi
+                    "⚡ **ʜᴇʟᴘ ᴍᴏᴅᴇ ʙᴜᴛᴛᴏɴ ᴅɪᴛᴜᴛᴜᴘ!** ⚡", buttons=openlagi
                 )
             else:
                 reply_pop_up_alert = f"Kamu Tidak diizinkan, ini Userbot Milik {owner}"
