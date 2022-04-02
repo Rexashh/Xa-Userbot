@@ -32,7 +32,7 @@ async def _(event):
         await event.edit("Setannya lagi ga ada.")
 
 
-@Xa_cmd(pattern="alquran$")
+@Xa_cmd(pattern="ngaji$")
 async def _(event):
     try:
         alqurannya = [
@@ -54,11 +54,10 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "ramadhan3": f"**Plugin : **ramadhan3\
-        \n\n  •  **𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝 :** {cmd}seg\
-        \n  ⌬  **𝙁𝙪𝙣𝙜𝙨𝙞 : **Buat panas panasin wkwkwk.\
-        \n\n  •  **𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝 :** {cmd}alquran\
-n  ⌬  **𝙁𝙪𝙣𝙜𝙨𝙞 : **Mengirim ayat ayat Al -Qur'an.
-"
-    }
-)
+        "ramadhan": f"**Plugin : **`ramadhan3`\
+        \n\n    **Perintah :** `{cmd}seg`\
+        \n⌬    **Fungsi : **Coba ini diwaktu Siang siang, atau lu isengin temen lu.\
+        \n\n    **Perintah :** `{cmd}ngaji`\
+        \n⌬    **Fungsi : **Untuk Menampilkan ayat suci Al-Quran secara Random."
+    })
+        
