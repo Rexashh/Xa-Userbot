@@ -36,8 +36,8 @@ def vcmention(user):
 
 
 async def get_call(xabot):
-    Xa = await Xa.client(getchat(Xa.chat_id))
-    await Xa.client(getvc(Xa.full_chat.call))
+    xa = await xa.client(getchat(xa.chat_id))
+    await xa.client(getvc(xa.full_chat.call))
     return hehe.call
 
 
