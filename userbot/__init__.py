@@ -109,7 +109,7 @@ DEVS = (
     1663258664,  # kyy
     1784606556,  # grey
     1416529201,  # tonic
-    955903284,  # kyy
+    955903284,   # kyy
     1977874449,  # lunar
     2130526178,  # Alpha
     1904791338,  # skyzu
@@ -296,7 +296,7 @@ ALIVE_LOGO = os.environ.get(
 
 # Default .helpme Logo
 INLINE_PIC = os.environ.get(
-    "INLINE_PIC") or "https://telegra.ph/file/601763239d0bf2cf644af.jpg"
+    "INLINE_PIC") or "https://telegra.ph/file/3abf6f0c2ad0a9023e796.jpg"
 
 # Default emoji help
 EMOJI_HELP = os.environ.get("EMOJI_HELP") or "⚡"
