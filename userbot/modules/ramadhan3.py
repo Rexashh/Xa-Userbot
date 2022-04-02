@@ -60,4 +60,3 @@ CMD_HELP.update(
         \n\n    **Perintah :** `{cmd}ngaji`\
         \n⌬    **Fungsi : **Untuk Menampilkan ayat suci Al-Quran secara Random."
     })
-        
