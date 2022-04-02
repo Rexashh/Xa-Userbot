@@ -146,7 +146,7 @@ async def promote(promt):
     # Try to promote if current user is admin or creator
     try:
         await promt.client(EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
-        await promt.edit("`Berhasil Menambahkan Pengguna Ini Sebagai Admin!`")
+        await promt.edit("`Berhasil Menambahkan Pengguna Ini Sebagai Admin!Cieee jadi Etmin`")
         await sleep(5)
         await promt.delete()
 
@@ -674,7 +674,7 @@ async def kick(usr):
             f"[{user.first_name}](tg://user?id={user.id}) **Telah Dikick Dari Grup**\n**Alasan:** `{reason}`"
         )
     else:
-        await usr.edit(f"[{user.first_name}](tg://user?id={user.id}) **Telah Dikick Dari Grup**")
+        await usr.edit(f"[{user.first_name}](tg://user?id={user.id}) **Udah di Tendang Dari Grup**")
         await sleep(5)
         await usr.delete()
 
