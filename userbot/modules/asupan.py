@@ -28,7 +28,7 @@ async def _(event):
         await event.client.send_file(
             event.chat_id,
             file=random.choice(asupannya),
-            caption=f"Nih kak asupannya [{owner}](tg://user?id={aing.id})",
+            caption=f"Nih kak asupan buat [{owner}](tg://user?id={aing.id})",
         )
         await event.delete()
     except Exception:
@@ -95,7 +95,7 @@ async def _(event):
         await event.edit("**GA ADA YANG MAU SAMA LO, MAKANYA CAKEP!.**")
 
 
-@Xa_cmd(pattern="sadvid$")
+@Xa_cmd(pattern="vidsad$")
 async def _(event):
     try:
         sadvidnya = [
@@ -114,11 +114,33 @@ async def _(event):
     except Exception:
         await event.edit("Maaf, kayaknya kamu ga pantes untuk sedih :) .")
 
+
+@Xa_cmd(pattern="asupan2$")
+async def _(event):
+    try:
+        asupannya = [
+            asupan
+            async for asupan in event.client.iter_messages(
+                "@Okeokelhh", filter=InputMessagesFilterVideo
+            )
+        ]
+        aing = await event.client.get_me()
+        await event.client.send_file(
+            event.chat_id,
+            file=random.choice(asupannya),
+            caption=f"Nih kak asupan buat [{owner}](tg://user?id={aing.id})",
+        )
+        await event.delete()
+    except Exception:
+        await event.edit("Tidak bisa menemukan video asupan.")
+
 CMD_HELP.update(
     {
         "asupan": f"**Plugin : **asupan\
         \n\n  •  **𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝 :** {cmd}asupan\
         \n  ⌬  **𝙁𝙪𝙣𝙜𝙨𝙞 : **Untuk Mengirim video asupan secara random.\
+        \n\n  •  **𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝 :** {cmd}asupan2\
+        \n  ⌬  **𝙁𝙪𝙣𝙜𝙨𝙞 : **Untuk Mengirim video asupan Cewe.\
         \n\n  •  **𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝 :** {cmd}desah\
         \n  ⌬  **𝙁𝙪𝙣𝙜𝙨𝙞 : **Untuk Mengirim voice desah secara random.\
         \n\n  •  **𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝 :** {cmd}vidlucu\
