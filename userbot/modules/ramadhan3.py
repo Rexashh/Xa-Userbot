@@ -30,8 +30,8 @@ async def _(event):
         await event.delete()
     except Exception:
         await event.edit("Setannya lagi ga ada.")
-        
-        
+
+
 @Xa_cmd(pattern="alquran$")
 async def _(event):
     try:
@@ -58,8 +58,7 @@ CMD_HELP.update(
         \n\n  •  **𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝 :** {cmd}seg\
         \n  ⌬  **𝙁𝙪𝙣𝙜𝙨𝙞 : **Buat panas panasin wkwkwk.\
         \n\n  •  **𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝 :** {cmd}alquran\
-        \n  ⌬  **𝙁𝙪𝙣𝙜𝙨𝙞 : **Mengirim ayat ayat Al-Qur'an.\       
+n  ⌬  **𝙁𝙪𝙣𝙜𝙨𝙞 : **Mengirim ayat ayat Al -Qur'an.
 "
     }
 )
- 
