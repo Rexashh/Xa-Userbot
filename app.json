@@ -44,7 +44,7 @@
       "description": "Ketik Nama Telegram Mu Saja, ini untuk nama di perintah .alive",
       "required": true
     }
-  },
+   },
   "addons": [
     {
       "plan": "heroku-postgresql",
