@@ -68,7 +68,7 @@ async def set_afk(afk_e):
     else:
         await afk_e.edit("⚠️ 𝘼𝙁𝙆\n━━━━━━━━━━━━━━━━━━━━━ \n⌬ ɪᴍ ɢᴏɪɴɢ ᴀғᴋ\n━━━━━━━━━━━━━━━━━━━━━")
     if user.last_name:
-        await afk_e(first_name=user.first_name, last_name=user.last_name))
+        await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=user.last_name))
     else:
         await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=user.last_name))
     if BOTLOG:
