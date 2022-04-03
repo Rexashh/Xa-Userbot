@@ -73,12 +73,12 @@ async def set_afk(afk_e):
         await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=user.last_name))
     if BOTLOG:
         await afk_e.client.send_message(BOTLOG_CHATID, "#AFK\n**ɢᴏɪɴɢ ᴀғᴋ**")
-    ISAFK = True
-    afk_time = datetime.now()  # pylint:disable=E0602
+    ISAFK=True
+    afk_time=datetime.now()  # pylint:disable=E0602
     raise StopPropagation
 
 
-@register(outgoing=True)
+@ register(outgoing = True)
 async def type_afk_is_not_true(notafk):
     """ This sets your status as not afk automatically when you write something while being afk """
     global ISAFK
@@ -89,17 +89,17 @@ async def type_afk_is_not_true(notafk):
     global afk_time  # pylint:disable=E0602
     global afk_start
     global afk_end
-    user = await bot.get_me()  # pylint:disable=E0602
-    last = user.last_name
+    user=await bot.get_me()  # pylint:disable=E0602
+    last=user.last_name
     if last and last.endswith("⚠️ 𝘼𝙁𝙆"):
-        last1 = last[:-12]
+        last1=last[:-12]
     else:
-        last1 = ""
-    back_alive = datetime.now()
-    afk_end = back_alive.replace(microsecond=0)
+        last1=""
+    back_alive=datetime.now()
+    afk_end=back_alive.replace(microsecond = 0)
     if ISAFK:
-        ISAFK = False
-        msg = await notafk.respond("🚀 𝙊𝙉𝙇𝙄𝙉𝙀")
+        ISAFK=False
+        msg=await notafk.respond("🚀 𝙊𝙉𝙇𝙄𝙉𝙀")
         time.sleep(3)
         await msg.delete()
         await notafk.client(UpdateProfileRequest(first_name=user.first_name, last_name=last1))
