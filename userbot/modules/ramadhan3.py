@@ -54,7 +54,7 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "ramadhan": f"**Plugin : **`ramadhan3`\
+        "ramadhan3": f"**Plugin : **`ramadhan3`\
         \n\n    **Perintah :** `{cmd}seg`\
         \n⌬    **Fungsi : **Coba ini diwaktu Siang siang, atau lu isengin temen lu.\
         \n\n    **Perintah :** `{cmd}ngaji`\
