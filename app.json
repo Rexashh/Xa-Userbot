@@ -23,7 +23,7 @@
       "required": true
     },
      "STRING_SESSION": {
-      "description": "Dapatkan String Session di termux caranya ada di repo, jika tidak tau reponya tanya ke @JustRex di telegram",
+      "description": "Dapatkan String Session di bot @xastringronbot",
       "required": true
     },
     "HEROKU_APP_NAME": {
@@ -36,17 +36,13 @@
       "required": true
     },
     "PM_AUTO_BAN": {
-      "description": "PM Auto-Ban Feature Switch. Also known as the 'bleep blop, this is a bot...' module. or /skip",
+      "description": "Ini buat aktifin PMPERMIT, kalo ga mau aktif ketik : /skip",
       "value": "False",
       "required": true
     },
     "ALIVE_NAME": {
-      "description": "Nama untuk menunjukan pesan .alive",
+      "description": "Ketik Nama Telegram Mu Saja, ini untuk nama di perintah .alive",
       "required": true
-    },
-    "S_PACK_NAME": {
-      "description": "Nama Sticker Pack Mu, bisa di /skip",
-      "required": false
     }
   },
   "addons": [
