@@ -497,7 +497,7 @@ async def join_(event):
         AudioPiped(
             'http://duramecho.com/Misc/SilentCd/Silence01s.mp3'
         ),
-        stream_type=StreamType().pulse_stream, 
+        stream_type=StreamType().pulse_stream,
     )
     try:
         await xnxx.edit("**{} Fake VCG Telah Berhasil Naik** `{}`".format(owner, str(event.chat_id)))
@@ -514,7 +514,7 @@ async def leavevc(event):
     if from_user:
         try:
             await call_py.leave_group_call(chat_id)
-        except (NotInGroupCallError, NoActiveGroupCall): 
+        except (NotInGroupCallError, NoActiveGroupCall):
             pass
         await xnxx.edit("**{} Fake VCG Berhasil Turun** `{}`".format(owner, str(event.chat_id)))
     else:
