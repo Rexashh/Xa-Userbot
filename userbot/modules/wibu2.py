@@ -1,5 +1,5 @@
 # JANGAN HAPUS INI! © @JustRex
-# Copyright Milik Xa-Userbot 
+# Copyright Milik Xa-Userbot
 
 
 import random
@@ -9,7 +9,6 @@ from userbot import CMD_HELP
 from userbot.utils import Xa_cmd
 
 from userbot import owner
-from telethon.tl.types import InputMessagesFilterVideo
 from telethon.tl.types import InputMessagesFilterPhotos
 
 
@@ -31,8 +30,8 @@ async def _(event):
         await event.delete()
     except Exception:
         await event.edit("**Lagi Ga Nemu pp anime!.**")
-        
-       
+
+
 @Xa_cmd(pattern="wallanime$")
 async def _(event):
     try:
@@ -71,8 +70,8 @@ async def _(event):
         await event.delete()
     except Exception:
         await event.edit("**maaf lagi ga ada videonya, coba lagi deh.**")
-        
-        
+
+
 CMD_HELP.update({
     "wibu2": f"𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `{cmd}ppanime`\
     \n↳ : untuk mendapatkan pp anime random.\
