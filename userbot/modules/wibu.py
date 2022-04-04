@@ -50,7 +50,7 @@ async def typewriter(typew):
     await typew.edit("**IUHH DEMEN KOK SAMA 2D😖**")
 
 
-@Xa_cmd(pattern="wibu(?: |$)(.*)")
+@Xa_cmd(pattern="wibu1(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**WI WIII WIIII WIIII.....**")
@@ -111,6 +111,6 @@ async def typewriter(typew):
 CMD_HELP.update({
     "wibu": f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}wibu`\
     \n↳ : untuk melihat sesuatu yng menarik\
-    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}wibu2`\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}wibu1`\
     \n↳ : Lari cukk ada wibuu aarrghh."
 })
