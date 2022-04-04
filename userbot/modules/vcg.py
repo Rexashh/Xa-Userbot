@@ -9,7 +9,7 @@
 # FROM GeezProjects <https://github.com/vckyou/GeezProjects>
 #
 # Support @GeezSupport & @GeezProjects
-# 
+#
 
 from telethon.tl.functions.channels import GetFullChannelRequest as getchat
 from telethon.tl.functions.phone import CreateGroupCallRequest as startvc
@@ -22,6 +22,7 @@ from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, owner
 from userbot.events import register
 from userbot.utils import edit_delete, edit_or_reply, Xa_cmd
+
 
 def vcmention(user):
     full_name = get_display_name(user)
@@ -38,7 +39,7 @@ async def get_call(event):
 
 def user_list(l, n):
     for i in range(0, len(l), n):
-        yield l[i : i + n]
+        yield l[i: i + n]
 
 
 @Xa_cmd(pattern="startvc$")
