@@ -18,7 +18,7 @@ async def _(event):
         await event.edit("`Give a name too!`")
     else:
         await event.edit("`Processing`")
-    chat = "@Nastymusiicbot"
+    chat = "@HikariManageRobot"
     async with event.client.conversation(chat) as conv:
         try:
             msg = await conv.send_message(f"/logo {text}")
@@ -28,7 +28,7 @@ async def _(event):
             await event.client.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
             await event.edit(
-                "**Error: Mohon Buka Blokir** @Nastymusiicbot **Dan Coba Lagi!**"
+                "**Error: Mohon Buka Blokir** @HikariManageRobot **Dan Coba Lagi!**"
             )
             return
         await asyncio.sleep(0.5)
@@ -41,5 +41,5 @@ async def _(event):
         await event.delete()
 
 
-CMD_HELP.update({"logo": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}logo <text>`"
-                 "\n↳ : Hasilkan logo dari Teks atau Balas Ke gambar yang diberikan, untuk menulis teks Anda di atasnya. Atau Balas Ke File Font, Untuk menulis dengan font itu."})
+CMD_HELP.update({"logo": "𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `{cmd}logo <text>`"
+                 "\n⌬𝙁𝙪𝙣𝙜𝙨𝙞 : Hasilkan logo dari Teks atau Balas Ke gambar yang diberikan, untuk menulis teks Anda di atasnya. Atau Balas Ke File Font, Untuk menulis dengan font itu."})
