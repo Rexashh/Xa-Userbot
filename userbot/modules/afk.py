@@ -263,7 +263,7 @@ async def afk_on_pm(sender):
 CMD_HELP.update({
     "afk":
     f"`{cmd}afk` [Alasan]\
-\n𝙁𝙪𝙣𝙜𝙨𝙞: Lakukan ketika ingin OFF.\nSiapapun Yang Balas, Tag, Atau Chat Kamu \
+\n⌬𝙁𝙪𝙣𝙜𝙨𝙞: Lakukan ketika ingin OFF.\nSiapapun Yang Balas, Tag, Atau Chat Kamu \
 Mereka Akan Tau Alasan Kamu OFF.\n\nAFK Bisa Dilakukan Dan Dibatalkan Dimanapun.\
 "
 })
