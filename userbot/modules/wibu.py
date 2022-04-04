@@ -5,7 +5,7 @@ from userbot import CMD_HELP, CMD_HANDLER as cmd
 from userbot.utils import Xa_cmd
 
 
-@Xa_cmd(pattern="wibu2(?: |$)(.*)")
+@Xa_cmd(pattern="wibu(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(0.07)
