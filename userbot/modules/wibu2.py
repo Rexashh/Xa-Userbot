@@ -10,6 +10,7 @@ from userbot.utils import Xa_cmd
 
 from userbot import owner
 from telethon.tl.types import InputMessagesFilterPhotos
+from telethon.tl.types import InputMessagesFilterVideos
 
 
 @Xa_cmd(pattern="ppanime$")
