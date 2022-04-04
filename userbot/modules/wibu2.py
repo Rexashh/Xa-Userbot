@@ -10,7 +10,7 @@ from userbot.utils import Xa_cmd
 
 from userbot import owner
 from telethon.tl.types import InputMessagesFilterPhotos
-from telethon.tl.types import InputMessagesFilterVideos
+from telethon.tl.types import InputMessagesFilterVideo
 
 
 @Xa_cmd(pattern="ppanime$")
@@ -59,7 +59,7 @@ async def _(event):
         shortanimenya = [
             shortanime
             async for shortanime in event.client.iter_messages(
-                "@anime_status998", filter=InputMessagesFilterVideos
+                "@anime_status998", filter=InputMessagesFilterVideo
             )
         ]
         aing = await event.client.get_me()
