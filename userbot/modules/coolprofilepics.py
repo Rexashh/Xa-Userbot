@@ -81,5 +81,5 @@ async def main(event):
         await asyncio.sleep(3600)  # Edit this to your required needs
 
 CMD_HELP.update({
-    "randompp": "\n\n⌬𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `.pprandom`"
-    "\n𝙁𝙪𝙣𝙜𝙨𝙞 : Mengubah Photo Profile Anda Secara Random."})
+    "randompp": "\n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `.pprandom`"
+    "\n⌬𝙁𝙪𝙣𝙜𝙨𝙞 : Mengubah Photo Profile Anda Secara Random."})
