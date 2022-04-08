@@ -55,7 +55,7 @@ async def typewriter(typew):
     await typew.edit("Terus gua harus apa??")
 
 
-@Xa_cmd(pattern='??(?: |$)(.*)')
+@Xa_cmd(pattern='tandata(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("?????")
