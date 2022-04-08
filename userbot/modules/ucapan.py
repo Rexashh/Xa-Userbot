@@ -1,9 +1,10 @@
-# © @JustRex Xa-Userbot 
+# © @JustRex Xa-Userbot
 # I took these modules from ultroid and modified them
 # Jangan hapus yg ada tanda # kontol!
 
 from userbot.utils import Xa_cmd
 import asyncio
+
 
 @Xa_cmd(pattern="lebaran(?: |$)(.*)")
 async def _(event):
@@ -26,8 +27,8 @@ async def _(event):
 
         await asyncio.sleep(animation_interval)
         await event.edit(animation_chars[i % 8], link_preview=True)
-        
-        
+
+
 @Xa_cmd(pattern="hbd(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
@@ -48,10 +49,9 @@ async def _(event):
     for i in animation_ttl:
 
         await asyncio.sleep(animation_interval)
-        await event.edit(animation_chars[i % 8], link_preview=True)   
-        
-        
-        
+        await event.edit(animation_chars[i % 8], link_preview=True)
+
+
 @Xa_cmd(pattern="happyaniv(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
@@ -72,9 +72,9 @@ async def _(event):
     for i in animation_ttl:
 
         await asyncio.sleep(animation_interval)
-        await event.edit(animation_chars[i % 8], link_preview=True)   
-        
-        
+        await event.edit(animation_chars[i % 8], link_preview=True)
+
+
 @Xa_cmd(pattern="papku(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
@@ -95,8 +95,8 @@ async def _(event):
     for i in animation_ttl:
 
         await asyncio.sleep(animation_interval)
-        await event.edit(animation_chars[i % 8], link_preview=True)   
-        
+        await event.edit(animation_chars[i % 8], link_preview=True)
+
 CMD_HELP.update(
     {
         "ucapan": f"**Plugin : **`ucapan`\
@@ -108,4 +108,4 @@ CMD_HELP.update(
         \n⌬    **Fungsi : **Untuk Mengucapkan Happy Aniversary kepasanganmu (Kalo Punya).\
         \n\n    **Perintah :** `{cmd}papku`\
         \n⌬    **Fungsi : **Bonus awoakwoak."
-    })        
+    })
