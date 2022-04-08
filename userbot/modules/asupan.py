@@ -134,6 +134,7 @@ async def _(event):
     except Exception:
         await event.edit("Tidak bisa menemukan video asupan.")
 
+
 @Xa_cmd(pattern="kpop$")
 async def _(event):
     try:
@@ -152,8 +153,8 @@ async def _(event):
         await event.delete()
     except Exception:
         await event.edit("Tidak bisa menemukan Fotonya coba lagi ya.")
-        
-        
+
+
 @Xa_cmd(pattern="ttfyp$")
 async def _(event):
     try:
