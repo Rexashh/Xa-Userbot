@@ -134,6 +134,46 @@ async def _(event):
     except Exception:
         await event.edit("Tidak bisa menemukan video asupan.")
 
+@Xa_cmd(pattern="kpop$")
+async def _(event):
+    try:
+        asupannya = [
+            asupan
+            async for asupan in event.client.iter_messages(
+                "@pictsenadaidol", filter=InputMessagesFilterPhotos
+            )
+        ]
+        aing = await event.client.get_me()
+        await event.client.send_file(
+            event.chat_id,
+            file=random.choice(asupannya),
+            caption=f"Nih Foto Kpop buat [{owner}](tg://user?id={aing.id})",
+        )
+        await event.delete()
+    except Exception:
+        await event.edit("Tidak bisa menemukan Fotonya coba lagi ya.")
+        
+        
+@Xa_cmd(pattern="ttfyp$")
+async def _(event):
+    try:
+        fypnya = [
+            fyp
+            async for fyp in event.client.iter_messages(
+                "@cah0192837465", filter=InputMessagesFilterVideo
+            )
+        ]
+        aing = await event.client.get_me()
+        await event.client.send_file(
+            event.chat_id,
+            file=random.choice(fypnya),
+            caption=f"Tiktok Random Video by [{owner}](tg://user?id={aing.id})",
+        )
+        await event.delete()
+    except Exception:
+        await event.edit("Tidak bisa menemukan video, maaf coba lagi.")
+
+
 CMD_HELP.update(
     {
         "asupan": f"**Plugin : **asupan\
@@ -149,6 +189,10 @@ CMD_HELP.update(
         \n  ⌬  **𝙁𝙪𝙣𝙜𝙨𝙞 : **Untuk Mendapatkan Ayang mu, hehe.\
         \n\n  •  **𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝 :** {cmd}vidsad\
         \n  ⌬  **𝙁𝙪𝙣𝙜𝙨𝙞 : **Untuk Melihat video sad random.\
+        \n\n  •  **𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝 :** {cmd}kpop\
+        \n  ⌬  **𝙁𝙪𝙣𝙜𝙨𝙞 : **Untuk Melihat foto idol kpop random.\
+        \n\n  •  **𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝 :** {cmd}ttfyp\
+        \n  ⌬  **𝙁𝙪𝙣𝙜𝙨𝙞 : **Untuk Melihat video dari tiktok secara random.\
 "
     }
 )
