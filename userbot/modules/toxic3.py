@@ -170,13 +170,13 @@ async def typewriter(typew):
 
   
 CMD_HELP.update({
-    "toxic3": f"𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `Y`\
+    "toxic3": f"𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: Y\
     \n↳ : coba aja Ketik Y doang gausah pake cmd.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `S`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: S\
     \n↳ : coba aja ketik S doang gausah pake cmd.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `G`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: G\
     \n↳ : coba aja ketik G doang gausah pake cmd.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `str`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: str\
     \n↳ : coba aja ketik str doang gausah pake cmd.\
     \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `nanya{cmd}`\
     \n↳ : cobain aja.\
