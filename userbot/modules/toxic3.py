@@ -10,12 +10,13 @@ from userbot.utils import Xa_cmd
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("Y AJA KONTOL")
-    
+
+
 @Xa_cmd(pattern='S(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("Sokap lu!!")    
-    
+    await typew.edit("Sokap lu!!")
+
  @Xa_cmd(pattern='G(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
