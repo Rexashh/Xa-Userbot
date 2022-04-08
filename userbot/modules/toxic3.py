@@ -6,24 +6,24 @@ from userbot import CMD_HELP, CMD_HANDLER as cmd
 from userbot.utils import Xa_cmd
 
 
-@Xa_cmd(pattern='Y(?: |$)(.*)')
+@register(outgoing=True, pattern="^Y(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("Y AJA KONTOL")
 
 
-@Xa_cmd(pattern='S(?: |$)(.*)')
+@register(outgoing=True, pattern="^S(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("Sokap lu!!")
 
- @Xa_cmd(pattern='G(?: |$)(.*)')
+@register(outgoing=True, pattern="^G(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("Ga!")  
     
     
-@Xa_cmd(Pattern='str(?: |$)(.*)')
+@register(outgoing=True, pattern="^str(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("Stress!!!")
@@ -141,7 +141,7 @@ async def typewriter(typew):
     await typew.edit("Kabur ah...")
     sleep(1)
     await typew.edit("Nanti takut Dirosting")
-    sleep(1.)
+    sleep(1)
     await typew.edit("Terus Nyuruh semua membernya naik ke os")
     sleep(1.5)
     await typew.edit("So galak Mic nya ditelen")
@@ -166,53 +166,53 @@ async def typewriter(typew):
 
   
 CMD_HELP.update({
-    "toxic3": f"𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `Y`\
+    "toxic3": f"𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:Y\
     \n↳ : coba aja.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `S{cmd}`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:S\
     \n↳ : coba aja.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `G{cmd}`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:G\
     \n↳ : coba.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `str{cmd}`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:str\
     \n↳ : coba aja.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `nanya{cmd}`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:`nanya{cmd}`\
     \n↳ : cobain aja.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `usi{cmd}`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:`usi{cmd}`\
     \n↳ : cobain aja.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `oh{cmd}`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:`oh{cmd}`\
     \n↳ : cobain aja.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `terus{cmd}`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:`terus{cmd}`\
     \n↳ : cobain aja.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `??{cmd}`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:`??{cmd}`\
     \n↳ : cobain aja.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `useh{cmd}`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:`useh{cmd}`\
     \n↳ : cobain aja.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `gjls{cmd}`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:`gjls{cmd}`\
     \n↳ : cobain aja.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `ykn{cmd}`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:`ykn{cmd}`\
     \n↳ : cobain aja.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `lunap{cmd}`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:`lunap{cmd}`\
     \n↳ : cobain aja.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `lontetol{cmd}`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:`lontetol{cmd}`\
     \n↳ : cobain aja.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `tmo1{cmd}`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:`tmo1{cmd}`\
     \n↳ : cobain aja.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `tmo2{cmd}`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:`tmo2{cmd}`\
     \n↳ : cobain aja.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `sasimo1{cmd}`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:`sasimo1{cmd}`\
     \n↳ : cobain aja.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `sasimo2{cmd}`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:`sasimo2{cmd}`\
     \n↳ : cobain aja.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `ngew1{cmd}`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:`ngew1{cmd}`\
     \n↳ : cobain aja.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `alian{cmd}`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:`alian{cmd}`\
     \n↳ : cobain aja.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `mutual{cmd}`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:`mutual{cmd}`\
     \n↳ : cobain aja.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `bcmk{cmd}`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:`bcmk{cmd}`\
     \n↳ : cobain aja.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `alian2{cmd}`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:`alian2{cmd}`\
     \n↳ : cobain aja.\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `peting{cmd}`\
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:`peting{cmd}`\
     \n↳ : cobain aja."
 })
     
