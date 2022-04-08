@@ -2,6 +2,7 @@
 # I took these modules from ultroid and modified them
 # Jangan hapus yg ada tanda # kontol!
 
+from userbot import CMD_HELP, CMD_HANDLER as cmd
 from userbot.utils import Xa_cmd
 import asyncio
 
