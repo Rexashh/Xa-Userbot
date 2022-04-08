@@ -10,17 +10,17 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 # ============================================
 
 
-
 @Xa_cmd(pattern='^Y(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("Y AJA KONTOL")
-    
+
+
 @Xa_cmd(pattern='^S(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("Sokap lu!!")    
-    
+    await typew.edit("Sokap lu!!")
+
  @Xa_cmd(pattern='^G(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
