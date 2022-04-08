@@ -302,16 +302,17 @@ async def redis(alive):
     await alive.edit("⚡")
     await asyncio.sleep(3)
     output = (
-        f"┏━━━━━━━🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖━━━ \n"
+        f"**🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖**\n"
+        f"┏━━━━━━━━━━━━━━━━━━━━━━ \n"
         f"┣  `Name     :` {DEFAULTUSER} \n"
         f"┣  `Username :` @{user.username} \n"
-        f"┣  `Telethon :` Ver {version.__version__} \n"
-        f"┣  `Python   :` Ver {python_version()} \n"
+        f"┣  `Telethon :` ᴠᴇʀ {version.__version__} \n"
+        f"┣  `Python   :` ᴠᴇʀ {python_version()} \n"
         f"┣  `Branch   :` {UPSTREAM_REPO_BRANCH} \n"
         f"┣  `Bot Ver  :` {BOT_VER} \n"
         f"┣  `Modules  :` {len(modules)} Modules \n"
         f"┣  `GitHub   :` [xᴀ-ᴜsᴇʀʙᴏᴛ](https://github.com/Rexashh/Xa-Userbot) \n"
-        f"┣  `Support  :` [ɢʀᴏᴜᴘ](https://t.me/rexaprivateroom) \n"
+        f"┣  `Support  :` [xᴀsᴜᴘᴘᴏʀᴛ](https://t.me/rexaprivateroom) \n"
         f"┣  `Owner    :` [ʀᴇxᴧ-ᴇx](https://t.me/JustRex) \n"
         f"┗━━━━━━━━━━━━━━━━━━━━━")
     if ALIVE_LOGO:
