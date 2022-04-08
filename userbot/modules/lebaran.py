@@ -1,10 +1,13 @@
-from . import *
+
+
+from userbot import CMD_HANDLER as cmd, CMD_HELP
+from userbot.utils import Xa_cmd
 import asyncio
 # BY Sh1vam Dont try to kang
 # Ported by @JustRex
 
 
-@Xa_cmd(pattern=r"lebaran")
+@Xa_cmd(pattern="lebaran(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
