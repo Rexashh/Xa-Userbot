@@ -1,6 +1,5 @@
 
 
-from userbot import CMD_HANDLER as cmd, CMD_HELP
 from userbot.utils import Xa_cmd
 import asyncio
 # BY Sh1vam Dont try to kang
