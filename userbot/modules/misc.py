@@ -108,11 +108,13 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "**ʜᴇʏ**, ᴛʜɪs ɪs ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ **🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖** \n"
-        "⌬ **ʀᴇᴘᴏ              :** [ɢɪᴛʜᴜʙ](https://github.com/Rexashh/Xa-Userbot)\n"
-        "⌬ **ᴏᴡɴᴇʀ             :** [xᴀ](t.me/JustRex)\n"
-        "⌬ **sᴜᴘᴏʀᴛ            :** [sᴜᴘᴘᴏʀᴛ](https://t.me/rexaprivateroom)\n"
-        "⌬ **ᴄʜᴀɴɴᴇʟ           :** [ᴄʜᴀɴɴᴇʟ](https://t.me/tirexgugel)\n"
+        "**ʜᴇʏ**, ᴛʜɪs ɪs ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ **xᴀ-ᴜsᴇʀʙᴏᴛ🦖** \n"
+        "━━━━━━━━━━━
+        "⌬ **ʀᴇᴘᴏ    :** [ɢɪᴛʜᴜʙ](https://github.com/Rexashh/Xa-Userbot)\n"
+        "⌬ **ᴏᴡɴᴇʀ  :** [xᴀ](t.me/JustRex)\n"
+        "⌬ **sᴜᴘᴏʀᴛ  :** [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/rexaprivateroom)\n"
+        "⌬ **ᴄʜᴀɴɴᴇʟ :** [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/tirexgugel)\n"
+        "━━━━━━━━━━━
     )
 
 
@@ -120,8 +122,8 @@ async def repo_is_here(wannasee):
 async def repo_is_here(wannasee):
     """For .repo command, just returns the repo URL."""
     await wannasee.edit(
-        f"⌬ **ɢᴇᴛ sᴛʀɪɴɢ sᴇssɪᴏɴ ᴠɪᴀ ʀᴇᴘʟɪᴛ  :** [ᴋʟɪᴋ ᴅɪsɪɴɪ](https://replit.com/@rizkyhmdanii16/StringSession)\n"
-        f"⌬ **ɢᴇᴛ sᴛʀɪɴɢ sᴇssɪᴏɴ ᴠɪᴀ ʙᴏᴛ    :** [ᴋʟɪᴋ ᴅɪsɪɴɪ](https://t.me/xastringrobot)\n"
+        f"⌬ **ᴠɪᴀ ʀᴇᴘʟɪᴛ  :** [ᴋʟɪᴋ ᴅɪsɪɴɪ](https://replit.com/@rizkyhmdanii16/StringSession)\n"
+        f"⌬ **ᴠɪᴀ ʙᴏᴛ    :** [ᴋʟɪᴋ ᴅɪsɪɴɪ](https://t.me/xastringrobot)\n"
     )
 
 
