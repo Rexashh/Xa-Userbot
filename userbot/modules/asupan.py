@@ -175,6 +175,27 @@ async def _(event):
         await event.edit("Tidak bisa menemukan video, maaf coba lagi.")
 
 
+@Xa_cmd(pattern="nc$")
+async def _(event):
+    try:
+        bokepnya = [
+            bokep
+            async for bokep in event.client.iter_messages(
+                "@sangeyaaaaaa", filter=InputMessagesFilterVideo
+            )
+        ]
+        aing = await event.client.get_me()
+        await event.client.send_file(
+            event.chat_id,
+            file=random.choice(bokepnya),
+            caption=f"**negative content by** [{owner}](tg://user?id={aing.id})",
+        )
+        await event.delete()
+    except Exception:
+        await event.edit("**tidak ditemukan, tahsn dulu sangenya.**")
+
+
+
 CMD_HELP.update(
     {
         "asupan": f"**Plugin : **asupan\
