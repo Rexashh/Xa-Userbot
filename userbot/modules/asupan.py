@@ -195,7 +195,6 @@ async def _(event):
         await event.edit("**tidak ditemukan, tahsn dulu sangenya.**")
 
 
-
 CMD_HELP.update(
     {
         "asupan": f"**Plugin : **asupan\
