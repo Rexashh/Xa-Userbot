@@ -231,6 +231,6 @@ CMD_HELP.update({
     \n↳ : cobain aja.\
     \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:`{cmd}peting`\
     \n↳ : cobain aja.\
-n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `{cmd}jlk`
+    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `{cmd}jlk`\
     \n↳: cobain aja."
 })
