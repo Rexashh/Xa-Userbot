@@ -230,7 +230,7 @@ CMD_HELP.update({
     \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:`{cmd}alian2`\
     \n↳ : cobain aja.\
     \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝:`{cmd}peting`\
-    \n↳ : cobain aja."
+    \n↳ : cobain aja.\
     \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `{cmd}jlk`
     \n↳: cobain aja."
 })
