@@ -27,6 +27,7 @@ GCAST_BLACKLIST = [
     -1001538752127,  # AbingSupport
     -1001489233533,  # Rumahnya kitaro
     -1001512737035,  # Hiroshi
+    -1001506023826,  # venz
 ]
 
 
