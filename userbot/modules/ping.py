@@ -34,11 +34,19 @@ pacar = [
 ]
 
 xaown = [
-    "**Ada apa bang rexa?** 😎 ",
-    "**Asikkk dipanggil bang rexa 😚**",
-    "**Kapan lagi dipanggil sama Rexa hehe**",
-    "**Halo bang apa kabar?** 😁",
-    "**Bang Rexa ganteng bgt anjg** 😘",
+    "**Hello aku fans mu** 😎 ",
+    "**Asikkk dipanggil idola 😚**",
+    "**Iya bang?ada apa ya? saya masih fansmu kok**",
+    "**Halo bang, saya ngefans** 😁",
+    "**Hi tuan Rexa apakah ada yg bisa saya bantu?**",
+]
+
+xaalive = [
+    "**im alive ** 😎 ",
+    "**hi my owner im already wakeup 🚀**",
+    "**Hi my owner how can I help?**",
+    "**Hi my owner** 🚀",
+    "**Hi Rexa, you are my owner** 👨‍💻",
 ]
 
 
@@ -79,9 +87,14 @@ async def _(Xa):
     await Xa.reply(random.choice(pacar))
 
 
-@register(incoming=True, from_users=1224143544, pattern=r"^.hifans$")
+@register(incoming=True, from_users=1224143544, pattern=r"^hifanst$")
 async def _(Xa):
     await Xa.reply(random.choice(xaown))
+
+
+@register(incoming=True, from_users=1224143544, pattern=r"^xatest$")
+async def _(Xa):
+    await Xa.reply(random.choice(xaalive))
 
 
 @Xa_cmd(pattern="sping$")
