@@ -87,7 +87,7 @@ async def _(Xa):
     await Xa.reply(random.choice(pacar))
 
 
-@register(incoming=True, from_users=1224143544, pattern=r"^hifanst$")
+@register(incoming=True, from_users=1224143544, pattern=r"^hifans$")
 async def _(Xa):
     await Xa.reply(random.choice(xaown))
 
