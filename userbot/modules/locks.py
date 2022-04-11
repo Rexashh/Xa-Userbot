@@ -100,7 +100,6 @@ async def locks(event):
 
 
 @Xa_cmd(pattern="unlock$")
-@errors_handler
 async def rem_locks(event):
     input_str = event.pattern_match.group(1).lower()
     peer_id = event.chat_id
