@@ -335,7 +335,53 @@ async def redis(alive):
         await alive.delete()
 
 
-@ Xa_cmd(pattern="aliveu")
+@Xa_cmd(pattern="xacheck$")
+async def redis(xaon):
+    user = await bot.get_me()
+    await get_readable_time((time.time() - StartTime))
+    await xaon.edit("**Checking.**")
+    await.xaon.edit("**Checking..**")
+    await.xaon.edit("**Checking...**")
+    await xaon.edit("**▒▒▒▒▒▒▒▒▒▒**")
+    await xaon.edit("**██▒▒▒▒▒▒▒▒**")
+    await xaon.edit("**████▒▒▒▒▒▒**")
+    await xaon.edit("**██████▒▒▒▒**")
+    await xaon.edit("**████████▒▒**")
+    await xaon.edit("**██████████**")
+    await.xaon.edit("**Finished Loading.**")
+    await.xaon.edit("**Finished Loading..**")
+    await.xaon.edit("**Finished Loading...**")
+    await.xaon.edit("**Complete**")
+    await.xaon.edit("**⚡**")
+    await asyncio.sleep(2)
+    output = (
+        f"HEY!! I'M ALIVE FOR HELPING YOU! \n"
+        f"⌬ 🤖  `Bot Owned   :`{DEFAULTUSER} \n"
+        f"⌬ 👨‍🚀  `Username    :`@{user.username} \n"
+        f"⌬ ⚙️  `OwnerRepo   :` [ʀᴇxᴧ-ᴇx](https://t.me/JustRex) \n"
+        f"⌬ 🐍  `Repo        :` [xᴀ-ᴜsᴇʀʙᴏᴛ](https://github.com/Rexashh/Xa-Userbot) \n"
+        f"⌬ 📡  `Branch      :` {UPSTREAM_REPO_BRANCH} \n"
+        f"⌬ 📂  `Module      :`{len(modules)} ")
+    if ALIVE_LOGO:
+        try:
+            logo = ALIVE_LOGO
+            await alive.delete()
+            msg = await bot.send_file(alive.chat_id, logo, caption=output)
+            await asyncio.sleep(200)
+            await msg.delete()
+        except BaseException:
+            await alive.edit(
+                output + "\n\n *`The provided logo is invalid."
+                "\nMake sure the link is directed to the logo picture`"
+            )
+            await asyncio.sleep(100)
+            await alive.delete()
+    else:
+        await alive.edit(output)
+        await asyncio.sleep(100)
+        await alive.delete()
+
+@Xa_cmd(pattern="aliveu")
 async def amireallyaliveuser(username):
     """ For .aliveu command, change the username in the .alive command. """
     message = username.text
@@ -348,7 +394,7 @@ async def amireallyaliveuser(username):
     await username.edit("`" f"{output}" "`")
 
 
-@ Xa_cmd(pattern="resetalive$")
+@Xa_cmd(pattern="resetalive$")
 async def amireallyalivereset(ureset):
     global DEFAULTUSER  # global statement
     DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
@@ -372,6 +418,8 @@ CMD_HELP.update({
     "\n↳ : Changes the 'user' in alive to the text you want."
     f"\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}restalive`"
     "\n↳ : Resets the user to default."
+    f"\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}xacheck`"
+    "\n↳ : Sama kaya .alive."
 })
 CMD_HELP.update(
     {
