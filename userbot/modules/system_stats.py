@@ -336,23 +336,23 @@ async def redis(alive):
 
 
 @Xa_cmd(pattern="xacheck$")
-async def redis(xaon):
+async def redis(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
-    await xaon.edit("**Checking.**")
-    await xaon.edit("**Checking..**")
-    await xaon.edit("**Checking...**")
-    await xaon.edit("**▒▒▒▒▒▒▒▒▒▒**")
-    await xaon.edit("**██▒▒▒▒▒▒▒▒**")
-    await xaon.edit("**████▒▒▒▒▒▒**")
-    await xaon.edit("**██████▒▒▒▒**")
-    await xaon.edit("**████████▒▒**")
-    await xaon.edit("**██████████**")
-    await xaon.edit("**Finished Loading.**")
-    await xaon.edit("**Finished Loading..**")
-    await xaon.edit("**Finished Loading...**")
-    await xaon.edit("**Complete**")
-    await xaon.edit("⚡")
+    await alive.edit("**Checking.**")
+    await alive.edit("**Checking..**")
+    await alive.edit("**Checking...**")
+    await alive.edit("**▒▒▒▒▒▒▒▒▒▒**")
+    await alive.edit("**██▒▒▒▒▒▒▒▒**")
+    await alive.edit("**████▒▒▒▒▒▒**")
+    await alive.edit("**██████▒▒▒▒**")
+    await alive.edit("**████████▒▒**")
+    await alive.edit("**██████████**")
+    await alive.edit("**Finished Loading.**")
+    await alive.edit("**Finished Loading..**")
+    await alive.edit("**Finished Loading...**")
+    await alive.edit("**Complete**")
+    await alive.edit("⚡")
     await asyncio.sleep(2)
     output = (
         f"HEY!! I'M ALIVE FOR HELPING YOU! \n"
@@ -365,21 +365,21 @@ async def redis(xaon):
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
-            await xaon.delete()
-            msg = await bot.send_file(xaon.chat_id, logo, caption=output)
+            await alive.delete()
+            msg = await bot.send_file(alive.chat_id, logo, caption=output)
             await asyncio.sleep(200)
             await msg.delete()
         except BaseException:
-            await xaon.edit(
+            await alive.edit(
                 output + "\n\n *`The provided logo is invalid."
                 "\nMake sure the link is directed to the logo picture`"
             )
             await asyncio.sleep(100)
-            await xaon.delete()
+            await alive.delete()
     else:
-        await xaon.edit(output)
+        await alive.edit(output)
         await asyncio.sleep(100)
-        await xaon.delete()
+        await alive.delete()
 
 
 @Xa_cmd(pattern="aliveu")
