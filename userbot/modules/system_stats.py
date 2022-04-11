@@ -352,7 +352,7 @@ async def redis(xaon):
     await xaon.edit("**Finished Loading..**")
     await xaon.edit("**Finished Loading...**")
     await xaon.edit("**Complete**")
-    await xaon.edit("**⚡**")
+    await xaon.edit("⚡")
     await asyncio.sleep(2)
     output = (
         f"HEY!! I'M ALIVE FOR HELPING YOU! \n"
@@ -366,7 +366,7 @@ async def redis(xaon):
         try:
             logo = ALIVE_LOGO
             await xaon.delete()
-            msg = await bot.send_file(alive.chat_id, logo, caption=output)
+            msg = await bot.send_file(xaon.chat_id, logo, caption=output)
             await asyncio.sleep(200)
             await msg.delete()
         except BaseException:
