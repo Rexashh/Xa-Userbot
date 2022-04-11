@@ -6,7 +6,7 @@
 
 from telethon.tl.functions.messages import EditChatDefaultBannedRightsRequest
 from telethon.tl.types import ChatBannedRights
-from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP
+from userbot import CMD_HELP
 from userbot.utils import Xa_cmd
 from userbot import CMD_HANDLER as cmd
 
