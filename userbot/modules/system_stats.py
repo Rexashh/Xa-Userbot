@@ -381,6 +381,7 @@ async def redis(xaon):
         await asyncio.sleep(100)
         await alive.delete()
 
+
 @Xa_cmd(pattern="aliveu")
 async def amireallyaliveuser(username):
     """ For .aliveu command, change the username in the .alive command. """
