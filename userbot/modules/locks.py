@@ -1,17 +1,18 @@
-# Copyright by Xa-Userbot
-# @JustRex dibantu @IDnyaKosong
-# this module is from jarvis userbot and i edited it a bit
-# Kalo mau ambil gausah hapus ini kontol
-
+# Copyright (C) 2019 The Raphielscape Company LLC.
+#
+# Licensed under the Raphielscape Public License, Version 1.c (the "License");
+# you may not use this file except in compliance with the License.
+# thanks to anishsk
 
 from telethon.tl.functions.messages import EditChatDefaultBannedRightsRequest
 from telethon.tl.types import ChatBannedRights
-from userbot import CMD_HELP
-from userbot.utils import Xa_cmd
+
 from userbot import CMD_HANDLER as cmd
+from userbot import CMD_HELP, owner
+from userbot.utils import edit_or_reply, Xa_cmd
 
 
-@Xa_cmd(pattern="lock$")
+@Xa_cmd(pattern="lock ?(.*)")
 async def locks(event):
     input_str = event.pattern_match.group(1).lower()
     peer_id = event.chat_id
@@ -27,34 +28,34 @@ async def locks(event):
     changeinfo = None
     if input_str == "msg":
         msg = True
-        what = "messages"
+        what = "Pesan"
     elif input_str == "media":
         media = True
-        what = "media"
+        what = "Media"
     elif input_str == "sticker":
         sticker = True
-        what = "stickers"
+        what = "Sticker"
     elif input_str == "gif":
         gif = True
-        what = "GIFs"
+        what = "GIF"
     elif input_str == "game":
         gamee = True
-        what = "games"
+        what = "Game"
     elif input_str == "inline":
         ainline = True
-        what = "inline bots"
+        what = "Inline Bot"
     elif input_str == "poll":
         gpoll = True
-        what = "polls"
+        what = "Poll"
     elif input_str == "invite":
         adduser = True
-        what = "invites"
+        what = "Invite"
     elif input_str == "pin":
         cpin = True
-        what = "pins"
+        what = "Pin"
     elif input_str == "info":
         changeinfo = True
-        what = "chat info"
+        what = "Info"
     elif input_str == "all":
         msg = True
         media = True
@@ -66,15 +67,15 @@ async def locks(event):
         adduser = True
         cpin = True
         changeinfo = True
-        what = "everything"
+        what = "Semuanya"
     else:
         if not input_str:
-            await event.edit("Tolong Berikan, Apa yang harus di kunci!!!")
-            return
+            await edit_or_reply(event, "**Apa Yang Harus Saya Kunci?**")
         else:
-            await event.edit(f"Jenis Penguncian tidak valid: {input_str}")
-            return
-
+            await edit_or_reply(
+                event, f"**Jenis Yang Mau Anda Kunci Tidak Valid** `{input_str}`"
+            )
+        return
     lock_rights = ChatBannedRights(
         until_date=None,
         send_messages=msg,
@@ -90,16 +91,18 @@ async def locks(event):
     )
     try:
         await event.client(
-            EditChatDefaultBannedRightsRequest(peer=peer_id,
-                                               banned_rights=lock_rights))
-        await event.edit(f"{DEFAULTUSER} Mengunci {what} Tunggu Sampai Dia membuka nya!!")
+            EditChatDefaultBannedRightsRequest(peer=peer_id, banned_rights=lock_rights)
+        )
+        await edit_or_reply(
+            event, f"**{owner} Telah Mengunci {what} Untuk Obrolan Ini!!**"
+        )
     except BaseException as e:
-        await event.edit(
-            f"Tidak Memliki hak untuk melakukan penguncian!\nError: {str(e)}")
+        await edit_or_reply(event, f"**ERROR:** {e}")
+
         return
 
 
-@Xa_cmd(pattern="unlock$")
+@Xa_cmd(pattern="unlock ?(.*)")
 async def rem_locks(event):
     input_str = event.pattern_match.group(1).lower()
     peer_id = event.chat_id
@@ -115,34 +118,34 @@ async def rem_locks(event):
     changeinfo = None
     if input_str == "msg":
         msg = False
-        what = "messages"
+        what = "Pesan"
     elif input_str == "media":
         media = False
-        what = "media"
+        what = "Media"
     elif input_str == "sticker":
         sticker = False
-        what = "stickers"
+        what = "Sticker"
     elif input_str == "gif":
         gif = False
-        what = "GIFs"
+        what = "GIF"
     elif input_str == "game":
         gamee = False
-        what = "games"
+        what = "Game"
     elif input_str == "inline":
         ainline = False
-        what = "inline bots"
+        what = "Inline"
     elif input_str == "poll":
         gpoll = False
-        what = "polls"
+        what = "Poll"
     elif input_str == "invite":
         adduser = False
-        what = "invites"
+        what = "Invite"
     elif input_str == "pin":
         cpin = False
-        what = "pins"
+        what = "Pin"
     elif input_str == "info":
         changeinfo = False
-        what = "chat info"
+        what = "Info"
     elif input_str == "all":
         msg = False
         media = False
@@ -154,15 +157,15 @@ async def rem_locks(event):
         adduser = False
         cpin = False
         changeinfo = False
-        what = "everything"
+        what = "Semuanya"
     else:
         if not input_str:
-            await event.edit("I can't unlock nothing !!")
-            return
+            await edit_or_reply(event, "**Apa Yang Harus Saya Buka?**")
         else:
-            await event.edit(f"Jenis Penguncian tidak Valid: {input_str}")
-            return
-
+            await edit_or_reply(
+                event, f"**Jenis Kunci Yang Mau Anda Buka Tidak Valid** `{input_str}`"
+            )
+        return
     unlock_rights = ChatBannedRights(
         until_date=None,
         send_messages=msg,
@@ -178,20 +181,29 @@ async def rem_locks(event):
     )
     try:
         await event.client(
-            EditChatDefaultBannedRightsRequest(peer=peer_id,
-                                               banned_rights=unlock_rights))
-        await event.edit(f"{DEFAULTUSER} Membuka {what} Sekarang sudah bebas!!")
+            EditChatDefaultBannedRightsRequest(
+                peer=peer_id, banned_rights=unlock_rights
+            )
+        )
+        await edit_or_reply(
+            event, f"**{owner} Telah Membuka Kunci {what} Untuk Obrolan Ini!!**"
+        )
     except BaseException as e:
-        await event.edit(
-            f"Tidak Memliki hak untuk melakukan penguncian!\nError: {str(e)}")
+        await edit_or_reply(event, f"**ERROR:** {e}")
+
         return
 
 
-CMD_HELP.update({
-    "locks":
-    f"{cmd}lock atau {cmd}unlock\
- \nFungsi: Memungkinkan Anda mengunci/membuka beberapa jenis pesan umum dalam Group.\
- [CATATAN: Memerlukan hak admin yang tepat dalam Group!!]\
- \n\nJenis pesan yang tersedia untuk dikunci/dibuka adalah: \
- \nall (semua), msg, media, stiker, gif, game, inline, poll, invite, pin, info"
-})
+CMD_HELP.update(
+    {
+        "locks": f"**Plugin : **`locks`\
+        \n\n  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `{cmd}lock` <all atau Jenis lock>\
+        \n  ғᴜɴɢsɪ : **Memungkinkan anda Mengunci beberapa jenis pesan dalam obrolan.\
+        \n\n  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `{cmd}unlock` <all atau Jenis lock>\
+        \n  ғᴜɴɢsɪ : **Untuk membuka kunci, beberapa jenis pesan dalam obrolan.\
+        \n\n  •  **Jenis pesan yang bisa dikunci atau dibuka adalah:**\
+        \n  •  `all, msg, media, sticker, gif, game, inline, poll, invite, pin, info`\
+        \n\n  •  **Contoh :** `.lock msg` atau `.unlock msg`\
+    "
+    }
+)
