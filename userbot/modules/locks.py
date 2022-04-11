@@ -145,17 +145,17 @@ async def rem_locks(event):
         changeinfo = False
         what = "chat info"
     elif input_str == "all":
-    msg = False
-    media = False
-    sticker = False
-    gif = False
-    gamee = False
-    ainline = False
-    gpoll = False
-    adduser = False
-    cpin = False
-    changeinfo = False
-    what = "everything"
+        msg = False
+        media = False
+        sticker = False
+        gif = False
+        gamee = False
+        ainline = False
+        gpoll = False
+        adduser = False
+        cpin = False
+        changeinfo = False
+        what = "everything"
     else:
         if not input_str:
             await event.edit("I can't unlock nothing !!")
