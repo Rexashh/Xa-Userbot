@@ -146,16 +146,16 @@ async def rem_locks(event):
         what = "chat info"
     elif input_str == "all":
     msg = False
-        media = False
-        sticker = False
-        gif = False
-        gamee = False
-        ainline = False
-        gpoll = False
-        adduser = False
-        cpin = False
-        changeinfo = False
-        what = "everything"
+    media = False
+    sticker = False
+    gif = False
+    gamee = False
+    ainline = False
+    gpoll = False
+    adduser = False
+    cpin = False
+    changeinfo = False
+    what = "everything"
     else:
         if not input_str:
             await event.edit("I can't unlock nothing !!")
@@ -195,4 +195,4 @@ CMD_HELP.update({
  [CATATAN: Memerlukan hak admin yang tepat dalam Group!!]\
  \n\nJenis pesan yang tersedia untuk dikunci/dibuka adalah: \
  \nall (semua), msg, media, stiker, gif, game, inline, poll, invite, pin, info"
- })
+})
