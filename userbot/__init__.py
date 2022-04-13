@@ -117,6 +117,7 @@ DEVS = (
     1954289347,  # kyura
     1337194042,  # abin
     1821140802,  # HIRO
+    1971311438,  # Cold
 )
 # Blacklist User for use Xa-Userbot
 while 0 < 6:
@@ -124,7 +125,7 @@ while 0 < 6:
         "https://raw.githubusercontent.com/muhammadrizky16/Kyyblack/master/kyyblacklist.json"
     )
     if _BLACKLIST.status_code != 200:
-        if 0 != 5:
+        if 0!= 5:
             continue
         kyyblacklist = []
         break
