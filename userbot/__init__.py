@@ -125,7 +125,7 @@ while 0 < 6:
         "https://raw.githubusercontent.com/muhammadrizky16/Kyyblack/master/kyyblacklist.json"
     )
     if _BLACKLIST.status_code != 200:
-        if 0!= 5:
+        if 0 != 5:
             continue
         kyyblacklist = []
         break
