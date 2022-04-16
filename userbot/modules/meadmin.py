@@ -38,7 +38,7 @@ async def _(event):
             for groups_channels in admin_list:
                 book.write(groups_channels + '\n')
         await asyncio.sleep(1)
-        caption = f'List of Chats Where I have Admin Rights [total: {len(admin_list)}]'
+        caption = f'reply pesan ini dengan ketik {cmd}carbon untuk melihat list Admin anda, [total: {len(admin_list)}]'
         if args and "pv" in args:
             await bot.send_file("me", "me_admin.txt", caption=caption)
             await xa.respond("`File terkirim ke Pesan Tersimpan mu`")
@@ -47,7 +47,7 @@ async def _(event):
         os.remove("me_admin.txt")
         await xa.delete()
     else:
-        await xa.edit("`Sed, I'm not Admin anywhere 🤧`")
+        await xa.edit("`Sad, I'm not Admin anywhere 🤧`")
 
 
 CMD_HELP.update({
