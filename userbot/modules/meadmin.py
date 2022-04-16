@@ -5,23 +5,24 @@
 import asyncio
 import os
 
+from userbot import bot
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
 from userbot.utils import edit_or_reply, Xa_cmd
 
 
-@Xa_cmd(pattern="meadmin ?(.*)")
+@Xa_cmd(pattern="meadmin(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
     here = event.chat_id
     args = event.pattern_match.group(1)
-    e1 = await edit_or_reply(event, "`Processing...`")
+    xa = await edit_or_reply(event, "`Processing...`")
     admin_list = []
-    dialogue = await ultroid_bot.get_dialogs()
+    dialogue = await bot.get_dialogs()
     for dialog in dialogue:
         if dialog.is_group or dialog.is_channel:
-            ids = await ultroid_bot.get_entity(dialog)
+            ids = await bot.get_entity(dialog)
             try:
                 if ids.admin_rights or ids.creator:
                     info = f"{ids.id}:  {ids.title}"
@@ -32,25 +33,27 @@ async def _(event):
                 continue
 
     if len(admin_list) > 0:
-        await e1.edit('`Berhasil, Sedang Membuat File 🖨️`')
+        await xa.edit('`Berhasil, Sedang Membuat File 🖨️`')
         with open('me_admin.txt', 'w') as book:
             for groups_channels in admin_list:
                 book.write(groups_channels + '\n')
         await asyncio.sleep(1)
-        caption = f'List Dimana kamu menjadi admin [total: {len(admin_list)}]'
+        caption = f'List of Chats Where I have Admin Rights [total: {len(admin_list)}]'
         if args and "pv" in args:
-            await ultroid_bot.send_file("me", "me_admin.txt", caption=caption)
-            await e1.respond("`File terkirim ke Pesan Tersimpan mu`")
+            await bot.send_file("me", "me_admin.txt", caption=caption)
+            await xa.respond("`File terkirim ke Pesan Tersimpan mu`")
         else:
-            await ultroid_bot.send_file(here, "me_admin.txt", caption=caption)
+            await bot.send_file(here, "me_admin.txt", caption=caption)
         os.remove("me_admin.txt")
-        await e1.delete()
+        await xa.delete()
     else:
-        await e1.edit("`Sed, I'm not Admin anywhere 🤧`")
-
+        await xa.edit("`Sed, I'm not Admin anywhere 🤧`")
+        
 
 CMD_HELP.update({
     "meadmin":
     f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}meadmin`\
-    \n↳ : memberikan list group dimana kamu menjadi admin."
+    \n↳ : memberikan list group dimana kamu menjadi admin\
+    f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}meadmin pv`\
+    \n↳ : memberikan list group dimana kamu menjadi admin mengirim nya lewat tersimpan."
 })
