@@ -48,12 +48,12 @@ async def _(event):
         await xa.delete()
     else:
         await xa.edit("`Sed, I'm not Admin anywhere 🤧`")
-        
+
 
 CMD_HELP.update({
     "meadmin":
     f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}meadmin`\
     \n↳ : memberikan list group dimana kamu menjadi admin\
-    f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}meadmin pv`\
-    \n↳ : memberikan list group dimana kamu menjadi admin mengirim nya lewat tersimpan."
+    f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}meadmin pv`
+    \n↳: memberikan list group dimana kamu menjadi admin mengirim nya lewat tersimpan."
 })
