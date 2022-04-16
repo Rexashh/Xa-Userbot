@@ -53,7 +53,5 @@ async def _(event):
 CMD_HELP.update({
     "meadmin":
     f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}meadmin`\
-    \n↳ : memberikan list group dimana kamu menjadi admin\
-    f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}meadmin pv`
-    \n↳: memberikan list group dimana kamu menjadi admin mengirim nya lewat tersimpan."
+    \n↳ : memberikan list group dimana kamu menjadi admin."
 })
