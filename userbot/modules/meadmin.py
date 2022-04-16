@@ -45,5 +45,5 @@ async def _(event):
         await e1.edit("`Sed, I'm not Admin anywhere 🤧`")
 
 
-CMD_HELP.update({"meadmin": f"\n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `{cmd}meadmin`
+CMD_HELP.update({"meadmin": f"\n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `{cmd}meadmin`\
                  "\n⌬ Memberikan list group dimana kamu menjadi admin."})
