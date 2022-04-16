@@ -1,5 +1,5 @@
 # COPYRIGHT ULTROID USERBOT
-# edit by @JustRex Xa-Userbot 
+# edit by @JustRex Xa-Userbot
 # Jangan hapus Anjg
 
 import asyncio
