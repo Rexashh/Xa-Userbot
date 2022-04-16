@@ -1,9 +1,13 @@
+# COPYRIGHT ULTROID USERBOT
+# edit by @JustRex Xa-Userbot 
+# Jangan hapus Anjg
+
 import asyncio
 import os
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
-from userbot.utils import Xa_cmd
+from userbot.utils import edit_or_reply, Xa_cmd
 
 
 @Xa_cmd(pattern="meadmin ?(.*)")
@@ -12,7 +16,7 @@ async def _(event):
         return
     here = event.chat_id
     args = event.pattern_match.group(1)
-    e1 = await eor(event, "`Processing...`")
+    e1 = await edit_or_reply(event, "`Processing...`")
     admin_list = []
     dialogue = await ultroid_bot.get_dialogs()
     for dialog in dialogue:
@@ -33,7 +37,7 @@ async def _(event):
             for groups_channels in admin_list:
                 book.write(groups_channels + '\n')
         await asyncio.sleep(1)
-        caption = f'List of Chats Where I have Admin Rights [total: {len(admin_list)}]'
+        caption = f'List Dimana kamu menjadi admin [total: {len(admin_list)}]'
         if args and "pv" in args:
             await ultroid_bot.send_file("me", "me_admin.txt", caption=caption)
             await e1.respond("`File terkirim ke Pesan Tersimpan mu`")
