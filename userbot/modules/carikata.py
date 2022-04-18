@@ -6,7 +6,7 @@
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
-from userbot.utils import edit_or_reply, Xa_cmd
+from userbot.utils import edit_or_reply, edit_or_delete, Xa_cmd
 
 
 @Xa_cmd(pattern="cari( -r|) ?(.*)")
