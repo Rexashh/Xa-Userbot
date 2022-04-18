@@ -139,19 +139,19 @@ async def redis(pong):
     """For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("__Bentar jing.__")
-    await pong.edit("__Bentar jing..__")
-    await pong.edit("__Bentar jing...__")
-    await pong.edit("__Bentar jing.__")
-    await pong.edit("__Bentar jing..__")
-    await pong.edit("__Bentar jing...__")
-    await pong.edit("__Bentar jing.__")
-    await pong.edit("__Bentar jing..__")
-    await pong.edit("__Bentar jing...__")
+    await pong.edit("__XXXX.__")
+    await pong.edit("__XXXX..__")
+    await pong.edit("__XXXX...__")
+    await pong.edit("__XXXX.__")
+    await pong.edit("__XXXX..__")
+    await pong.edit("__XXXX...__")
+    await pong.edit("__XXXX.__")
+    await pong.edit("__XXXX..__")
+    await pong.edit("__XXXX...__")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**🦖xᴀ ᴜsᴇʀʙᴏᴛ🦖**\n"
+        f"**xᴀ ᴜsᴇʀʙᴏᴛ**\n"
         f"⌬ __Signal__    __:__ "
         f"`%sms` \n"
         f"⌬ __Uptime__ __:__ "
@@ -175,7 +175,7 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**🦖 xᴀ-ᴜsᴇʀʙᴏᴛ 🦖**\n\n"
+        f"**xᴀ-ᴜsᴇʀʙᴏᴛ**\n\n"
         f"** ⌬  Sɪɢɴᴀʟ   :** "
         f"`%sms` \n"
         f"** ⌬  Uᴘᴛɪᴍᴇ  :** "
@@ -285,7 +285,7 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**BABI!! **\n**NGENTOT** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
+        f"**CROTT!! **\n**KUATNGEWE** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
     )
 
 
