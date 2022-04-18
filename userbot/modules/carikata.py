@@ -6,7 +6,7 @@
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
-from userbot.utils import edit_or_reply, edit_or_delete, Xa_cmd
+from userbot.utils import edit_or_reply, edit_delete, Xa_cmd
 
 
 @Xa_cmd(pattern="cari( -r|) ?(.*)")
@@ -15,7 +15,7 @@ async def searcher(e):
     args = e.pattern_match.group(2)
     limit = 5
     if not args or len(args) < 2:
-        await edit_or_delete(rex, "Invalid argument!, Coba Lagi")
+        await edit_delete(rex, "Invalid argument!, Coba Lagi")
         return
 
     if ":" in args:
