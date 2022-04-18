@@ -9,7 +9,6 @@ from userbot.utils import Xa_cmd
 
 from userbot import owner
 from telethon.tl.types import InputMessagesFilterVideo
-from telethon.tl.types import InputMessagesFilterVoice
 from telethon.tl.types import InputMessagesFilterPhotos
 
 
@@ -73,7 +72,6 @@ async def _(event):
         await event.edit("Maaf, kayaknya kamu ga pantes untuk sedih :) .")
 
 
-
 @Xa_cmd(pattern="kpop$")
 async def _(event):
     try:
@@ -132,8 +130,8 @@ async def _(event):
         await event.delete()
     except Exception:
         await event.edit("**tidak ditemukan, tahsn dulu sangenya.**")
-        
-        
+
+
 @Xa_cmd(pattern="ppcp$")
 async def _(event):
     try:
@@ -148,12 +146,12 @@ async def _(event):
             event.chat_id,
             file=random.choice(ppcpnya),
             caption=f"pp couple by [{owner}](tg://user?id={xa.id})",
-      )
+        )
         await event.delete()
     except Exception:
         await event.edit("**tidak ditemukan. **")
-            
-            
+
+
 @Xa_cmd(pattern="memeid$")
 async def _(event):
     try:
@@ -172,8 +170,6 @@ async def _(event):
         await event.delete()
     except Exception:
         await event.edit("**tidak ditemukan. **")
-            
-
 
 
 CMD_HELP.update(
