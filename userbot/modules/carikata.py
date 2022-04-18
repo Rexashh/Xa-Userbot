@@ -1,11 +1,9 @@
 # " Made by @e3ris for Ultroid. "
 # < https://github.com/TeamUltroid/Ultroid >
 # idea: https://t.me/TelethonChat/256160
-# recode by @JustRex 
+# recode by @JustRex
 
 
-import asyncio
-import os
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
@@ -45,7 +43,7 @@ async def searcher(e):
         else f"**Tidak ada Hasil Pencarian Kata :**  `{args}`"
     )
     await rex.edit(txt)
-    
+
 CMD_HELP.update(
     {
         "carikata": f"**Plugin : **carikata\
