@@ -182,15 +182,18 @@ async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("UDAH JELEK GAUSAH BANYAK GAYA KONTOL.")
 
+
 @Xa_cmd(pattern='unor(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("MINIMAL KALO LO PUNYA USERBOT, GAUSAH NORAK KONTOL")
 
+
 @Xa_cmd(pattern='kspoi(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("||CIE NGEKLIK, KEPO LU YA?||")
+
 
 @Xa_cmd(pattern='kspoi2(?: |$)(.*)')
 async def typewriter(typew):
