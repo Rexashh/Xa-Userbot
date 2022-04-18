@@ -161,7 +161,7 @@ PMPERMIT_TEXT = os.environ.get("PMPERMIT_TEXT", None)
 
 # Custom Pmpermit pic
 PMPERMIT_PIC = os.environ.get(
-    "PMPERMIT_PIC") or "https://telegra.ph/file/a25712fa68c951e3cd285.jpg"
+    "PMPERMIT_PIC") or "https://telegra.ph/file/95447acd924e43f0e40af.jpg"
 
 # Bleep Blop, this is a bot ;)
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
@@ -285,7 +285,7 @@ BITLY_TOKEN = os.environ.get(
 TERM_ALIAS = os.environ.get("TERM_ALIAS", "Xa-Userbot")
 
 # Bot Version
-BOT_VER = os.environ.get("BOT_VER", "8.1")
+BOT_VER = os.environ.get("BOT_VER", "8.2")
 
 # Default .alive Username
 ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
@@ -295,11 +295,11 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/a25712fa68c951e3cd285.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/e297bc3e404955d1948d3.jpg"
 
 # Default .helpme Logo
 INLINE_PIC = os.environ.get(
-    "INLINE_PIC") or "https://telegra.ph/file/3abf6f0c2ad0a9023e796.jpg"
+    "INLINE_PIC") or "https://telegra.ph/file/eabe1aacc5b823140b5b8.jpg"
 
 # Default emoji help
 EMOJI_HELP = os.environ.get("EMOJI_HELP") or "⚡"
@@ -577,7 +577,7 @@ with bot:
                 current_page_number = int(looters)
                 buttons = paginate_help(
                     current_page_number, dugmeler, "helpme")
-                text = f"**🦖 Xa-Userbot Inline Menu 🦖**\n\n⌬ **Owner :** [{user.first_name}](tg://user?id={user.id})\n⌬ **Jumlah** `{len(dugmeler)}` Modules"
+                text = f"**⚡ Xa-Userbot Inline Menu ⚡**\n\n⌬ **Owner :** [{user.first_name}](tg://user?id={user.id})\n⌬ **Jumlah** `{len(dugmeler)}` Modules"
                 await event.edit(
                     text,
                     file=xalogo,
