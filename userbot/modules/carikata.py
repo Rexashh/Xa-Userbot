@@ -27,8 +27,8 @@ async def searcher(e):
 
     limit = 99 if limit > 99 else limit
     text, c = "", 0
-    async for msg in edit.client.iter_messages(
-        edit.chat_id,
+    async for msg in e.client.iter_messages(
+        e.chat_id,
         search=args.strip(),
         limit=limit,
         reverse=bool(e.pattern_match.group(1)),
