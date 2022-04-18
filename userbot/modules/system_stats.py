@@ -292,17 +292,17 @@ async def amireallyalive(alive):
 async def redis(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
-    await alive.edit("__𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵.__")
-    await alive.edit("__𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵..__")
-    await alive.edit("__𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵.__")
-    await alive.edit("__𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵..__")
-    await alive.edit("__𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵...__")
-    await alive.edit("__𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵..__")
-    await alive.edit("__𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵...__")
-    await alive.edit("⚡")
+    await alive.edit("__Loading.__")
+    await alive.edit("__Loading..__")
+    await alive.edit("__Loading.__")
+    await alive.edit("__Loading..__")
+    await alive.edit("__Loading...__")
+    await alive.edit("__Loading..__")
+    await alive.edit("__Loading...__")
+    await alive.edit("🤖")
     await asyncio.sleep(3)
     output = (
-        f"**🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖**\n"
+        f"**xᴀ-ᴜsᴇʀʙᴏᴛ⚡**\n"
         f"┏━━━━━━━━━━━━━━━━━━━━━━ \n"
         f"┣  `Name     :` {DEFAULTUSER} \n"
         f"┣  `Username :` @{user.username} \n"
@@ -352,7 +352,7 @@ async def redis(alive):
     await alive.edit("**Finished Loading..**")
     await alive.edit("**Finished Loading...**")
     await alive.edit("**Complete**")
-    await alive.edit("⚡")
+    await alive.edit("🔥")
     await asyncio.sleep(2)
     output = (
         f"HEY!! I'M ALIVE FOR HELPING YOU! \n"
