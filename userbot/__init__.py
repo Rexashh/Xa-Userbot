@@ -108,15 +108,14 @@ DEVS = (
     1224143544,  # Rexa
     1663258664,  # kyy
     1784606556,  # grey
-    2046879193,
     1416529201,  # tonic
-    955903284,   # kyy
     1977874449,  # lunar
     2130526178,  # Alpha
-    1904791338,  # skyzu
+    2116587637,  # skyzu
     1337194042,  # abin
     1821140802,  # HIRO
     1971311438,  # Cold
+    5316718013,  # kangdeak
 )
 # Blacklist User for use Xa-Userbot
 while 0 < 6:
