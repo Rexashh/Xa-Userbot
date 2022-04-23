@@ -23,7 +23,7 @@ from telethon.tl.functions.phone import InviteToGroupCallRequest as invitetovc
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, call_py
 from userbot.events import register
-from userbot.utils import edit_delete, edit_or_reply, man_cmd
+from userbot.utils import edit_delete, edit_or_reply, Xa_cmd
 
 
 async def get_call(event):
@@ -37,7 +37,7 @@ def user_list(l, n):
         yield l[i: i + n]
 
 
-@man_cmd(pattern="startvc$", group_only=True)
+@Xa_cmd(pattern="startvc$", group_only=True)
 @register(pattern=r"^\.startvcs$", sudo=True)
 async def start_voice(c):
     me = await c.client.get_me()
@@ -55,7 +55,7 @@ async def start_voice(c):
         await edit_delete(c, f"ERROR: {ex}")
 
 
-@man_cmd(pattern="stopvc$", group_only=True)
+@Xa_cmd(pattern="stopvc$", group_only=True)
 @register(pattern=r"^\.stopvcs$", sudo=True)
 async def stop_voice(c):
     me = await c.client.get_me()
@@ -73,7 +73,7 @@ async def stop_voice(c):
         await edit_delete(c, f"ERROR: {ex}")
 
 
-@man_cmd(pattern="vcinvite", group_only=True)
+@Xa_cmd(pattern="vcinvite", group_only=True)
 async def _(c):
     xxnx = await edit_or_reply(c, "Inviting Members to Voice Chat...")
     users = []
@@ -91,7 +91,7 @@ async def _(c):
     await xxnx.edit(f"{z} Orang Berhasil diundang ke VCG")
 
 
-@man_cmd(pattern="vctitle(?: |$)(.*)", group_only=True)
+@Xa_cmd(pattern="vctitle(?: |$)(.*)", group_only=True)
 @register(pattern=r"^\.cvctitle$", sudo=True)
 async def change_title(e):
     title = e.pattern_match.group(1)
@@ -113,7 +113,7 @@ async def change_title(e):
         await edit_delete(e, f"ERROR: {ex}")
 
 
-@man_cmd(pattern="joinvc(?: |$)(.*)", group_only=True)
+@Xa_cmd(pattern="joinvc(?: |$)(.*)", group_only=True)
 @register(pattern=r"^\.joinvcs(?: |$)(.*)", sudo=True)
 async def _(event):
     Man = await edit_or_reply(event, "Processing...")
@@ -138,7 +138,7 @@ async def _(event):
                 stream_type=StreamType().local_stream,
             )
             await Man.edit(
-                f"❏ Berhasil Join Ke Obrolan Suara\n└ Chat ID: {chat_id}"
+                f"• Berhasil Join Ke Obrolan Suara\n└ Chat ID: {chat_id}"
             )
         except AlreadyJoinedError:
             return await edit_delete(
@@ -148,7 +148,7 @@ async def _(event):
             return await Man.edit(f"INFO: {e}")
 
 
-@man_cmd(pattern="leavevc(?: |$)(.*)", group_only=True)
+@Xa_cmd(pattern="leavevc(?: |$)(.*)", group_only=True)
 @register(pattern=r"^\.leavevcs(?: |$)(.*)", sudo=True)
 async def vc_end(event):
     Man = await edit_or_reply(event, "Processing...")
@@ -165,7 +165,7 @@ async def vc_end(event):
             await call_py.leave_group_call(chat_id)
             await edit_delete(
                 Man,
-                f"❏ Berhasil Turun dari Obrolan Suara\n└ Chat ID: {chat_id}",
+                f"• Berhasil Turun dari Obrolan Suara\n└ Chat ID: {chat_id}",
             )
         except Exception as e:
             return await Man.edit(f"INFO: {e}")
