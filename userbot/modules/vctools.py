@@ -34,7 +34,7 @@ async def get_call(event):
 
 def user_list(l, n):
     for i in range(0, len(l), n):
-        yield l[i : i + n]
+        yield l[i: i + n]
 
 
 @man_cmd(pattern="startvc$", group_only=True)
@@ -111,6 +111,8 @@ async def change_title(e):
         await edit_or_reply(e, f"Berhasil Mengubah Judul VCG Menjadi {title}")
     except Exception as ex:
         await edit_delete(e, f"ERROR: {ex}")
+
+
 @man_cmd(pattern="joinvc(?: |$)(.*)", group_only=True)
 @register(pattern=r"^\.joinvcs(?: |$)(.*)", sudo=True)
 async def _(event):
