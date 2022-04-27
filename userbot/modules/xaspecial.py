@@ -172,6 +172,26 @@ async def _(event):
         await event.edit("**tidak ditemukan. **")
 
 
+@Xa_cmd(pattern="ncp$")
+async def _(event):
+    try:
+        kontenrexnya = [
+            kontenrex
+            async for kontenrex in event.client.iter_messages(
+                "@durovbgst", filter=InputMessagesFilterPhotos
+            )
+        ]
+        xa = await event.client.get_me()
+        await event.client.send_file(
+            event.chat_id,
+            file=random.choice(kontenrexnya),
+            caption=f"adult photos by [{owner}](tg://user?id={xa.id})",
+        )
+        await event.delete()
+    except Exception:
+        await event.edit("**tidak ditemukan. **")
+
+
 CMD_HELP.update(
     {
         "xaspecial": f"**Plugin : **xaspecial\
