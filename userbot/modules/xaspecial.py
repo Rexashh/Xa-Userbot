@@ -191,6 +191,7 @@ async def _(event):
     except Exception:
         await event.edit("**tidak ditemukan. **")
 
+
 @Xa_cmd(pattern="lebaran6$")
 async def _(event):
     try:
@@ -205,8 +206,8 @@ async def _(event):
             event.chat_id,
             file=random.choice(lebarannya),
             caption=f" saya [{owner}](tg://user?id={xa.id}) dan sekeluarga mengucapkan ",
-                             f"Mengucapkan Minal 'Aidin wal-Faizin",
-                             f"Mohon Maaf Lahir dan Batin",
+            f"Mengucapkan Minal 'Aidin wal-Faizin",
+            f"Mohon Maaf Lahir dan Batin",
         )
         await event.delete()
     except Exception:
