@@ -18,7 +18,7 @@ async def _(typew):
     await typew.edit("🕌")
     await typew.edit("🕌🕌")
     await typew.edit("🕌🕌🕌")
-    awiat typew.edit("✨")
+    await typew.edit("✨")
     sleep(1)
     await typew.edit("🕌 𝙎𝙚𝙡𝙖𝙢𝙖𝙩 𝙃𝙖𝙧𝙞 𝙍𝙖𝙮𝙖 𝙄𝙙𝙪𝙡 𝙁𝙞𝙩𝙧𝙞 🕌\n"
                      " Ramadhan akan segera pergi, tapi diri tak bisa suci\n"
@@ -127,16 +127,16 @@ CMD_HELP.update(
         \n  🕌  **Fungsi : **Coba aja.\
         \n\n  •  **Perintah :** `{cmd}lebaran6`\
         \n  🕌  **Fungsi : **Coba aja.\
-n\n  • ** Perintah: ** `{cmd}petasan`
-        \n  🕌 ** Fungsi: **Coba aja.
-        \n\n  • ** Perintah: ** `{cmd}thr`
-        \n  🕌 ** Fungsi: **Coba aja.
-        \n\n  • ** Perintah: ** `{cmd}slok`
-        \n  🕌 ** Fungsi: **Coba aja.
-        \n\n  • ** Perintah: ** `{cmd}thr2`
-        \n  🕌 ** Fungsi: **Coba aja.
-        \n\n  • ** Perintah: ** `{cmd}thr3`
-        \n  🕌 ** Fungsi: **Coba aja.
+        \n\n  • ** Perintah :** `{cmd}petasan`\
+        \n  🕌 ** Fungsi : **Coba aja.\
+        \n\n  • ** Perintah :** `{cmd}thr`\
+        \n  🕌 ** Fungsi : **Coba aja.\
+        \n\n  • ** Perintah :** `{cmd}slok`\
+        \n  🕌 ** Fungsi : **Coba aja.\
+        \n\n  • ** Perintah :** `{cmd}thr2`\
+        \n  🕌 ** Fungsi : **Coba aja.\
+        \n\n  • ** Perintah :** `{cmd}thr3`\
+        \n  🕌 ** Fungsi : **Coba aja.\
         "
     }
 )
