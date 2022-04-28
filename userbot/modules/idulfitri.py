@@ -127,16 +127,16 @@ CMD_HELP.update(
         \n  🕌  **Fungsi : **Coba aja.\
         \n\n  •  **Perintah :** `{cmd}lebaran6`\
         \n  🕌  **Fungsi : **Coba aja.\
-n\n  • ** Perintah: ** `{cmd}petasan`
-        \n  🕌 ** Fungsi: **Coba aja.
-        \n\n  • ** Perintah: ** `{cmd}thr`
-        \n  🕌 ** Fungsi: **Coba aja.
-        \n\n  • ** Perintah: ** `{cmd}slok`
-        \n  🕌 ** Fungsi: **Coba aja.
-        \n\n  • ** Perintah: ** `{cmd}thr2`
-        \n  🕌 ** Fungsi: **Coba aja.
-        \n\n  • ** Perintah: ** `{cmd}thr3`
-        \n  🕌 ** Fungsi: **Coba aja.
+        \n\n  • ** Perintah: ** `{cmd}petasan` \
+        \n  🕌 ** Fungsi: **Coba aja.\
+        \n\n  • ** Perintah: ** `{cmd}thr`\
+        \n  🕌 ** Fungsi: **Coba aja.\
+        \n\n  • ** Perintah: ** `{cmd}slok`\
+        \n  🕌 ** Fungsi: **Coba aja.\
+        \n\n  • ** Perintah: ** `{cmd}thr2`\
+        \n  🕌 ** Fungsi: **Coba aja\
+        \n\n  • ** Perintah: ** `{cmd}thr3`\
+        \n  🕌 ** Fungsi: **Coba aja.\
         "
     }
 )
