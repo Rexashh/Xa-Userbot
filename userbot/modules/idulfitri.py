@@ -6,10 +6,6 @@ from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
 from userbot.utils import Xa_cmd
 
-import random
-from userbot import owner
-from telethon.tl.types import InputMessagesFilterPhotos
-
 
 @Xa_cmd(pattern=r"lebaran2(?: |$)(.*)")
 async def _(typew):
@@ -53,29 +49,6 @@ async def _(typew):
     await typew.edit("Eh maksudnya, pernah berbuat salah ke lu ")
     sleep(1)
     await typew.edit("maafin ya!!")
-
-
-@Xa_cmd(pattern="lebaran6$")
-async def _(event):
-    try:
-        lebarannya = [
-            lebaran
-            async for lebaran in event.client.iter_messages(
-                "@lebaranxauserbot", filter=InputMessagesFilterPhotos
-            )
-        ]
-        xa = await event.client.get_me()
-        await event.client.send_file(
-            event.chat_id,
-            file=random.choice(lebarannya),
-            caption=f" saya [{owner}](tg://user?id={xa.id}) dan sekeluarga mengucapkan ",
-            f"Mengucapkan Minal 'Aidin wal-Faizin",
-            f"Mohon Maaf Lahir dan Batin",
-        )
-        await event.delete()
-    except Exception:
-        await event.edit("**tidak ditemukan. **")
-
 
 @Xa_cmd(pattern=r"petasan(?: |$)(.*)")
 async def _(typew):
