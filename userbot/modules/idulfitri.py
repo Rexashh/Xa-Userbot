@@ -2,13 +2,11 @@
 # By @JustRex Xa-Userbot
 
 from time import sleep
-
-import random
-
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
 from userbot.utils import Xa_cmd
 
+import random
 from userbot import owner
 from telethon.tl.types import InputMessagesFilterPhotos
 
@@ -51,7 +49,7 @@ async def _(typew):
     await typew.edit("Jadiii... ")
     sleep(1)
     await typew.edit("Maaf kalo gua pernah suka & cinta sama lu ")
-    sleep(0.5)
+    sleep(1.5)
     await typew.edit("Eh maksudnya, pernah berbuat salah ke lu ")
     sleep(1)
     await typew.edit("maafin ya!!")
@@ -127,16 +125,16 @@ CMD_HELP.update(
         \n  🕌  **Fungsi : **Coba aja.\
         \n\n  •  **Perintah :** `{cmd}lebaran6`\
         \n  🕌  **Fungsi : **Coba aja.\
-        \n\n  • ** Perintah :** `{cmd}petasan`\
-        \n  🕌 ** Fungsi : **Coba aja.\
-        \n\n  • ** Perintah :** `{cmd}thr`\
-        \n  🕌 ** Fungsi : **Coba aja.\
-        \n\n  • ** Perintah :** `{cmd}slok`\
-        \n  🕌 ** Fungsi : **Coba aja.\
-        \n\n  • ** Perintah :** `{cmd}thr2`\
-        \n  🕌 ** Fungsi : **Coba aja.\
-        \n\n  • ** Perintah :** `{cmd}thr3`\
-        \n  🕌 ** Fungsi : **Coba aja.\
+        \n\n  •  **Perintah :** `{cmd}petasan`\
+        \n  🕌  **Fungsi : **Coba aja.\
+        \n\n  •  **Perintah :** `{cmd}thr`\
+        \n  🕌  **Fungsi : **Coba aja.\
+        \n\n  •  **Perintah :** `{cmd}slok`\
+        \n  🕌  **Fungsi : **Coba aja.\
+        \n\n  •  **Perintah :** `{cmd}thr2`\
+        \n  🕌  **Fungsi : **Coba aja.\
+        \n\n  •  **Perintah :** `{cmd}thr3`\
+        \n  🕌  **Fungsi : **Coba aja.\
         "
     }
 )
