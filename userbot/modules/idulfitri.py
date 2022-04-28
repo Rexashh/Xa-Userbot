@@ -50,6 +50,7 @@ async def _(typew):
     sleep(1)
     await typew.edit("maafin ya!!")
 
+
 @Xa_cmd(pattern=r"petasan(?: |$)(.*)")
 async def _(typew):
     await typew.edit("🎆")
