@@ -13,7 +13,6 @@ from userbot import owner
 from telethon.tl.types import InputMessagesFilterPhotos
 
 
-
 @Xa_cmd(pattern=r"lebaran2(?: |$)(.*)")
 async def _(typew):
     await typew.edit("🕌")
@@ -27,22 +26,24 @@ async def _(typew):
                      " Taqobballahu minna wa minkum \n"
                      " Taqobbal ya Kariim\n"
                      " Mohon maaf lahir dan batin\n")
-                     
-                     
+
+
 @Xa_cmd(pattern=r"lebaran3(?: |$)(.*)")
 async def _(typew):
     await typew.edit("𝐌𝐢𝐧𝐚𝐥 '𝐀𝐢𝐝𝐢𝐧 𝐰𝐚𝐥-𝐅𝐚𝐢𝐳𝐢𝐧🕌\n"
-                                     "mohon maaf kalo ada salah kata,\n"
-                                     "salah cinta, atau salah menaruh rasa\n"
-                                     "Selamat  Hari Raya Idul Fitri 🕌\n")
+                     "mohon maaf kalo ada salah kata,\n"
+                     "salah cinta, atau salah menaruh rasa\n"
+                     "Selamat  Hari Raya Idul Fitri 🕌\n")
+
 
 @Xa_cmd(pattern=r"lebaran4(?: |$)(.*)")
 async def _(typew):
     await typew.edit("CTRL + S berkah Ramadan\n"
-                                     "CTRL + A, DEL Dosa dan kesalahan\n"
-                                     "CTRL + C, CTRL + V Kebahagian Lebaran\n"
-                                     "Selamat Idul Fitri teman-teman\n")
- 
+                     "CTRL + A, DEL Dosa dan kesalahan\n"
+                     "CTRL + C, CTRL + V Kebahagian Lebaran\n"
+                     "Selamat Idul Fitri teman-teman\n")
+
+
 @Xa_cmd(pattern=r"lebaran5(?: |$)(.*)")
 async def _(typew):
     await typew.edit("Walaupun gua pernah nyimpen perasaan ke lu, setidaknya gua ga mau nyimpen dosa ke lu,")
@@ -50,10 +51,11 @@ async def _(typew):
     await typew.edit("Jadiii... ")
     sleep(1)
     await typew.edit("Maaf kalo gua pernah suka & cinta sama lu ")
-    sleep(0.5)   
-    await typew.edit("Eh maksudnya, pernah berbuat salah ke lu ")  
-    sleep(1) 
-    await typew.edit("maafin ya!!")                
+    sleep(0.5)
+    await typew.edit("Eh maksudnya, pernah berbuat salah ke lu ")
+    sleep(1)
+    await typew.edit("maafin ya!!")
+
 
 @Xa_cmd(pattern="lebaran6$")
 async def _(event):
@@ -69,8 +71,8 @@ async def _(event):
             event.chat_id,
             file=random.choice(lebarannya),
             caption=f" saya [{owner}](tg://user?id={xa.id}) dan sekeluarga mengucapkan ",
-                             f" Mengucapkan Minal 'Aidin wal-Faizin",
-                             f" Mohon Maaf Lahir dan Batin",
+            f" Mengucapkan Minal 'Aidin wal-Faizin",
+            f" Mohon Maaf Lahir dan Batin",
         )
         await event.delete()
     except Exception:
@@ -86,29 +88,30 @@ async def _(typew):
     await typew.edit("𝐒𝐄𝐋𝐀𝐌𝐀𝐓 𝐈𝐃𝐔𝐋 𝐅𝐈𝐓𝐑𝐈 1443")
     sleep(1)
     await typew.edit("Mohon Maaf Lahir Dan Batin")
-    
-    
+
+
 @Xa_cmd(pattern=r"thr(?: |$)(.*)")
 async def _(typew):
     await typew.edit("Sory, lebih butuh Thr daripada Maaf dari lu !")
-    
+
+
 @Xa_cmd(pattern=r"slok(?: |$)(.*)")
 async def _(typew):
     await typew.edit("Udah Kelar nih Puasanya, Mau berantem ga? Sharelok cepet!")
-    
+
+
 @Xa_cmd(pattern=r"thr2(?: |$)(.*)")
 async def _(typew):
-    await typew.edit("Minal aidzin Bro! Jangan lupa kirim thr ke rekening gua")  
-    
+    await typew.edit("Minal aidzin Bro! Jangan lupa kirim thr ke rekening gua")
+
 
 @Xa_cmd(pattern=r"thr3(?: |$)(.*)")
 async def _(typew):
     await typew.edit("Lebaran nih...")
     sleep(1)
     await typew.edit("Bagi Thr lah jjingg!!!!")
-    
-    
-        
+
+
 CMD_HELP.update(
     {
         "idulfitri": f"**Plugin : **`idulfitri`\
@@ -123,17 +126,17 @@ CMD_HELP.update(
         \n\n  •  **Perintah :** `{cmd}lebaran5`\
         \n  🕌  **Fungsi : **Coba aja.\
         \n\n  •  **Perintah :** `{cmd}lebaran6`\
-        \n  🕌  **Fungsi : **Coba aja.\     
-        \n\n  •  **Perintah :** `{cmd}petasan`\
-        \n  🕌  **Fungsi : **Coba aja.\   
-        \n\n  •  **Perintah :** `{cmd}thr`\
-        \n  🕌  **Fungsi : **Coba aja.\      
-        \n\n  •  **Perintah :** `{cmd}slok`\
-        \n  🕌  **Fungsi : **Coba aja.\  
-        \n\n  •  **Perintah :** `{cmd}thr2`\
-        \n  🕌  **Fungsi : **Coba aja.\        
-        \n\n  •  **Perintah :** `{cmd}thr3`\
-        \n  🕌  **Fungsi : **Coba aja.\                
-    "
+ n  🕌  **F ungsi : **Coba aja.
+        \n\n  • ** Perintah: ** `{cmd}petasan`
+        \n  🕌 ** Fungsi: **Coba aja.
+        \n\n  • ** Perintah: ** `{cmd}thr`
+        \n  🕌 ** Fungsi: **Coba aja.
+        \n\n  • ** Perintah: ** `{cmd}slok`
+        \n  🕌 ** Fungsi: **Coba aja.
+        \n\n  • ** Perintah: ** `{cmd}thr2`
+        \n  🕌 ** Fungsi: **Coba aja.
+        \n\n  • ** Perintah: ** `{cmd}thr3`
+        \n  🕌 ** Fungsi: **Coba aja.
+        "
     }
 )
