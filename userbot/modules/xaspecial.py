@@ -205,7 +205,7 @@ async def _(event):
         await event.client.send_file(
             event.chat_id,
             file=random.choice(lebarannya),
-            caption=f" saya [{owner}](tg://user?id={xa.id}) dan sekeluarga mengucapkan, Minal Aidzin Walfaidzin",
+            caption=f"𝐒𝐚𝐲𝐚 [{owner}](tg://user?id={xa.id}) 𝐝𝐚𝐧 𝐬𝐞𝐤𝐞𝐥𝐮𝐚𝐫𝐠𝐚 𝐌𝐞𝐧𝐠𝐮𝐜𝐚𝐩𝐤𝐚𝐧, 𝐌𝐢𝐧𝐚𝐥 𝐀𝐢𝐝𝐳𝐢𝐧 𝐖𝐚𝐥𝐟𝐚𝐢𝐝𝐳𝐢𝐧, 𝐌𝐨𝐡𝐨𝐧 𝐌𝐚𝐚𝐟 𝐋𝐚𝐡𝐢𝐫 𝐃𝐚𝐧 𝐁𝐚𝐭𝐢𝐧",
         )
         await event.delete()
     except Exception:
