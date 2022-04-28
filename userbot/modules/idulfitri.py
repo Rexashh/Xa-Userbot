@@ -114,27 +114,27 @@ CMD_HELP.update(
     {
         "idulfitri": f"**Plugin : **`idulfitri`\
         \n\n  •  **Perintah :** `{cmd}lebaran1`\
-        \n  🕌  **Fungsi : **Coba aja.\
+        \n  •  **Fungsi : **Coba aja.\
         \n\n  •  **Perintah :** `{cmd}lebaran2`\
-        \n  🕌  **Fungsi : **Coba Aja.\
+        \n  •  **Fungsi : **Coba Aja.\
         \n\n  •  **Perintah :** `{cmd}lebaran3`\
-        \n  🕌  **Fungsi : **Coba Aja.\
+        \n  •  **Fungsi : **Coba Aja.\
         \n\n  •  **Perintah :** `{cmd}lebaran4`\
-        \n  🕌  **Fungsi : **Coba aja.\
+        \n  •  **Fungsi : **Coba aja.\
         \n\n  •  **Perintah :** `{cmd}lebaran5`\
-        \n  🕌  **Fungsi : **Coba aja.\
+        \n  •  **Fungsi : **Coba aja.\
         \n\n  •  **Perintah :** `{cmd}lebaran6`\
-        \n  🕌  **Fungsi : **Coba aja.\
+        \n  •  **Fungsi : **Coba aja.\
         \n\n  •  **Perintah :** `{cmd}petasan`\
-        \n  🕌  **Fungsi : **Coba aja.\
+        \n  •  **Fungsi : **Coba aja.\
         \n\n  •  **Perintah :** `{cmd}thr`\
-        \n  🕌  **Fungsi : **Coba aja.\
+        \n  •  **Fungsi : **Coba aja.\
         \n\n  •  **Perintah :** `{cmd}slok`\
-        \n  🕌  **Fungsi : **Coba aja.\
+        \n  •  **Fungsi : **Coba aja.\
         \n\n  •  **Perintah :** `{cmd}thr2`\
-        \n  🕌  **Fungsi : **Coba aja.\
+        \n  •  **Fungsi : **Coba aja.\
         \n\n  •  **Perintah :** `{cmd}thr3`\
-        \n  🕌  **Fungsi : **Coba aja.\
+        \n  •  **Fungsi : **Coba aja.\
         "
     }
 )
