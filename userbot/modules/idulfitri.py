@@ -19,42 +19,40 @@ async def _(typew):
                      "Jika marah dan sakit hati belum juga bisa dimaafkan dan dimengerti\n"
                      "Taqobballahu minna wa minkum \n"
                      "Taqobbal ya Kariim\n"
-                     "Mohon maaf lahir dan batin\n")
+                     "𝐌𝐨𝐡𝐨𝐧 𝐌𝐚𝐚𝐟 𝐋𝐚𝐡𝐢𝐫 𝐃𝐚𝐧 𝐁𝐚𝐭𝐢𝐧\n")
 
 
 @Xa_cmd(pattern=r"lebaran3(?: |$)(.*)")
 async def _(typew):
     await typew.edit("𝐌𝐢𝐧𝐚𝐥 '𝐀𝐢𝐝𝐢𝐧 𝐰𝐚𝐥-𝐅𝐚𝐢𝐳𝐢𝐧🕌\n"
-                     "mohon maaf kalo ada salah kata,\n"
-                     "salah cinta, atau salah menaruh rasa\n"
+                     "Mohon maaf kalo ada salah kata,\n"
+                     "Salah Cinta, atau Salah menaruh rasa\n"
                      "Selamat  Hari Raya Idul Fitri 🕌\n")
 
 
 @Xa_cmd(pattern=r"lebaran4(?: |$)(.*)")
 async def _(typew):
-    await typew.edit("CTRL + S berkah Ramadan\n"
-                     "CTRL + A, DEL Dosa dan kesalahan\n"
-                     "CTRL + C, CTRL + V Kebahagian Lebaran\n"
-                     "Selamat Idul Fitri teman-teman\n")
+    await typew.edit("𝘾𝙏𝙍𝙇 + 𝙎 Berkah Ramadan\n"
+                     "𝘾𝙏𝙍𝙇 + 𝘼 DELETE Dosa dan kesalahan\n"
+                     "𝘾𝙏𝙍𝙇 + 𝘾 𝘾𝙏𝙍𝙇 + 𝙑 Kebahagian Lebaran\n"
+                     "𝙎𝙀𝙇𝘼𝙈𝘼𝙏 𝙃𝘼𝙍𝙄 𝙍𝘼𝙔𝘼 𝙄𝘿𝙐𝙇 𝙁𝙄𝙏𝙍𝙄 !!\n")
 
 
 @Xa_cmd(pattern=r"lebaran5(?: |$)(.*)")
 async def _(typew):
     await typew.edit("Walaupun gua pernah nyimpen perasaan ke lu, setidaknya gua ga mau nyimpen dosa ke lu,")
-    sleep(1)
+    sleep(2)
     await typew.edit("Jadiii... ")
-    sleep(1)
+    sleep(2)
     await typew.edit("Maaf kalo gua pernah suka & cinta sama lu ")
     sleep(1.5)
     await typew.edit("Eh maksudnya, pernah berbuat salah ke lu ")
-    sleep(1)
+    sleep(2)
     await typew.edit("maafin ya!!")
 
 
 @Xa_cmd(pattern=r"petasan(?: |$)(.*)")
 async def _(typew):
-    await typew.edit("🎆")
-    sleep(2)
     await typew.edit("🎆")
     sleep(2)
     await typew.edit("𝐒𝐄𝐋𝐀𝐌𝐀𝐓 𝐈𝐃𝐔𝐋 𝐅𝐈𝐓𝐑𝐈 1443")
