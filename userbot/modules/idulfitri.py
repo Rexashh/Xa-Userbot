@@ -19,11 +19,11 @@ async def _(typew):
     await typew.edit("✨")
     sleep(1)
     await typew.edit("🕌 𝙎𝙚𝙡𝙖𝙢𝙖𝙩 𝙃𝙖𝙧𝙞 𝙍𝙖𝙮𝙖 𝙄𝙙𝙪𝙡 𝙁𝙞𝙩𝙧𝙞 🕌\n"
-                     " Ramadhan akan segera pergi, tapi diri tak bisa suci\n"
-                     " Jika marah dan sakit hati belum juga bisa dimaafkan dan dimengerti\n"
-                     " Taqobballahu minna wa minkum \n"
-                     " Taqobbal ya Kariim\n"
-                     " Mohon maaf lahir dan batin\n")
+                     "Ramadhan akan segera pergi, tapi diri tak bisa suci\n"
+                     "Jika marah dan sakit hati belum juga bisa dimaafkan dan dimengerti\n"
+                     "Taqobballahu minna wa minkum \n"
+                     "Taqobbal ya Kariim\n"
+                     "Mohon maaf lahir dan batin\n")
 
 
 @Xa_cmd(pattern=r"lebaran3(?: |$)(.*)")
@@ -69,8 +69,8 @@ async def _(event):
             event.chat_id,
             file=random.choice(lebarannya),
             caption=f" saya [{owner}](tg://user?id={xa.id}) dan sekeluarga mengucapkan ",
-            f" Mengucapkan Minal 'Aidin wal-Faizin",
-            f" Mohon Maaf Lahir dan Batin",
+            f"Mengucapkan Minal 'Aidin wal-Faizin",
+            f"Mohon Maaf Lahir dan Batin",
         )
         await event.delete()
     except Exception:
