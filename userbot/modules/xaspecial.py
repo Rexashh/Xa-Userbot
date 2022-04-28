@@ -191,6 +191,27 @@ async def _(event):
     except Exception:
         await event.edit("**tidak ditemukan. **")
 
+@Xa_cmd(pattern="lebaran6$")
+async def _(event):
+    try:
+        lebarannya = [
+            lebaran
+            async for lebaran in event.client.iter_messages(
+                "@lebaranxauserbot", filter=InputMessagesFilterPhotos
+            )
+        ]
+        xa = await event.client.get_me()
+        await event.client.send_file(
+            event.chat_id,
+            file=random.choice(lebarannya),
+            caption=f" saya [{owner}](tg://user?id={xa.id}) dan sekeluarga mengucapkan ",
+                             f"Mengucapkan Minal 'Aidin wal-Faizin",
+                             f"Mohon Maaf Lahir dan Batin",
+        )
+        await event.delete()
+    except Exception:
+        await event.edit("**tidak ditemukan. **")
+
 
 CMD_HELP.update(
     {
