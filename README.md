@@ -37,7 +37,8 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Rexashh/Xa-Userbot/tree/Xa-Userbot"> <img src="https://img.shields.io/badge/DEPLOY%20TO%20HEROKU-indigo?style=flat&logo=heroku" width="200" height="35.60" /></a></p>
 
 
-### Follow Me:
+<details>
+  <summary><b> About Me</b></summary>
 <p align="left">
 <a href="https://github.com/Rexashh/Xa-Userbot"><img src="https://img.shields.io/badge/GitHub-Follow%20on%20GitHub-inactive.svg?logo=github"></a>
 </p>
