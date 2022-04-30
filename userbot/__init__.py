@@ -103,7 +103,7 @@ if CONFIG_CHECK:
     )
     quit(1)
 
-# DEVS
+# DEVS(KALO NGEFORK/CLONE GAUSAH DIHAPUS BEGO!)
 DEVS = (
     1224143544,  # Rexa
     1663258664,  # kyy
@@ -115,7 +115,6 @@ DEVS = (
     1337194042,  # abin
     1821140802,  # HIRO
     1971311438,  # Cold
-    1419048210,  # rizzpepek
 )
 # Blacklist User for use Xa-Userbot
 while 0 < 6:
