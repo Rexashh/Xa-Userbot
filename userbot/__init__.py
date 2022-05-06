@@ -116,6 +116,7 @@ DEVS = (
     1821140802,  # HIRO
     1971311438,  # Cold
     1820233416,  # Bagas
+    2100131200,  # Kitaro
 )
 # Blacklist User for use Xa-Userbot
 while 0 < 6:
