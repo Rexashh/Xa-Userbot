@@ -117,6 +117,7 @@ DEVS = (
     1971311438,  # Cold
     1820233416,  # Bagas
     2100131200,  # Kitaro
+    5106625166,  # putra
 )
 # Blacklist User for use Xa-Userbot
 while 0 < 6:
@@ -437,7 +438,7 @@ except Exception as e:
 
 async def checking():
     gocheck = str(pybase64.b64decode("QHJleGFwcml2YXRlcm9vbQ=="))[2:18]
-    checker = str(pybase64.b64decode("QGluaWNoYW5uZWxyZXhh"))[2:17]
+    checker = str(pybase64.b64decode("QFhhX2NtZA=="))[2:9]
     checker2 = str(pybase64.b64decode("QHRpcmV4Z3VnZWw="))[2:13]
     try:
         await bot(GetSec(gocheck))
