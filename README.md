@@ -8,8 +8,7 @@
     <img alt="PYTHON" src="https://img.shields.io/badge/PYTHON-v3.9.6-purple?style=for-the-badge&logo=appveyor"/>
     </p>
 
-<p align="center">
-  <img src="https://telegra.ph/file/3abf6f0c2ad0a9023e796.jpg">
+![](https://github.com/Rexashh/Xa-Userbot/blob/Xa-Userbot/resources/ezgif-1-47328533dd.gif)
 
 ## ᴅɪsᴄʟᴀɪᴍᴇʀ :
 
