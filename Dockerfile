@@ -1,11 +1,11 @@
-FROM Rexashh/Xa-Userbot:buster
+FROM Rexashh/xauserbot:buster
 
-RUN git clone -b Xa-Userbot https://github.com/Rexashh/Xa-Userbot /home/userbot/ \
+RUN git clone -b Xa-Userbot https://github.com/Rexashh/Xa-Userbot /home/xauserbot/ \
     && chmod 777 /home/userbot \
-    && mkdir /home/userbot/bin/
+    && mkdir /home/xauserbot/bin/
 
-COPY ./sample_config.env ./config.env* /home/userbot/
+COPY ./sample_config.env ./config.env* /home/xauserbot/
 
-WORKDIR /home/userbot/
+WORKDIR /home/xauserbot/
 
-CMD ["bash","start"]
+CMD ["python3", "-m", "userbot"]
