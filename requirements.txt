@@ -17,6 +17,7 @@ csvfaker
 deezloader
 dnspython
 emoji
+ffmpeg-python
 fontTools
 gitpython
 git+https://github.com/ahupp/python-magic
